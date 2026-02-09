@@ -114,4 +114,4 @@ Contributions are welcome! You can:
 License
 =======
 
-This repo is open for educational and development purposes. Please **credit the source** if used in applications or AI models.
+This repo is open for educational and development purposes.
