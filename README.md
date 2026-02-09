@@ -1,10 +1,10 @@
 <h1 style="display: flex; justify-content: space-between; align-items: center;">
   Sri Lankan ICT Textbooks JSON
-  <img src="https://i.ibb.co/ccgjT189/image-wmm-1.png" alt="Project Logo" width="120" style="margin-left: 20px;">
 </h1>
 
 This repository contains Sri Lankan Grade 10 and 11 ICT textbooks in JSON format.  
 Each chapter, section, and lesson is structured so developers, web/app creators, or AI projects can use it directly.
+  <img src="https://i.ibb.co/ccgjT189/image-wmm-1.png" alt="Project Logo" width="160" style="margin-left: 20px;">
 
 The JSON files include:
 
