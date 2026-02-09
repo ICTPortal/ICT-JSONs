@@ -1,0 +1,118 @@
+<table>
+<tr>
+<td>
+
+# Sri Lankan ICT Textbooks JSON
+
+This repository contains **Sri Lankan Grade 10 and 11 ICT textbooks in JSON format**.  
+Each chapter, section, and lesson is structured so developers, web/app creators, or AI projects can **use it directly**.
+
+The JSON files include:
+
+- Chapters, sections, and subsections
+- Definitions, concepts, examples, activities
+- Lists, paragraphs
+- Learning objectives and summaries
+
+It’s essentially the textbook content converted into structured JSON, ready to use in applications, websites, or models.
+
+</td>
+<td>
+
+<img src="https://i.ibb.co/ccgjT189/image-wmm-1.png" alt="Project Logo" width="150"/>
+
+</td>
+</tr>
+</table>
+
+## Resources
+
+The textbook content is based on official Sri Lankan ICT textbooks and online resources:
+
+- e-Thaksalawa ICT Textbooks: [https://e-thaksalawa.moe.gov.lk](https://e-thaksalawa.moe.gov.lk)  
+- Other publicly available ICT resources and PDFs
+
+A `resources` folder in this repo contains the textbook PDFs for reference.
+
+## JSON Structure
+
+Each chapter has its own JSON file, structured like this:
+
+- `document_info`: Title, language  
+- `chapter_content`: chapter number, learning objectives, sections  
+- `sections`: each section or subsection with content  
+- `content` inside sections: definitions, concepts, examples, activities, lists, paragraphs, history, generations
+
+Example structure (simplified):
+
+```
+
+Chapter JSON
+├── document_info
+├── chapter_content
+│    ├── chapter_number
+│    ├── learning_objectives
+│    └── sections
+│         ├── id
+│         ├── title
+│         └── content
+│              ├── definition / concept / paragraph
+│              ├── example
+│              ├── list
+│              └── activity
+
+```
+
+## Usage
+
+1. Clone or download the repo:
+
+```
+
+git clone [https://github.com/ICTPortal/ICT-JSONs.git](https://github.com/ICTPortal/ICT-JSONs.git)
+
+````
+
+2. Load JSON in your project (example in JavaScript):
+
+```javascript
+import chapter1 from './chapter1.json';
+console.log(chapter1.chapter_content.sections[0].title); // "Data and Information"
+````
+
+## Notes
+
+* The JSON represents the actual textbook content, not just notes.
+* You can add more chapters or extend to other grades if needed.
+
+## Optional Diagram
+
+The JSON hierarchy can be visualized like this:
+
+```
+Chapter JSON
+├── document_info
+├── chapter_content
+│    ├── chapter_number
+│    ├── learning_objectives
+│    └── sections
+│         ├── id
+│         ├── title
+│         └── content
+│              ├── definition / concept / paragraph
+│              ├── example
+│              ├── list
+│              └── activity
+```
+
+## Contributing
+
+Contributions are welcome. You can:
+
+* Add new chapters or units
+* Correct typos or update content
+* Extend structure for additional subjects or grades
+
+## License
+
+This repo is open for educational and development purposes.
