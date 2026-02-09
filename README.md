@@ -61,7 +61,7 @@ Chapter JSON
 
 ```
 
-git clone [https://github.com/ICTPortal/ICT-JSONs.git](https://github.com/ICTPortal/ICT-JSONs.git)
+git clone https://github.com/ICTPortal/ICT-JSONs.git
 
 ````
 
