@@ -1,0 +1,423 @@
+{
+  "textbook_info": {
+    "language": "en",
+    "title": "Operating Systems"
+  },
+  "chapter_content": {
+    "chapter_number": 5,
+    "title": {
+      "en": "Operating Systems",
+      "si": "meial,a l%uf,aLk NdIdj"
+    },
+    "learning_objectives": [
+      "the necessity of an operating system",
+      "the function of an operating system",
+      "user interfaces of operating systems",
+      "services of an operating system",
+      "types of operating systems",
+      "advantages of operating systems",
+      "utility programs of an operating system",
+      "drives, folders and files"
+    ],
+    "sections": [
+      {
+        "id": "5.1",
+        "title": "Introduction to Operating Systems",
+        "type": "section",
+        "content": [
+          {
+            "type": "definition",
+            "text": "Any physical component of a computer system with a definite shape is called a hardware. Examples of hardware include mouse, keyboard, display unit, hard disk, speaker, printer, etc.",
+            "firmware": "The booting instructions stored in the ROM (Read Only Memory) are called firmware. The initial text information displayed on the screen are displayed by firmware."
+          },
+          {
+            "type": "initial_operations",
+            "text": "When the user powers up the computer, the CPU (Central Processing Unit) activates the BIOS (Basic Input Output System). The first program activated is POST (Power On Self-Test). Using the CMOS (Complementary Metal Oxide Semiconductor) memory this checks all the hardware and confirms that all are functioning properly. After that it reads the MBR (Master Boot Record) in boot drive in accordance with the firmware 'bootstrap loader' provided by the computer manufacturer. Then the computer loads in the Operating System in boot drive to the RAM (Random Access Memory). Once this is performed, the Operating System takes over the control of the computer and displays a user interface to the user. This whole process is called booting."
+          }
+        ]
+      },
+      {
+        "id": "5.1.3",
+        "title": "Introduction to several Operating Systems",
+        "type": "section",
+        "content": [
+          {
+            "type": "item",
+            "details": "Microsoft Windows Operating System"
+          },
+          {
+            "type": "item",
+            "details": "This Operating System which was introduced by Microsoft is proprietary software which means users have to pay for software license. Nevertheless, this Operating System is very popular around the world and is available in many different editions such as Windows XP, Windows Vista, Windows 7, Windows 8. In addition to the above versions there is a Windows Mobile version which is meant to be used in smart phones, tablets etc. There is a server edition called MS Windows Server as well."
+          },
+          {
+            "type": "item",
+            "details": "Apple Mac Operating System"
+          },
+          {
+            "type": "item",
+            "details": "The Mac Operating System which was developed by Apple Incorporation is called Apple Macintosh. This Operating System is also a proprietary software which requires payment for license. However, this Operating System can only be installed on Apple computers which are manufactured by Apple Incorporation."
+          },
+          {
+            "type": "item",
+            "details": "Ubuntu has been developed based on Linux Operating System. This Operating System is available free of charge. Hence it is called a Free and Open Source Software. We can download Ubuntu free from the URL: http://www.ubuntu.com"
+          },
+          {
+            "type": "item",
+            "details": "Android operating system is developed by Google. This is mainly used for mobile devices. This is also a Free and Open Source Software."
+          },
+          {
+            "type": "item",
+            "details": "This operating system is developed based on Linux operating system and can be downloaded free of charge at www.hanthana.org"
+          }
+        ]
+      },
+      {
+        "id": "5.1.5",
+        "title": "Types of Operating Systems",
+        "type": "section",
+        "content": [
+          {
+            "type": "item",
+            "details": "Single User Operating System"
+          },
+          {
+            "type": "item",
+            "details": "Multi-User Operating System"
+          },
+          {
+            "type": "item",
+            "details": "Multi-Tasking Operating System"
+          },
+          {
+            "type": "item",
+            "details": "Real Time Operating System"
+          }
+        ]
+      },
+      {
+        "id": "5.1.6",
+        "title": "Services of an Operating System",
+        "type": "section",
+        "content": [
+          {
+            "type": "definition",
+            "text": "The Operating System is a software which manages the hardware and other software in a computer system. It provides services to other software."
+          },
+          {
+            "type": "sub_section",
+            "title": "Managing the Hardware of a computer",
+            "content": [
+              {
+                "type": "sub_sub_section",
+                "id": "i. Process Management",
+                "title": "Process Management"
+              },
+              {
+                "type": "sub_sub_section",
+                "id": "ii. Memory Management",
+                "title": "Memory Management"
+              },
+              {
+                "type": "sub_sub_section",
+                "id": "iii. Device Management",
+                "title": "Device Management"
+              },
+              {
+                "type": "sub_sub_section",
+                "id": "iv. File Management",
+                "title": "File Management"
+              },
+              {
+                "type": "sub_sub_section",
+                "id": "v. Security Management",
+                "title": "Security Management"
+              },
+              {
+                "type": "sub_sub_section",
+                "id": "vi. Network Management",
+                "title": "Network Management"
+              }
+            ]
+          },
+          {
+            "type": "sub_section",
+            "title": "2. Providing user friendly interface",
+            "content": [
+              {
+                "type": "sub_subsection",
+                "title": "1. Command Line Interface - CLI"
+              },
+              {
+                "type":sub_subsection",
+                "title": "2. Graphical User Interface - GUI"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "5.2",
+        "title": "Utility Programs in an Operating System",
+        "type": "section",
+        "content": [
+          {
+            "type": "list",
+            "title": "There can be many types of utility programs in an Operating System",
+            "items": [
+              "Backup Software",
+              "Disk scanner",
+              "Disk defragmentation",
+              "File/data compression",
+              "Task Manager",
+              "System diagnosis tools",
+              "Anti-Virus Software",
+              "Clipboard",
+              "Data synchronization software",
+              "Disk partitioning software",
+              "Screensavers",
+              "System profilers",
+              "Network utilities"
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Disk Partitioning",
+            "content": [
+              {
+                "type": "definition",
+                "text": "By default there will be only one physical drive in a hard drive. But this drive is normally divided into many logical partitions. This process of dividing an individual drive into multiple logical drives is called disk partitioning. Partitioning could also be performed when a new hard disk is to be added or when an existing hard disk is replaced with a new hard disk.",
+                "note": "We may need to change the existing partition. When an already partitioned hard disk is partitioned again, all the data in that hard disk would be deleted. Therefore, it is necessary to keep a point to keep a backup copy of existing data before partitioning again."
+              },
+              {
+                "type": "example",
+                "title": "Why do we need partitioning?",
+                "details": [
+                  "When we need to save different items in different places.",
+                  "When we need to have more than one Operating System in the same machine.",
+                  "To meet the requirement of the Operating System."
+                ],
+                "note": "In windows environment, Multimedia drives (DVD, CD), flash drives etc. which are connected to the computer would be identified as 'Drives' and they would be named using an English letter after C (after partitioning the hard disk)."
+              },
+              {
+                "type": "description",
+                "text": "In Linux environment all the partitions, multimedia drives, flash drives etc. would be identified as individual folders (in Linux they are called Directories). Therefore it cannot be seen drives named C: D: etc in Linux environment."
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Disk Formatting",
+            "content": [
+              {
+                "type": "definition",
+                "text": "Formatting is the process of preparing a data storage device such as a hard disk drive, solid-state drive, floppy disk or USB flash drive for storing data. This is done using a file format in the Operating System."
+              },
+              {
+                "type": "example",
+                "title": "Formatting a new drive",
+                "details": "A hard disk cannot be used once partitioning is completed. We need to format each of the drives individually."
+              },
+              {
+                "type": "example",
+                "title": "Formatting a used drive",
+                "details": "We can format a hard disk drive, solid-state drive, floppy disk or USB flash drive whenever need arises."
+              },
+              {
+                "type": "note",
+                "text": "Every time we perform formatting the data in the drive would be deleted. Therefore it is necessary to keep backup copies of the data before formatting."
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Defragmentation",
+            "content": [
+              {
+                "type": "concept",
+                "text": "Sometimes a file (which is larger in size) may not be stored as a single track in a hard disk. This process where a single file is broken into different pieces and stored in different parts of a disk is called fragmentation.",
+                "note": "Linux based Operating Systems use a different method to store files. Linux Operating System makes sure that ample space is left between saved files so that they can be saved at the same location as a single intact file even when the file expands due to editing. Therefore there is very little possibility for fragmentation to happen."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "5.3",
+        "title": "Introduction to File Systems",
+        "type": "section",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Computer is a machine which allows for storage of large volumes of data while facilitating the quick retrieval of those saved data when we need. The data we save must be given a file name for the purpose of identification. There are many file names used in the storage media which are relevant to a particular operating system and application software. But all these file names consist of two components, namely file name and file extension. However, the file extension is hidden to the user by the Operating System by default."
+          }
+        ]
+      },
+      {
+        "id": "5.3.1",
+        "title": "Finding out the File Extension",
+        "type": "section",
+        "content": [
+          {
+            "type": "instruction",
+            "title": "Start Control Panel > Folder Options > View > Hide Extensions for known File types (See Figure 5.11) untick it then click OK."
+          },
+          {
+            "type": "example",
+            "title": "File Name and Extension",
+            "details": {
+              "symbol": "Symbol that separates file name and extension - fullstop (.)",
+              "examples": [
+                "File Name",
+                "File Name. Extension"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "5.3.2",
+        "title": "Table of File Types and Examples",
+        "type": "table",
+        "headers": ["File Extension", "File Type"],
+        "rows": [
+          ["exe", "Executable"],
+          ["docx", "Word"],
+          ["xlsx", "Excel"],
+          ["pptx", "PowerPoint"],
+          ["accdb", "Access"]
+        ]
+      },
+      {
+        "id": "5.3.3",
+        "title": "File Information",
+        "type": "table",
+        "headers": ["Information", "Details"],
+        "rows": [
+          ["Type of file", "Text"],
+          ["Size of File", "Bytes"],
+          ["Saved Date and Time", "2016.01.12"],
+          ["Memory allocated by the storage to save the file", "Approximate Text pages"],
+          ["Memory allocated by the storage to save the file", "Approximate Text pages"]
+        ]
+      },
+      {
+        "id": "5.3.4",
+        "title": "Selecting a location to save a file",
+        "type": "section",
+        "content": [
+          {
+            "type": "concept",
+            "text": "A location is used in the storage space to save a file. It is called a drive. The previous section detailed that several drives can exist after partitioning.",
+            "details": [
+              {
+                "definition": "By default a computer uses the hard drive to save. If the hard drive is not partitioned then it would be labelled as C: drive.",
+                "example": "If the hard drive is partitioned then the partitions could be named in order as [C:], [D:], [E:], [F:].",
+                "example": "If there are other storage media such as CD, DVD or Blue Ray Disk drives in a computer then these drives are given different letter names. For example if the hard disk is partitioned into four separate partitions then they would be labelled [C:], [D:], [E:], [F:] drives whereas a CD, DVD or Blue Ray Disk drive would be named as [G:] drive."
+              },
+              {
+                "definition": "In the same manner when a pen drive is connected to the computer a new drive would be labelled as [K:] drive."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "5.3.5",
+        "title": "Creating a Folder",
+        "type": "section",
+        "content": [
+          {
+            "type": "instruction",
+            "title": "Steps for creating a folder",
+            "steps": [
+              "Select the drive where the folder is to be created.",
+              "Select 'Folder' under 'New' in 'File Menu' or 'New folder' under 'Tools'.",
+              "Provide a suitable folder name."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "5.3.6",
+        "title": "Managing files and folders",
+        "type": "section",
+        "content": [
+          {
+            "type": "method",
+            "title": "Copy and Paste of files/folders",
+            "steps": [
+              "Select the file/folder to be copied.",
+              "Select copy (Edit -> Copy or Ctrl + C).",
+              "Select the destination drive or folder.",
+              "Select paste (Edit -> Paste or Ctrl + V)."
+            ]
+          },
+          {
+            "type": "method",
+            "title": "Cut and Paste of files/folders",
+            "steps": [
+              "Select the file/folder to be cut.",
+              "Select to cut (Edit -> Cut or Ctrl + X).",
+              "Select the destination drive or folder.",
+              "Select paste (Edit -> Paste or Ctrl + V)."
+            ]
+          },
+          {
+            "type": "method",
+            "title": "Renaming a file/folder",
+            "steps": [
+              "Select the file/folder to be renamed.",
+              "Select to rename under File menu or Press F2.",
+              "Key the new name and Enter."
+            ]
+          },
+          {
+            "type": "method",
+            "title": "Deleting a file/folder",
+            "steps": [
+              "Select the file/folder to be deleted.",
+              "Select to delete under File menu or use Delete key on the keyboard.",
+              "Click ‘Yes’ in the dialog box that appears.",
+              "Deleted file/folder would be placed in Recycle Bin temporarily."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "5.3.7",
+        "title": "Restore a Deleted file/folder",
+        "type": "section",
+        "content": [
+          {
+            "type": "instruction",
+            "steps": [
+              "Open Recycle bin.",
+              "Select the file/folder to be restored.",
+              "Click Restore under File menu."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "summary",
+        "title": "Summary",
+        "type": "section",
+        "content": [
+          "Operating System is essential for Operating a Computer.",
+          "All the Application Software in a computer runs on the Operating System.",
+          "The User Interface functions as a facilitator between the computer and the user.",
+          "The GUI is convenient to the user than the CLI.",
+          "The types of Operating System are: Single User, Multi User, Multi-tasking and Real Time.",
+          "The Operating System which provides service to one person at a time is called a Single User Operating System.",
+          "The Operating System which allows multiple users to use a system is called a Multi User Operating System.",
+          "The Operating System which allows to run multiple processes at the same time is called a Multi-Tasking Operating System.",
+          "The Operating System helps in managing all the resources of a computer.",
+          "The hard disk is partitioned and formatted before installing an Operating System.",
+          "A file consists of a File Name and Extension.",
+          "Folders are used to save files.",
+          "In order to save the files, the user creates folders inside the drive."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,885 @@
+{
+  "document_info": {
+    "language": "en",
+    "title": "Electronic Spreadsheet"
+  },
+  "chapter_content": {
+    "chapter_number": 7,
+    "title": "Electronic Spreadsheet",
+    "learning_objectives": [
+      "fundamental functions and operations of spreadsheets",
+      "identifying the components of a worksheet",
+      "entering and editing data in a worksheet",
+      "simple mathematical operators and building a formula using values",
+      "use of function and cell address for writing formulae",
+      "formatting a worksheet",
+      "use of relative and absolute cell addresses",
+      "creating charts"
+    ],
+    "sections": [
+      {
+        "id": "7.1",
+        "title": "Introduction",
+        "type": "section",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Electronic spreadsheets consist of multiples of rows and columns based on the model of square ruled books. They are used to perform simple and complex calculations accurately and efficiently."
+          },
+          {
+            "type": "subsection",
+            "id": "7.1.1",
+            "title": "Electronic Spreadsheet Application Software",
+            "content": {
+              "table": {
+                "headers": ["Software", "Company"],
+                "rows": [
+                  ["Excel", "Microsoft Corporation"],
+                  ["Numbers", "Apple Inc"],
+                  ["LibreOffice Calc", "The Document Foundation (Open Source)"],
+                  ["OpenOffice Calc", "Apache Software Foundation"]
+                ]
+              }
+            }
+          },
+          {
+            "type": "subsection",
+            "id": "7.1.2",
+            "title": "Using Spreadsheet Software",
+            "content": [
+              {
+                "type": "instruction",
+                "text": "Start path for Microsoft Office Excel 2010: Start -> Programs -> Microsoft Office -> Microsoft Office Excel 2010"
+              },
+              {
+                "type": "instruction",
+                "text": "Start path for LibreOffice Calc: Start -> Programs -> LibreOffice -> LibreOffice Calc"
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "7.1.3",
+            "title": "The user interface and the components of Microsoft Excel 2010",
+            "content": {
+              "components": [
+                {
+                  "name": "1. Quick Access Tool Bar",
+                  "function": "Contains commonly used commands such as Save, Print Preview, Undo, New."
+                },
+                {
+                  "name": "2. Title Bar",
+                  "function": "Shows the name of the Application Software."
+                },
+                {
+                  "name": "3. Ribbon",
+                  "function": "Contains a toolbar with, Home, Insert, Page layout."
+                },
+                {
+                  "name": "4. Help",
+                  "function": "Provides help functions."
+                },
+                {
+                  "name": "5. Control Buttons",
+                  "function": "To minimize, open or to maximize worksheet window."
+                },
+                {
+                  "name": "6. Insert Functions",
+                  "function": "Opens dialog box to create formulae."
+                },
+                {
+                  "name": "7. Tabs",
+                  "function": "Changes ribbon."
+                },
+                {
+                  "name": "8. Formulae Bar",
+                  "function": "Views formulae and displays contents of a cell."
+                },
+                {
+                  "name": "9. Column Heading",
+                  "function": "Shows column name."
+                },
+                {
+                  "name": "10. Name Box",
+                  "function": "Shows active cell address."
+                },
+                {
+                  "name": "11. Vertical Scroll Bar",
+                  "function": "Scrolls worksheet vertically."
+                },
+                {
+                  "name": "12. Active Cell",
+                  "function": "Displays cell in which data is entered."
+                },
+                {
+                  "name": "13. Row Heading",
+                  "function": "Shows row number."
+                },
+                {
+                  "name": "14. Sheet Tabs",
+                  "function": "Represents the worksheet."
+                },
+                {
+                  "name": "15. Horizontal Scroll Bar",
+                  "function": "Scrolls worksheet horizontally."
+                },
+                {
+                  "name": "16. Sheet Tab Scroll Button",
+                  "function": "Changes worksheet."
+                },
+                {
+                  "name": "17. Status Bar",
+                  "function": "Displays the status of the worksheet."
+                },
+                {
+                  "name": "18. View Button",
+                  "function": "Enables to change the view of the worksheet."
+                },
+                {
+                  "name": "19. Zoom Control",
+                  "function": "Zooms in or zooms out view of a worksheet."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "id": "7.1.4",
+            "title": "The user interface and the components of LibreOffice Calc",
+            "content": {
+              "components": [
+                {
+                  "name": "1. Title Bar",
+                  "function": "Shows the name of the application software."
+                },
+                {
+                  "name": "2. Menu Bar",
+                  "function": "Helps to select commands (File, Edit, View, etc)."
+                },
+                {
+                  "name": "3. Standard Tool Bar",
+                  "function": "Useful to select standard tools (New, Save, Open, etc)."
+                },
+                {
+                  "name": "4. Control Buttons",
+                  "function": "Minimizes, opens or maximizes worksheet window."
+                },
+                {
+                  "name": "5. Name Box",
+                  "function": "Shows the address of the active cell."
+                },
+                {
+                  "name": "6. Insert Functions",
+                  "function": "Opens dialog box to make formulae."
+                },
+                {
+                  "name": "7. Formulae bar",
+                  "function": "To view formulae and display contents of a cell."
+                },
+                {
+                  "name": "8. Formatting Tool Bar",
+                  "function": "Helps to format worksheet."
+                },
+                {
+                  "name": "9. Active Cell",
+                  "function": "Displays cell in which data is entered."
+                },
+                {
+                  "name": "10. Column Heading",
+                  "function": "Shows column name."
+                },
+                {
+                  "name": "11. Vertical Scroll Bar",
+                  "function": "Scrolls worksheet vertically."
+                },
+                {
+                  "name": "12. Row Heading",
+                  "function": "Shows row number."
+                },
+                {
+                  "name": "13. Horizontal Scroll Bar",
+                  "function": "Scrolls worksheet horizontally."
+                },
+                {
+                  "name": "14. Sheet Tabs",
+                  "function": "Represents the worksheet."
+                },
+                {
+                  "name": "15. Tab Scroll Button",
+                  "function": "Changes worksheet."
+                },
+                {
+                  "name": "16. Status Bar",
+                  "function": "Displays the status of the worksheet."
+                },
+                {
+                  "name": "17. Zoom Control",
+                  "function": "Zooms in or zooms out view of a worksheet."
+                }
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "id": "7.1.5",
+            "title": "Worksheet",
+            "content": "A worksheet is made up of a multitude of cells made by columns and rows on a two dimensional plane."
+          },
+          {
+            "type": "subsection",
+            "id": "7.1.6",
+            "title": "Naming columns in a worksheet",
+            "content": [
+              {
+                "type": "list",
+                "title": "Single Letters",
+                "items": ["A", "B", "C", "...", "Z"]
+              },
+              {
+                "type": "list",
+                "title": "Two Letters",
+                "items": ["AA", "AB", "AC", "AD", "...", "AZ"]
+              },
+              {
+                "type": "list",
+                "title": "Two Letters (continued)",
+                "items": ["BA", "BB", "BC", "...", "BZ"]
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "7.1.7",
+            "title": "Naming rows in a worksheet",
+            "content": {
+              "description": "Each row of a worksheet is assigned a row number as 1,2,3,4,5... etc."
+            }
+          },
+          {
+            "type": "subsection",
+            "id": "7.1.8",
+            "title": "Table of rows and columns counts",
+            "content": {
+              "table": {
+                "headers": ["Worksheet Application", "Number of rows", "Number of columns"],
+                "rows": [
+                  ["Microsoft Excel 2003", "65536", "256"],
+                  ["Microsoft Excel 2007/2010", "1048576", "16384"],
+                  ["LibreOffice Calc 4.1", "1048576", "1024"]
+                ]
+              }
+            }
+          },
+          {
+            "type": "subsection",
+            "id": "7.1.9",
+            "title": "Active Cell",
+            "content": "It is needed to select the cell before entering data in it. A currently selected cell is called an active cell. An active cell always has a thick border."
+          },
+          {
+            "type": "subsection",
+            "id": "7.1.10",
+            "title": "Cell Address",
+            "content": "A cell address is denoted first by the column letter and secondly by the row number. The address of the active cell is displayed in the name box. E.g., A cell at D column and 3rd row would be named D3."
+          },
+          {
+            "type": "subsection",
+            "id": "7.1.11",
+            "title": "Range of Cells",
+            "content": [
+              {
+                "type": "definition",
+                "text": "A block of adjacent cells in a worksheet which is highlighted or selected is called a range of cells."
+              },
+              {
+                "type": "description",
+                "text": "Range of cells in a column (B2:B5). The range starts in B2 and ending in B5.",
+                "items": ["B2", "B3", "B4", "B5"]
+              },
+              {
+                "type": "description",
+                "text": "Range of cells in a row (A3:C3). The range consists of A3, B3, C3.",
+                "items": ["A3", "B3", "C3"]
+              },
+              {
+                "type": "description",
+                "text": "Range of cells spanning several rows and columns (B2:C4).",
+                "items": ["B2", "B3", "B4", "C2", "C3", "C4"]
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "7.1.12",
+            "title": "Entering Data",
+            "content": [
+              {
+                "type": "category",
+                "name": "Label",
+                "definition": "A combination of letters, numbers, special symbols or text entered using a keyboard.",
+                "properties": [
+                  "Left aligned by default.",
+                  "Leading zero in phone numbers is not displayed automatically in numeric format."
+                ]
+              },
+              {
+                "type": "category",
+                "name": "Values",
+                "definition": "The data with numerical figure are called values.",
+                "properties": [
+                  "By default value is right aligned.",
+                  "A space needs to be entered after full number when entering half numbers."
+                ]
+              },
+              {
+                "type": "category",
+                "name": "Formulae",
+                "definition": "The expressions beginning with an equals ‘=’ mark using values, cell address and functions.",
+                "example": "Getting the total value of cells A1 and B1 into cell C1. Formula: =A1+B1."
+              }
+            ]
+          },
+          {
+            "type": "activity",
+            "title": "Scrolling in a worksheet",
+            "content": {
+              "key_actions": [
+                {"key": "Arrow keys", "result": "Move a single cell in any direction."},
+                {"key": "Ctrl + Arrow Keys", "result": "Moves the cell to the end of the data range in a particular direction."},
+                {"key": "Home", "result": "Moves to column A along the row where the active cell is."},
+                {"key": "Ctrl + Home", "result": "Moves the cell to A1 position."},
+                {"key": "Ctrl + End", "result": "Moves to bottom right cell of the data range."},
+                {"key": "Page Up", "result": "Moves the worksheet one screen up."},
+                {"key": "Page Down", "result": "Moves the worksheet one screen down."}
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "7.2",
+        "title": "Simple calculations using values and operators",
+        "type": "section",
+        "content": [
+          {
+            "type": "operators_table",
+            "data": [
+              {"operator": "+", "meaning": "Addition", "example": "=2+4", "result": "6"},
+              {"operator": "-", "meaning": "Subtraction", "example": "=5-2", "result": "3"},
+              {"operator": "*", "meaning": "Multiplication", "example": "=4*5", "result": "20"},
+              {"operator": "/", "meaning": "Division", "example": "=12/6", "result": "2"},
+              {"operator": "^", "meaning": "Exponentiation (power)", "example": "=2^4", "result": "16"}
+            ]
+          },
+          {
+            "type": "rules",
+            "items": [
+              "Brackets can be used to change the order of evaluation.",
+              "Operator precedence: First ^, Second *, /, Third +, -, Fourth =, <, >, <=, >=, <>"
+            ]
+          },
+          {
+            "type": "activity",
+            "title": "Evaluate the following equations",
+            "items": [
+              {"expression": "=6-4/2 ^6-2", "result": "4"},
+              {"expression": "=4*5-3 ^7-2", "result": "18"},
+              {"expression": "=8/4*2 -12+3", "result": "5"}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "7.3",
+        "title": "Formulas with cell addresses and operators",
+        "type": "section",
+        "content": [
+          {
+            "type": "example",
+            "title": "Calculating perimeter and area of a rectangle",
+            "scenario": "Length in A2, Breadth in B2.",
+            "formulas": [
+              {"cell": "C2", "formula": "=A2+B2+A2+B2"},
+              {"cell": "C3", "formula": "=A2*2+B2*2"},
+              {"cell": "C4", "formula": "=(A2+B2)*2"},
+              {"cell": "D2", "formula": "=A2*B2"}
+            ],
+            "note": "Important: In cell D2 if you write the formula D2=A2*B2 it would be taken as a label. Nothing should be written on the left side of the equal sign (=)."
+          },
+          {
+            "type": "example",
+            "title": "Price calculation",
+            "description": "Price of pencils and books calculation using cell addresses.",
+            "note": "When values of cells change, results from formulas are updated automatically."
+          },
+          {
+            "type": "activity",
+            "title": "Formulas evaluation",
+            "description": "Study the worksheet (Figure 7.18) and the table containing formulae. Calculate the result of each formula in accordance with the precedence of operators.",
+            "items": [
+              {"formula": "=A1+B1", "result": "12"},
+              {"formula": "=C1+C2+C3", "result": "17"},
+              {"formula": "=B2+C3+B3", "result": "7"},
+              {"formula": "=A2*C1", "result": "12"},
+              {"formula": "=C2/A2*D1", "result": "6"},
+              {"formula": "=B3^A2+D1", "result": "10"}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "7.4",
+        "title": "Use of functions to do calculations",
+        "type": "section",
+        "content": [
+          {
+            "type": "functions_table",
+            "data": [
+              {"name": "SUM", "syntax": "SUM(Number1, Number2...)", "desc": "Adds values contained in a range of cells."},
+              {"name": "AVERAGE", "syntax": "AVERAGE(Number1, Number2...)", "desc": "Finds out average of values contained in a range."},
+              {"name": "MAX", "syntax": "MAX(Number1, Number2...)", "desc": "Finds out largest value contained in a range."},
+              {"name": "MIN", "syntax": "MIN(Number1, Number2...)", "desc": "Finds out smallest value contained in a range."},
+              {"name": "COUNT", "syntax": "COUNT(Number1, Number2...)", "desc": "Counts number of cells within a range."}
+            ]
+          },
+          {
+            "type": "examples",
+            "items": [
+              {
+                "title": "SUM Function",
+                "details": [
+                  {"formula": "=SUM(A1,B1,C1)", "desc": "The sum of cells A1, B1 and C1", "result": "12"},
+                  {"formula": "=SUM(A1:C1)", "desc": "The sum of cells in the range from A1 to C1", "result": "12"},
+                  {"formula": "=SUM(A1:C1,B2)", "desc": "The sum of cells from A1 to C1 and B2", "result": "15"},
+                  {"formula": "=SUM(B1:C2)", "desc": "The sum of cells from B1 to C2", "result": "20"},
+                  {"formula": "=SUM(A1:A3,C1:C3)", "desc": "The sum of cells from A1 to A3 and C1 to C3", "result": "35"}
+                ]
+              },
+              {
+                "title": "AVERAGE Function",
+                "details": [
+                  {"formula": "=AVERAGE(A1,B1,C1)", "result": "4'00"},
+                  {"formula": "=AVERAGE(A1:C1)", "result": "4'00"},
+                  {"formula": "=AVERAGE(A1:C1,B2)", "result": "3'75"}
+                ]
+              },
+              {
+                "title": "MAX Function",
+                "details": [
+                  {"formula": "=MAX(A1,B2,C1)", "result": "4"},
+                  {"formula": "=MAX(A2:C2,B3)", "result": "9"},
+                  {"formula": "=MAX(A1:C1)", "result": "6"}
+                ]
+              },
+              {
+                "title": "MIN Function",
+                "details": [
+                  {"formula": "=MIN(A1,B2,C1)", "result": "3"},
+                  {"formula": "=MIN(A2:C2,B3)", "result": "3"}
+                ]
+              }
+            ]
+          },
+          {
+            "type": "activity",
+            "title": "Marks of ICT Students",
+            "description": "Provide answers using functions based on Figure 7.20.",
+            "questions": [
+              {"q": "What is the formula to be inserted in F2 to find total marks scored by K. Bhanu Somarathne?", "a": "=SUM(C2:F2)"},
+              {"q": "What is the formula to be inserted in F3 to find average marks scored by Wasantham Jayaraj?", "a": "=AVERAGE(C2:F2)"},
+              {"q": "What is the formula to be inserted in cell B8 to find highest score made in 1st Term?", "a": "=MAX(C3:E3)"},
+              {"q": "What is the formula to be inserted in cell C8 to find total number of students who appeared for Term 2?", "a": "=COUNT(C2:E2)"}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "7.5",
+        "title": "Formatting a worksheet",
+        "type": "section",
+        "content": [
+          {
+            "type": "subsection",
+            "id": "7.5.1",
+            "title": "Formatting tools",
+            "content": {
+              "excel_tools": [
+                {"name": "Font", "function": "Apply different font types."},
+                {"name": "Font Size", "function": "Apply different font sizes."},
+                {"name": "Bold", "function": "Make the selected text bold."},
+                {"name": "Italic", "function": "Italicize the selected text."},
+                {"name": "Underline", "function": "Underline the selected text."},
+                {"name": "Alignment (Left/Center/Right)", "function": "Align text in a cell."},
+                {"name": "Increase/Decrease decimal places", "function": "Show more/less precise decimal places."}
+              ],
+              "calc_tools": [
+                {"name": "Font", "function": "Apply different font types."},
+                {"name": "Font Size", "function": "Apply different font sizes."},
+                {"name": "Bold", "function": "Make the selected text bold."},
+                {"name": "Italic", "function": "Italicize the selected text."},
+                {"name": "Underline", "function": "Underline the selected text."},
+                {"name": "Left Alignment", "function": "Align text in a cell to left."},
+                {"name": "Center Alignment", "function": "Align text in a cell to center."},
+                {"name": "Right Alignment", "function": "Align text in a cell to right."},
+                {"name": "Increase/Decrease decimal places", "function": "Show more/less precise decimal places."}
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "id": "7.5.2",
+            "title": "Using dialog boxes to format values",
+            "content": "The formal cells dialog box' in the tool bar can be used to find more about formatting a cell or range."
+          },
+          {
+            "type": "subsection",
+            "id": "7.5.3",
+            "title": "Formatting a range of cells with decimal places",
+            "steps_excel": [
+              "Select the range of cells.",
+              "Open the ‘format cells dialog’ box.",
+              "Click the ‘Number’ tab.",
+              "Select the ‘Number’ category.",
+              "Change decimal places as required.",
+              "Click ‘OK’."
+            ],
+            "steps_calc": [
+              "Select the range of cells.",
+              "Open the ‘format cells dialog’ box.",
+              "Click the ‘Number’ tab.",
+              "Select the ‘Number’ category.",
+              "Change decimal places as required.",
+              "Click ‘OK’."
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "7.5.4",
+            "title": "Formatting a range of cells to be seen as labels",
+            "description": "Telephone numbers are stored as numeric values, so the first '0' is not displayed. Must format the range as 'Text' to see the full number.",
+            "steps_excel": [
+              "Select the range of cells.",
+              "Open ‘format cells dialog’ box.",
+              "Click Number tab.",
+              "Select Text.",
+              "Click ‘OK’.",
+              "Enter numbers."
+            ],
+            "steps_calc": [
+              "Select the range of cells.",
+              "Open the ‘format cells dialog’ box.",
+              "Click the ‘Number’ tab.",
+              "Select Text.",
+              "Click ‘OK’.",
+              "Enter numbers."
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "7.5.5",
+            "title": "Formatting a range of cells as percentage",
+            "description": "Monthly profit earned by a school book shop in first term.",
+            "steps_excel": [
+              "Select the cell range.",
+              "Open ‘format cells dialog’ box.",
+              "Click the ‘Number’ tab.",
+              "Select percentage category.",
+              "Click ‘Ok’."
+            ],
+            "steps_calc": [
+              "Select the cell range.",
+              "Open ‘format cells dialog’ box.",
+              "Click the ‘Number’ tab.",
+              "Select percentage category.",
+              "Click ‘Ok’."
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "7.5.6",
+            "title": "Formatting a range of cells as scientific notation",
+            "description": "Spreadsheets are used to calculate very small to very large numbers. Represented by common format.",
+            "steps_excel": [
+              "Select the cell range.",
+              "Open ‘format cells dialog’ box.",
+              "Click the ‘Number’ tab.",
+              "Select ‘Scientific’.",
+              "Change decimal places as needed.",
+              "Click ‘OK’."
+            ],
+            "steps_calc": [
+              "Select the cell range.",
+              "Open the ‘format cells dialog’ box.",
+              "Click the ‘Number’ tab.",
+              "Select ‘Scientific’.",
+              "Change decimal places as needed.",
+              "Click ‘OK’."
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "7.5.7",
+            "title": "Formatting of a cell range as Date",
+            "description": "Date can be displayed in many different formats (mm/dd/yyyy).",
+            "steps_excel": [
+              "Select the range of cells.",
+              "Open the ‘format cells dialog’ box.",
+              "Click the ‘Number’ tab.",
+              "Select ‘Date’ category.",
+              "Select date format.",
+              "Click ‘OK’."
+            ],
+            "steps_calc": [
+              "Select the range of cells.",
+              "Open the ‘format cells dialog’ box.",
+              "Click the ‘Number’ tab.",
+              "Select ‘Date’ category.",
+              "Select date format.",
+              "Click ‘OK’."
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "7.5.8",
+            "title": "Formatting a cell range to display Time",
+            "description": "Time is indicated as hh;mm;ss AM/PM.",
+            "steps_excel": [
+              "Select the range of cells.",
+              "Open the ‘format cells dialog’ box.",
+              "Click the ‘Number’ tab.",
+              "Select ‘Time’ category.",
+              "Select category Time should be displayed.",
+              "Click ‘Ok’."
+            ],
+            "steps_calc": [
+              "Select the range of cells.",
+              "Open the ‘format cells dialog’ box.",
+              "Click the ‘Number’ tab.",
+              "Select ‘Time’ category.",
+              "Select category Time should be displayed.",
+              "Click ‘Ok’."
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "7.5.9",
+            "title": "Formatting a cell range to display Currency",
+            "description": "When a number denotes a monetary value, currency form such as Dollar, Rupees should be displayed.",
+            "steps_excel": [
+              "Select the cell range.",
+              "Open the ‘format cells dialog’ box.",
+              "Click the ‘Number’ tab.",
+              "Select ‘Currency’.",
+              "Click ‘Ok’."
+            ],
+            "steps_calc": [
+              "Select the cell range.",
+              "Open the ‘format cells dialog’ box.",
+              "Click the ‘Number’ tab.",
+              "Select ‘Currency’.",
+              "Click ‘Ok’."
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "7.5.10",
+            "title": "Formatting alignment of a cell range",
+            "steps_excel": [
+              "Select the cell range.",
+              "Open the ‘format cells dialog’ box.",
+              "Click the ‘Alignment’ tab.",
+              "Select left, right or center.",
+              "Click ‘Ok’."
+            ],
+            "steps_calc": [
+              "Select the cell range.",
+              "Open the ‘format cells dialog’ box.",
+              "Click the ‘Alignment’ tab.",
+              "Select left, right or center.",
+              "Click ‘Ok’."
+            ]
+          },
+          {
+            "type": "activity",
+            "title": "Formatting Worksheet Activity",
+            "tasks": [
+              "Center align column A and row 2.",
+              "Make row 2 Bold. Underline heading in row. Make font size 16.",
+              "Italicize cells A3, A4, A5.",
+              "Use function SUM and write a formula in B7 to calculate total for January.",
+              "Use function AVERAGE and write a formula in B7 to calculate average for January.",
+              "Copy formulae in B6 and B7 and use them to calculate total and average for other months.",
+              "Use SUM function to get total of Arts Section in cell E3.",
+              "Use AVERAGE function to get average of Arts section in cell F3.",
+              "Copy formulae in E3 and F3 and use them to calculate total and average for other departments."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "7.6",
+        "title": "Relative and absolute cell reference",
+        "type": "section",
+        "content": [
+          {
+            "type": "subsection",
+            "id": "7.6.1",
+            "title": "Copying a formula",
+            "content": "A class teacher calculates total and average of each student. One can copy formulae once apply it to many other instances."
+          },
+          {
+            "type": "subsection",
+            "id": "7.6.2",
+            "title": "Fill handle of a cell",
+            "description": "The small black square in the bottom – right corner of the selected cell is called a fill handle."
+          },
+          {
+            "type": "subsection",
+            "id": "7.6.3",
+            "title": "Use of fill handle for copying formulae",
+            "steps": [
+              "Select the cell which contains formula.",
+              "Click the small black square in the bottom-right corner of the selected cell (Fill Handle).",
+              "Drag the fill handle up to the required cell."
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "7.6.4",
+            "title": "Use of copy and paste commands for copying formulae",
+            "steps": [
+              "Select the cell which contains formula.",
+              "Copy contents of selected cell (Ctrl + C).",
+              "Select the cell to which formula is to be pasted.",
+              "Paste contents on selected cell (Ctrl + V)."
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "7.6.5",
+            "title": "Relative and absolute cell reference",
+            "content": [
+              {
+                "type": "definition",
+                "text": "A cell address (reference) consists of the column letter and the row number. In a formula such a cell address is always called as a relative reference."
+              },
+              {
+                "type": "concept",
+                "name": "Relative cell reference",
+                "desc": "If the row number and the column letter of adjacent cells change accordingly when a formula is copied, such cell addresses are called relative cell reference.",
+                "example": "Formula = A1+B1. When dragged down column C and sideways along row 1, cell references change accordingly (A2+B2, A3+B3, etc.)."
+              },
+              {
+                "type": "concept",
+                "name": "Absolute cell reference",
+                "desc": "If the row number of the cells remain unchanged when a formula is dragged sideways along a row, it is called row absolute cell reference.",
+                "symbols": ["$A1 (Row absolute)", "$A1 (Column absolute)", "$A$1 (Row and column absolute)"],
+                "example": "Formula = $A1 + B$1. When dragged, only column letters change relatively while row numbers remain unchanged."
+              },
+              {
+                "type": "example",
+                "title": "Calculating price of pencils",
+                "scenario": "Length/Qty in A2, Unit Price in B2.",
+                "formula": "=A2*B$2. A2 changes relatively, B2 is absolute."
+              },
+              {
+                "type": "example",
+                "title": "Calculating price of books",
+                "scenario": "Quantity in C5..C10, Price per dozen in C1.",
+                "formula": "=(C5..C10)*$C$1. C5..C10 changes relatively, C1 is absolute."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "7.7",
+        "title": "Creation of charts using spreadsheets",
+        "type": "section",
+        "content": [
+          {
+            "type": "chart_types",
+            "types": [
+              {"name": "Column Chart", "purpose": "Comparing classes of data items in group."},
+              {"name": "Bar Chart", "purpose": "Comparing classes of data items in group."},
+              {"name": "Line Chart", "purpose": "Comparing classes of data items in group."},
+              {"name": "Pie Chart", "purpose": "Comparing classes of data items as percentage."},
+              {"name": "XY Scatter Chart", "purpose": "Comparing data in pairs."}
+            ]
+          },
+          {
+            "type": "creation_steps",
+            "application": "Microsoft Office Excel 2010",
+            "steps": [
+              "Select the range of data (e.g., A1:F7).",
+              "Insert -> Chart.",
+              "Select the type of chart.",
+              "Select the chart.",
+              "Click finish."
+            ]
+          },
+          {
+            "type": "creation_steps",
+            "application": "LibreOffice Calc",
+            "steps": [
+              "Select the range of data (e.g., A1:F7).",
+              "Insert -> Chart.",
+              "Select the type of chart.",
+              "Select the chart.",
+              "Click finish."
+            ]
+          },
+          {
+            "type": "activity",
+            "title": "Creating specific charts",
+            "tasks": [
+              {
+                "type": "chart",
+                "title": "XY Scatter Chart",
+                "data": "Enter values 2 to 7 in axis.",
+                "formula": "= B1 ^2 - 5*B1 - 3."
+              },
+              {
+                "type": "chart",
+                "title": "Pie Chart",
+                "data": "Display marks of students.",
+                "instruction": "Select data ranges A1:A7 and G1:G7."
+              }
+            ]
+          },
+          {
+            "type": "exercise",
+            "title": "Activity based on Worksheet (Figure 7.44)",
+            "questions": [
+              "Name the cell range where 2,6,10,14 are present.",
+              "Name the cell range where 9,10,11,12 are present.",
+              "Name the cell range where 6,7,8,10,11,12 are present.",
+              "Write formula in A5 using only cell addresses to calculate total of values from A1 to A4.",
+              "Write formula in A3 using function to calculate total of values from A3 to D3.",
+              "Write how you would copy formula in E3 to E4.",
+              "Write formula in A5 using function to calculate average of values from A3 to D3."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "summary",
+        "title": "Summary",
+        "content": [
+          "A worksheet is composed of vertical columns and horizontal rows in a two dimensional plane.",
+          "Columns in a worksheet are named with English letters or combination of English letters.",
+          "Rows in a worksheet are named with numbers.",
+          "Cells are named firstly by column letter and secondly by row number.",
+          "Cell content is either a label, value or formulae.",
+          "A formulae is initiated with equals sign (=).",
+          "There is a precedence of operators.",
+          "Formulas are made with cell addresses, operators and functions.",
+          "Formatting tools are used to format labels and values.",
+          "The fill handle is used to copy formulae.",
+          "Dollar sign ($) is used to make absolute cell reference.",
+          "Several chart types are available in spreadsheet applications."
+        ]
+      }
+    ]
+  }
+}

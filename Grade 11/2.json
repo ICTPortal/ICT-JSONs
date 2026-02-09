@@ -1,0 +1,288 @@
+{
+  "document_info": {
+    "language": "en",
+    "title": "System Development Life Cycle"
+  },
+  "chapter_content": {
+    "chapter_number": 2,
+    "title": "System Development Life Cycle",
+    "topics": [
+      "What is a system?",
+      "Interactions among components in a system",
+      "Manual information systems vs computer based information systems",
+      "The ability to determine why a system is necessary",
+      "Steps in the development process of an information system",
+      "The use of life cycle models to develop information systems"
+    ],
+    "sections": [
+      {
+        "id": "2.1",
+        "title": "Describes the concept for Information Systems",
+        "type": "section",
+        "content": [
+          {
+            "type": "definition",
+            "term": "System",
+            "definition": "A collection of different components that usually interconnected towards a common objective."
+          },
+          {
+            "type": "example",
+            "title": "Road construction machine",
+            "description": "A machine consisting of a bucket, drill, conveyor belt, and engine, used for construction work."
+          },
+          {
+            "type": "subsection",
+            "title": "Basic Elements of a System",
+            "content": {
+              "description": "A system consists of three basic components: Input, Process, and Output. Input received by a system is converted to output by processing.",
+              "components": [
+                "Input",
+                "Process",
+                "Output"
+              ]
+            }
+          },
+          {
+            "type": "example",
+            "number": 1,
+            "title": "School as a system",
+            "details": {
+              "System": "School",
+              "Objective": "To produce a responsible, worthwhile, just citizen to society",
+              "Input": "Children",
+              "Process": "The child is subjected to the teaching/learning process through interactions of teachers and other resources",
+              "Output": "Providing good citizens to the country"
+            }
+          },
+          {
+            "type": "example",
+            "number": 2,
+            "title": "Weather forecasting system",
+            "details": {
+              "Input": "Atmospheric pressure, temperature, wind direction, humidity",
+              "Process": "Calculation logic",
+              "Output": "Tomorrow's weather"
+            }
+          },
+          {
+            "type": "definition",
+            "term": "Information Systems",
+            "definition": "A system which converts data into Information."
+          },
+          {
+            "type": "subsection",
+            "title": "Manual System",
+            "content": {
+              "description": "In this type of system all processes are done manually.",
+              "example": "Manual student information system. Input: Name of student and relevant year. Process: Find index number, check special abilities, collect achievements, prepare report. Output: Progress report."
+            }
+          },
+          {
+            "type": "subsection",
+            "title": "Computer Based Information Systems",
+            "content": {
+              "description": "A system which converts data into Information using a computer.",
+              "example_benefits": [
+                "Ability to detect availability of books",
+                "Ability to use bar codes for issues/receipts",
+                "Ability to check overdue books easily",
+                "Maintain records of borrowers",
+                "List those who failed to return books",
+                "Online system for reservation and searching",
+                "Generate reports easily"
+              ],
+              "comparison_table": {
+                "title": "Manual vs Computer Based Systems",
+                "headers": ["Feature", "Manual Systems", "Computer Based Information Systems"],
+                "rows": [
+                  ["Errors", "Since data is manually processed, prone to error.", "Errors are minimal with data processed by a computer program."],
+                  ["Speed", "Processing of data is less efficient.", "Data can be processed more efficiently."],
+                  ["Storage", "Requires large space for data storage (Filing cabinets).", "Large amounts of data can be stored in small physical surface using Database software."],
+                  ["Security", "Data is open to threats. Not as safe.", "Security can be ensured with backups and passwords."]
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "2.2",
+        "title": "System Development Processes",
+        "type": "section",
+        "content": [
+          {
+            "type": "subsection",
+            "id": "2.2.1",
+            "title": "System Development Life Cycle (SDLC)",
+            "content": [
+              {
+                "type": "list",
+                "title": "Steps in SDLC",
+                "items": [
+                  "Investigation and Analysis",
+                  "Designing the solution",
+                  "Coding of the solution",
+                  "Testing and debugging",
+                  "Deployment of the system",
+                  "Maintenance of the system"
+                ]
+              },
+              {
+                "type": "phase",
+                "number": 1,
+                "title": "Investigation and Analysis",
+                "details": "Complete investigation of the existing manual system or the computer-based system. Identify user needs.",
+                "methods_of_gathering_information": [
+                  {
+                    "name": "Observation",
+                    "desc": "Observing the existing system working. E.g., Observing issuing of books in a library."
+                  },
+                  {
+                    "name": "Interviews",
+                    "desc": "Meeting staff to discuss matters. E.g., Meeting the librarian."
+                  },
+                  {
+                    "name": "Questionnaires",
+                    "desc": "Using questionnaires to gather requirements from a large number of users."
+                  },
+                  {
+                    "name": "Document sample collection",
+                    "desc": "Collecting forms and reports used in the existing system."
+                  },
+                  {
+                    "name": "Prototyping",
+                    "desc": "Developing a model of the proposed system to demonstrate for feedback."
+                  }
+                ]
+              },
+              {
+                "type": "phase",
+                "number": 2,
+                "title": "Designing the solution",
+                "details": "Creating a blueprint of the new system.",
+                "activities": [
+                  "Designing input and output",
+                  "Designing file/structure and database",
+                  "Designing the User Interface",
+                  "Deciding on required hardware and software",
+                  "Planning tests"
+                ]
+              },
+              {
+                "type": "phase",
+                "number": 3,
+                "title": "Coding of the solution",
+                "details": "Writing the program code using a programming language. Objective is to ensure correctness, readability, and portability."
+              },
+              {
+                "type": "phase",
+                "number": 4,
+                "title": "Testing and debugging",
+                "details": "Resolving errors found in the code.",
+                "types_of_testing": [
+                  {
+                    "name": "Unit Testing",
+                    "desc": "Testing each unit independently. E.g., Testing Accounts branch vs Establishment branch."
+                  },
+                  {
+                    "name": "Integration Testing",
+                    "desc": "Combining tested units and testing them together."
+                  },
+                  {
+                    "name": "System Testing",
+                    "desc": "Testing the complete system for given inputs and outputs."
+                  },
+                  {
+                    "name": "Acceptance Testing",
+                    "desc": "Testing carried out with the users at the final stage to get approval."
+                  }
+                ]
+              },
+              {
+                "type": "phase",
+                "number": 5,
+                "title": "Deployment of the system",
+                "details": "Installing the system for use.",
+                "approaches": [
+                  {
+                    "name": "Direct deployment",
+                    "desc": "Terminating the existing system and starting the new one immediately.",
+                    "example": "Installing new library management software and stopping the manual system."
+                  },
+                  {
+                    "name": "Parallel deployment",
+                    "desc": "Using both the existing and new systems together for a period until the new system is stable.",
+                    "example": "Using new library software alongside the manual system."
+                  },
+                  {
+                    "name": "Pilot deployment",
+                    "desc": "Using the new system in a selected area/branch.",
+                    "example": "Installing system in one district library first."
+                  },
+                  {
+                    "name": "Phased deployment",
+                    "desc": "Introducing the system module by module or branch by branch.",
+                    "example": "Introducing system in the Accounts branch first, then Establishment."
+                  }
+                ]
+              },
+              {
+                "type": "phase",
+                "number": 6,
+                "title": "Maintenance of the system",
+                "details": "Ensuring the system continues to function correctly after installation. Includes correcting bugs, developing new features, and improving performance."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "2.2.2",
+            "title": "System Development Life cycle Models",
+            "content": [
+              {
+                "type": "model",
+                "name": "Waterfall Model",
+                "description": "Linear development where one stage must be completed before the next begins.",
+                "features": [
+                  "Identify requirements first.",
+                  "Complete one stage before going to the next.",
+                  "Limitation: If user requirements are unclear, the resulting system may differ from what the user wants."
+                ]
+              },
+              {
+                "type": "model",
+                "name": "Iterative Incremental Model",
+                "description": "Developing one small component at a time in an iterative fashion.",
+                "features": [
+                  "Develop small components iteratively.",
+                  "Developers can use knowledge gained in earlier iterations.",
+                  "User feedback can be incorporated easily.",
+                  "System grows larger incrementally until completion."
+                ]
+              },
+              {
+                "type": "activity",
+                "text": "Compare and contrast Waterfall Life Cycle model with iterative incremental life cycle model."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "summary",
+        "title": "Summary",
+        "content": [
+          "A system is a collection of different components that usually interconnected towards a common objective.",
+          "Any system consists of three basic components namely input, process and output.",
+          "Information systems transform data into information.",
+          "Information systems can be divided into Manual Information Systems and Computer based Information Systems.",
+          "Manual Information Systems does not use computers and performs tasks using human.",
+          "Computer based Information Systems use a computer to transform data into information.",
+          "Information systems are developed by using the system development life cycle.",
+          "The system development life cycle consists of: 1. Investigation and Analysis, 2. Designing Solution, 3. Coding of Solution, 4. Testing and Debugging, 5. Deployment of System, 6. Maintenance of System.",
+          "The waterfall life cycle model and iterative incremental models are examples for system development life cycles."
+        ]
+      }
+    ]
+  }
+}

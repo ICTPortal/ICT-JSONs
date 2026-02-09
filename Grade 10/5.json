@@ -1,0 +1,442 @@
+{
+  "textbook_info": {
+    "language": "en",
+    "title": "Operating Systems"
+  },
+  "chapter_content": {
+    "chapter_number": 5,
+    "title": "Operating Systems",
+    "learning_objectives": [
+      "the necessity of an operating system",
+      "the function of an operating system",
+      "user interfaces of operating systems",
+      "services of an operating system",
+      "types of operating systems",
+      "advantages of operating systems",
+      "utility programs of an operating system",
+      "drives, folder and files"
+    ],
+    "sections": [
+      {
+        "id": "5.1",
+        "title": "Introduction to Operating Systems",
+        "type": "section",
+        "content": [
+          {
+            "type": "definition_list",
+            "items": [
+              {
+                "term": "Hardware",
+                "definition": "Any physical component of a computer system with a definite shape."
+              },
+              {
+                "term": "Firmware",
+                "definition": "The booting instructions stored in the ROM (Read Only Memory)."
+              },
+              {
+                "term": "Software",
+                "definition": "A set of instructions given to the computer to perform some activity."
+              }
+            ]
+          },
+          {
+            "type": "process",
+            "title": "Initial Operations / Booting",
+            "steps": [
+              "The user powers up the computer, CPU activates BIOS.",
+              "POST (Power On Self-Test) runs using CMOS to check hardware.",
+              "Reads MBR (Master Boot Record) in boot drive.",
+              "Loads Operating System in boot drive to RAM (Main Memory).",
+              "Operating System takes control and displays user interface."
+            ]
+          },
+          {
+            "type": "classification",
+            "title": "Types of Software",
+            "categories": [
+              {
+                "name": "System Software",
+                "types": [
+                  "Operating System",
+                  "Utility Software",
+                  "Language Translators"
+                ]
+              },
+              {
+                "name": "Application Software",
+                "examples": ["Word Processing", "Spread Sheets", "Database", "Computer Games", "Web Browsers"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "5.1.1",
+        "title": "System Software",
+        "type": "section",
+        "content": [
+          {
+            "type": "overview",
+            "description": "System software is divided into three types.",
+            "details": "The Operating System provides for the user to utilize the functions of a computer by managing the hardware and software in it."
+          },
+          {
+            "type": "sub_section",
+            "title": "a. Operating System",
+            "description": "Provides instructions for installation and management of various application software. Manages all input, output and computer memory."
+          },
+          {
+            "type": "sub_section",
+            "title": "b. Utility Software",
+            "description": "Used to manage and analyze the software in the computer. Helps in managing resources.",
+            "examples": [
+              "Anti-Virus Software",
+              "Disk Formatting",
+              "Language Translators - Assembler, Compiler, Interpreter"
+            ]
+          },
+          {
+            "type": "sub_section",
+            "title": "c. Language Translators",
+            "description": "Translates high level languages to machine language.",
+            "types": [
+              {
+                "name": "Assembler",
+                "function": "Translates assembly code."
+              },
+              {
+                "name": "Compiler",
+                "function": "Translates entire program to machine code."
+              },
+              {
+                "name": "Interpreter",
+                "function": "Translates line by line."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "5.1.2",
+        "title": "Application Software",
+        "type": "section",
+        "content": [
+          {
+            "type": "definition",
+            "text": "Runs on the Operating System to carry out computer based activities of the user.",
+            "examples": ["Word processing", "spread sheets", "database", "computer games", "Web browsers"]
+          }
+        ]
+      },
+      {
+        "id": "5.1.3",
+        "title": "Importance of Operating System",
+        "type": "section",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The software which facilitates the interaction between human user and hardware is the Operating System. It manages all the input, output and computer memory. It is the sole software which manages the whole computer system."
+          }
+        ]
+      },
+      {
+        "id": "5.1.4",
+        "title": "Introduction to several Operating Systems",
+        "type": "section",
+        "content": [
+          {
+            "type": "list",
+            "items": [
+              {
+                "name": "Microsoft Windows",
+                "type": "Proprietary software",
+                "versions": ["Windows XP", "Windows Vista", "Windows 7", "Windows 8"],
+                "other": "Windows Mobile", "MS Windows Server"
+              },
+              {
+                "name": "Apple Mac",
+                "type": "Proprietary software",
+                "note": "Requires payment for license. Can only be installed on Apple computers."
+              },
+              {
+                "name": "Ubuntu",
+                "type": "Free and Open Source Software",
+                "details": "Developed based on Linux. Available free of charge."
+              },
+              {
+                "name": "Android",
+                "type": "Free and Open Source Software",
+                "details": "Developed by Google. Mainly used for mobile devices."
+              },
+              {
+                "name": "Hanthana Linux",
+                "type": "Free of charge",
+                "details": "Developed based on Linux operating system."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "5.1.5",
+        "title": "Types of Operating Systems",
+        "type": "section",
+        "content": [
+          {
+            "type": "category",
+            "name": "Single user",
+            "description": "Provides service to one person at a time.",
+            "example": "MS Dos"
+          },
+          {
+            "type": "category",
+            "name": "Multi-user",
+            "description": "Allows multiple users to use a system simultaneously.",
+            "example": "Linux, Windows server"
+          },
+          {
+            "type": "category",
+            "name": "Multi-tasking",
+            "description": "Allows to run multiple processes at the same time.",
+            "example": "Windows 7, Windows 8, Ubuntu, Mac"
+          },
+          {
+            "type": "category",
+            "name": "Real Time",
+            "description": "Gives the output in real time without observable delays.",
+            "example": "ATM machines, Calculators"
+          }
+        ]
+      },
+      {
+        "id": "5.1.6",
+        "title": "Services of an Operating System",
+        "type": "section",
+        "content": [
+          {
+            "type": "overview",
+            "text": "The Operating System is a software which manages the hardware and other software. It provides services to other software. Two main services: Managing hardware and Providing user interface."
+          },
+          {
+            "type": "subsection",
+            "title": "1. Managing the Hardware of a computer",
+            "content": [
+              {
+                "type": "process",
+                "name": "i. Process Management",
+                "details": "Allocation of CPU time, allocation of memory, allocation of input output devices of each process. Prioritization of processes.",
+                "example": "Printing a letter (single process vs multiple tasks)."
+              },
+              {
+                "type": "process",
+                "name": "ii. Memory Management",
+                "details": "Ensuring enough memory is allocated for each process and freed once the process ends. Utilizing Primary Memory (RAM) and Secondary Memory efficiently.",
+                "example": "Typing changes to a document while it is printing."
+              },
+              {
+                "type": "process",
+                "name": "iii. Device Management",
+                "details": "Responsible for managing peripheral devices. Device controllers manage devices, device drivers manage software components.",
+                "example": "Installing a printer driver. Plug and play devices."
+              },
+              {
+                "type": "process",
+                "name": "iv. File Management",
+                "details": "Saving data in files and keeping them in folders. Services: Making/deleting files/folders, Renaming, Changing storage location, Creating backups.",
+                "note": "Includes handling file properties, operations, access and file systems."
+              },
+              {
+                "type": "process",
+                "name": "v. Security Management",
+                "details": "Protecting from malicious software (Viruses) and unauthorized access.",
+                "note": "Uses external (third party) software support as well."
+              },
+              {
+                "type": "process",
+                "name": "vi. Network Management",
+                "details": "Supports different types of network connectivity (wired and wireless). Helps in accessing computer from remote computer. Facilitates Cloud Computing."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "2. Providing user friendly interface",
+            "content": [
+              {
+                "type": "interface_type",
+                "name": "Command Line Interface - CLI",
+                "description": "Had a 'prompt' where commands are keyed in using a keyboard. Correct syntax must be used."
+              },
+              {
+                "type": "interface_type",
+                "name": "Graphical User Interface - GUI",
+                "description": "Uses graphics on their interfaces (Mouse, Finger tips).",
+                "components": {
+                  "acronym": "WIMP",
+                  "parts": [
+                    "Windows",
+                    "Icons",
+                    "Menus",
+                    "Pointer"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "5.1.7",
+        "title": "Utility Programs",
+        "type": "section",
+        "content": [
+          {
+            "type": "list",
+            "title": "Available Utility Programs",
+            "items": [
+              "Backup Software",
+              "Disk scanner",
+              "Disk defragmentation",
+              "File/data compression",
+              "Task Manager",
+              "System diagnosis tools",
+              "Anti-Virus Software",
+              "Clipboard",
+              "Data synchronization software",
+              "Disk partitioning software",
+              "Screensavers",
+              "System profilers",
+              "Network utilities"
+            ]
+          },
+          {
+            "type": "details",
+            "subjects": [
+              {
+                "title": "Disk Partitioning",
+                "content": {
+                  "definition": "Process of dividing an individual drive into multiple logical drives.",
+                  "reasons": [
+                    "To save different items in different places.",
+                    "To have more than one Operating System on the same machine.",
+                    "To meet the requirement of the Operating System."
+                  ],
+                  "process_note": "Partitioning is performed at the time when a hard disk is configured for the first time. Re-partitioning deletes all data. Naming conventions differ in Windows (C:, D:) vs Linux (directories)."
+                }
+              },
+              {
+                "title": "Disk Formatting",
+                "content": "Preparing a data storage device for storing data using a file format. Data is deleted during formatting. USBs come pre-formatted."
+              },
+              {
+                "title": "Defragmentation",
+                "content": {
+                  "problem": "A single file may be stored in different parts of a disk (fragmentation), taking longer to read.",
+                  "solution": "Rearranging fragmented data so it will work more efficiently.",
+                  "note": "Linux based systems leave space between files to minimize fragmentation, so defragmentation utility is not needed."
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "5.2",
+        "title": "Introduction to File Systems",
+        "type": "section",
+        "content": [
+          {
+            "type": "concept",
+            "title": "File Name and Extension",
+            "description": "File names consist of two components: file name and file extension. Extensions are hidden by default."
+          },
+          {
+            "type": "instruction",
+            "title": "Finding out the File Extension",
+            "steps": [
+              "Start -> Control Panel -> Folder Options -> View",
+              "Untick 'Hide Extensions for known File types'",
+              "Click OK."
+            ]
+          },
+          {
+            "type": "list",
+            "title": "Common File Extensions",
+            "items": [
+              {"ext": "exe", "type": "Executable"},
+              {"ext": "docx", "type": "Word"},
+              {"ext": "xlsx", "type": "Excel"},
+              {"ext": "pptx", "type": "PowerPoint"},
+              {"ext": "accdb", "type": "Access"}
+            ]
+          },
+          {
+            "type": "info",
+            "title": "File Properties",
+            "details": ["Type of file", "Size of the File", "Saved Date and Time", "Memory allocated"]
+          },
+          {
+            "type": "info",
+            "title": "Selecting a location to save a file",
+            "description": "Location is called a drive. Partitions are named [C:], [D:], [E:] in Windows. Removable drives like CDs/Flash drives get subsequent letter names (e.g., [G:])."
+          },
+          {
+            "type": "instruction",
+            "title": "Creating a Folder",
+            "steps": [
+              "Select the drive.",
+              "Select 'Folder' under 'New' or 'New folder'.",
+              "Provide a name."
+            ]
+          },
+          {
+            "type": "operations",
+            "title": "Managing files and folders",
+            "actions": [
+              {
+                "name": "Copy and Paste",
+                "steps": ["Select file/folder", "Edit -> Copy or Ctrl + C", "Select destination", "Edit -> Paste or Ctrl + V"]
+              },
+              {
+                "name": "Cut and Paste",
+                "steps": ["Select file/folder", "Edit -> Cut or Ctrl + X", "Select destination", "Edit -> Paste or Ctrl + V"]
+              },
+              {
+                "name": "Renaming",
+                "steps": ["Select file/folder", "File -> Rename or F2", "Key new name and Enter"]
+              },
+              {
+                "name": "Deleting",
+                "steps": ["Select file/folder", "File -> Delete or Delete key", "Click 'Yes'"],
+                "note": "Deleted file/folder is placed in Recycle Bin temporarily."
+              },
+              {
+                "name": "Restore",
+                "steps": ["Open Recycle bin", "Select file/folder", "File -> Restore"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "summary",
+        "title": "Summary",
+        "content": [
+          "Operating System is essential for Operating a Computer.",
+          "All the Application Software in the computer runs on the Operating System.",
+          "The User Interface functions as a facilitator between the computer and the user.",
+          "The GUI is convenient to the user than the CLI.",
+          "The types of Operating System are: Single User, Multi User, Multi-tasking and Real Time User.",
+          "The Operating System which provides service to one person at a time is called a Single User Operating System.",
+          "The Operating System which allows multiple users to use a system is called a Multi User Operating System.",
+          "The Operating System which allows to run multiple process at the same time is called a Multi-Tasking Operating System.",
+          "The Operating System helps in managing all the resources of a computer.",
+          "The hard disk is partitioned and formatted before installing an Operating System.",
+          "A file consists of a File Name and Extension.",
+          "Folders are used to save files.",
+          "In order to save the files the user creates folders inside the drive."
+        ]
+      }
+    ]
+  }
+}

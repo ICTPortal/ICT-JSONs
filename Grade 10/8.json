@@ -1,0 +1,821 @@
+{
+  "document_info": {
+    "language": "en",
+    "title": "Electronic Presentations"
+  },
+  "chapter_content": {
+    "chapter_number": 8,
+    "title": "Electronic Presentations",
+    "learning_objectives": [
+      "What is meant by ‘presentation’?",
+      "Characteristics of a good quality presentation",
+      "Creating an attractive multi-media presentation using basic tools of presentations software",
+      "Slide background, slide templates, slide layout planning",
+      "Inserting suitable images or pictures into slides of presentation",
+      "Inserting animations into slides"
+    ],
+    "sections": [
+      {
+        "id": "8.1",
+        "title": "What is meant by ‘presentation’?",
+        "type": "section",
+        "content": [
+          {
+            "type": "definition",
+            "text": "People make presentations to share their views, opinions, ideas and knowledge with a larger group of people."
+          },
+          {
+            "type": "traditional_methods",
+            "title": "Traditional methods",
+            "items": [
+              "Method": "Drumming",
+              "Method": "Using signals (Flags - Green to go, Red to stop)",
+              "Speech"
+            ]
+          },
+          {
+            "type": "traditional_tools",
+            "title": "Traditional presentation tools",
+            "items": [
+              {
+                "name": "Slide Projector (OHP)",
+                "description": "Transparent sheets used on overhead projector. Notes can be written on them. Limitations: Cannot erase and reuse, No audio/video."
+              },
+              {
+                "name": "Overhead Projector",
+                "description": "Transparencies prepared in lab. Fixed images. Limitations: No audio/video, cannot edit once prepared."
+              }
+            ]
+          },
+          {
+            "type": "electronic_methods",
+            "title": "Electronic presentations",
+            "description": "Presentations made quickly using a computer and multimedia projector. Can include multimedia contents such as audio and video.",
+            "items": [
+              "Computer",
+              "Video Camera",
+              "Multimedia Projector"
+            ]
+          },
+          {
+            "type": "definition",
+            "text": "A presentation that contains multiple types of contents like numbers, letters, pictures, graphics, images, movies and videos, tables and graphs, voice and sound is called a multimedia electronic presentation."
+          }
+        ]
+      },
+      {
+        "id": "8.2",
+        "title": "The characteristics of a good quality presentation",
+        "type": "section",
+        "content": [
+          {
+            "type": "criteria",
+            "name": "Number of Lines",
+            "description": "It is important to consider the number of lines per slide. The most appropriate number is 6-9 lines per slide."
+          },
+          {
+            "type": "criteria",
+            "name": "Font Size",
+            "description": "The distance between screen and audience is a key factor. It is an accepted norm to keep font size at 32 points or more."
+          },
+          {
+            "type": "criteria",
+            "name": "Correct Use of Grammar and Language",
+            "description": "It is a must that you double check grammar, spellings and use of language by reading slides carefully."
+          },
+          {
+            "type": "criteria",
+            "name": "Inserting Images, Drawings, Tables or Graphs",
+            "description": "It is not suitable to insert more than two images, drawings, tables or graphs in each slide. It may become confusing."
+          },
+          {
+            "type": "criteria",
+            "name": "Use of Colours",
+            "description": "Use dark colours, bold letters or use of different fonts to emphasize certain points. Avoid using dark red colour throughout the slide. Pay attention to contrast of background and foreground colours."
+          },
+          {
+            "type": "criteria",
+            "name": "Animation and Videos",
+            "description": "It is ideal to use one animation or video in each slide. If you use more than one, overlap of sounds may cause confusion to the viewer."
+          },
+          {
+            "type": "criteria",
+            "name": "Pay Attention on Target Group",
+            "description": "When using multimedia, it is important to pay attention to meeting the objectives of the target audience. The content should not divert attention away from the objectives."
+          }
+        ]
+      },
+      {
+        "id": "8.3",
+        "title": "Presentation Software",
+        "type": "section",
+        "content": [
+          {
+            "type": "definition",
+            "text": "A software which helps to create presentations with multimedia contents is called presentation software."
+          },
+          {
+            "type": "software_types",
+            "title": "Types of Presentation Software",
+            "categories": [
+              {
+                "name": "Free and Open Source Software",
+                "examples": [
+                  {"name": "LibreOffice Impress", "publisher": "The Document Foundation"},
+                  {"name": "OpenOffice.org Impress", "publisher": "Apache Corporation"}
+                ]
+              },
+              {
+                "name": "Proprietary / Commercial Software",
+                "examples": [
+                  {"name": "Apple Keynote", "publisher": "Apple Inc."},
+                  {"name": "Corel Presentation", "publisher": "Corel Corporation"},
+                  {"name": "Microsoft PowerPoint", "publisher": "Microsoft Corporation"}
+                ]
+              }
+            ]
+          },
+          {
+            "type": "info",
+            "text": "If MS Office software is not installed in your computer, you can make a presentation using web-based tools (e.g., MS Office 365 PowerPoint, Google Presentation or Microsoft OneDrive PowerPoint)."
+          }
+        ]
+      },
+      {
+        "id": "8.4",
+        "title": "Fundamentals of presentation software",
+        "type": "section",
+        "content": [
+          {
+            "type": "software_comparison",
+            "name": "Microsoft Office PowerPoint",
+            "interface_components": [
+              {
+                "name": "Quick Access Tool Bar",
+                "function": "Contains commonly used commands such as Save, Print Preview, Undo, New."
+              },
+              {
+                "name": "Title Bar",
+                "function": "Shows the name of the software and the name of the opened document."
+              },
+              {
+                "name": "Ribbon",
+                "function": "A toolbar with groups like Home, Insert, Page Layout. Items are shown as icons. Can change tabs."
+              },
+              {
+                "name": "Slide Pane",
+                "function": "Vertical pane at left hand side. Thumbnails view (small) vs Large slide view (middle)."
+              },
+              {
+                "name": "Workspace",
+                "function": "Presentation is created at this location."
+              },
+              {
+                "name": "Task Pane",
+                "function": "Useful to add features like animations and slide transitions."
+              },
+              {
+                "name": "Notes Pane",
+                "function": "Used to insert notes about a slide. Not visible to audience during slide show."
+              },
+              {
+                "name": "Status Bar",
+                "function": "Displays important info like number of slides, active slide number, language."
+              },
+              {
+                "name": "View Tab",
+                "function": "Enables to change the view of a slide.",
+                "options": [
+                  {
+                    "name": "Normal View",
+                    "function": "The view you get in interface."
+                  },
+                  {
+                    "name": "Slide Sorter View",
+                    "function": "All slides displayed together as mini slides."
+                  },
+                  {
+                    "name": "Reading View",
+                    "function": "Slide shown as on screen. Clearly readable. Press Esc to exit."
+                  },
+                  {
+                    "name": "Slide Show",
+                    "function": "View selected slide on full screen. Used to run presentation. F5 to start."
+                  }
+                ]
+              },
+              {
+                "name": "Zoom Control",
+                "function": "Tool to zoom in or zoom out view of a slide."
+              }
+            ]
+          },
+          {
+            "type": "software_comparison",
+            "name": "LibreOffice Impress",
+            "interface_components": [
+              {
+                "name": "Title Bar",
+                "function": "Shows the name of the application software."
+              },
+              {
+                "name": "Menu Bar",
+                "function": "Helps to select commands (File, Edit, View, Insert, Format, Tables, Tools, Window, Help)."
+              },
+              {
+                "name": "Standard Tool Bar",
+                "function": "Useful to select standard tools (New, Save, Open, Cut, Copy, Paste, Undo, Redo, Print, Insert, Gallery)."
+              },
+              {
+                "name": "Formatting Tool Bar",
+                "function": "Helps to format worksheets. (Bold, Italic, Underline, Alignment, etc.)."
+              },
+              {
+                "name": "Slide Pane",
+                "function": "Left hand side pane. Thumbnails (small) vs Large slide view (middle)."
+              },
+              {
+                "name": "Workspace",
+                "function": "Presentation is created at this location."
+              },
+              {
+                "name": "Tasks Pane",
+                "function": "Has 5 components.",
+                "sub_components": [
+                  {
+                    "name": "Master Pages",
+                    "description": "You can make a presentation and style using this. There are default templates."
+                  },
+                  {
+                    "name": "Layouts",
+                    "description": "Earlier made layouts. Click on layout button to use it."
+                  },
+                  {
+                    "name": "Table Design",
+                    "description": "Gives styles for creating tables."
+                  },
+                  {
+                    "name": "Custom Animation",
+                    "description": "Features for text, drawings etc. (Entrance, Emphasis, Exit, Motion Paths)."
+                  },
+                  {
+                    "name": "Slide Transition",
+                    "description": "Change way transition from one slide to another. (Speed, Sound, Auto vs Manual)."
+                  }
+                ]
+              },
+              {
+                "name": "Drawing Tool Bar",
+                "function": "Provides various tools required to make drawings on a slide."
+              },
+              {
+                "name": "Status Bar",
+                "function": "Displays important information (Total slides, active slide, language)."
+              },
+              {
+                "name": "Zoom Control",
+                "function": "Zooms in or zooms out view of a worksheet."
+              }
+            ]
+          },
+          {
+            "type": "operating_instructions",
+            "title": "Starting the software",
+            "examples": [
+              {
+                "software": "Microsoft Office PowerPoint",
+                "path": "Start -> All Programs -> Microsoft Office -> Microsoft Office PowerPoint 2010",
+                "actions": [
+                  "Save As: Select 'File -> Save As'. Select location and File Name. Click 'Save'."
+                ]
+              },
+              {
+                "software": "LibreOffice Impress",
+                "path": "Start -> All Programs -> LibreOffice 4.1 -> LibreOffice Impress",
+                "actions": [
+                  "Save As: Select 'File -> Save As'. Select folder. Type File Name. Click 'Save'."
+                ]
+              }
+            ]
+          },
+          {
+            "type": "example",
+            "title": "Example 1 (Microsoft Office PowerPoint)",
+            "content": [
+              {
+                "name": "Saving with Password",
+                "steps": [
+                  "File -> Save.",
+                  "Select location. Type name.",
+                  "Select 'Tools'.",
+                  "Select 'General Options'.",
+                  "Type password in 'Password to open' box.",
+                  "Click 'Ok'.",
+                  "Type same password in 'Re-enter Password to open' box.",
+                  "Click 'Save' button."
+                ]
+              }
+            ]
+          },
+          {
+            "type": "example",
+            "title": "Example 2 (LibreOffice Impress)",
+            "content": [
+              {
+                "name": "Saving with Password",
+                "steps": [
+                  "File -> Save.",
+                  "Select location. Type name.",
+                  "Click on box 'Save with a Password'.",
+                  "Type password in 'Set Password' dialog box.",
+                  "Type same password in second box and click 'Ok' button."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "8.5",
+        "title": "Creating a Presentation",
+        "type": "section",
+        "content": [
+          {
+            "type": "step",
+            "title": "Setting Slide Size",
+            "description": "The size of the slides should be changed according to the theme. You can change type of slide, length and breadth, slide orientation.",
+            "methods": [
+              {
+                "software": "Microsoft Office PowerPoint",
+                "path": "Design -> Page Setup (Figure 8.6.1)"
+              },
+              {
+                "software": "LibreOffice Impress",
+                "path": "Format -> Page"
+              }
+            ]
+          },
+          {
+            "type": "step",
+            "title": "Office Theme / Slide Layouts",
+            "description": "After finishing required changes to size, select Office Themes or Slide Layouts.",
+            "methods": [
+              {
+                "software": "Microsoft Office Presentation",
+                "path": "Home -> New Slide or Layout -> Office Theme. You can select templates from 'Slides from Outside'. You can Reuse Slides. Figure 8.6.3."
+              },
+              {
+                "software": "LibreOffice Impress",
+                "path": "Format -> Slide Layout... -> Layout (Select and enter slide layouts also called themes). Click mouse on it. Or Format -> Slide Layout -> Master Pages (Select an elegant theme). Figure 8.6.4."
+              }
+            ]
+          },
+          {
+            "type": "step",
+            "title": "Creating a Title Slide",
+            "description": "Select Title Slide to give a title to the theme of your presentation. Type a Title and Subtitle.",
+            "methods": [
+              {
+                "software": "Microsoft Office Presentation",
+                "path": "Select Title Slide / Layout. Type Title and Subtitle. Figure 8.6.5."
+              },
+              {
+                "software": "LibreOffice Impress",
+                "path": "Format -> Slide Layout... / Layout / Master Pages. Select Title slide layout. Type Title and Subtitle. Figure 8.6.5."
+              }
+            ]
+          },
+          {
+            "type": "step",
+            "title": "Saving an Opening Presentation",
+            "methods": [
+              {
+                "software": "Microsoft Office Presentation",
+                "path": "File -> Save As -> Folder Name -> File Name (Enter name) -> Save."
+              },
+              {
+                "software": "LibreOffice Impress",
+                "path": "File -> Save As -> My Documents -> File Folder -> Type File Name -> Click 'Save'."
+              }
+            ]
+          },
+          {
+            "type": "step",
+            "title": "Opening an Existing Presentation",
+            "methods": [
+              {
+                "software": "Microsoft Office Presentation",
+                "path": "Start -> All Programs -> Microsoft Office -> Microsoft Office PowerPoint 2010 -> File -> Open -> Select file -> Open"
+              },
+              {
+                "software": "LibreOffice Impress",
+                "path": "Start -> All Programs -> LibreOffice 4.1 -> LibreOffice Impress -> File -> Open -> Select file -> Open."
+              }
+            ]
+          },
+          {
+            "type": "step",
+            "title": "Adding a Slide Background",
+            "description": "The software provides options for making required Slide Background. Offers user friendly ways to add colours, shapes or objects and/images/drawings.",
+            "methods": [
+              {
+                "software": "Microsoft Office Presentation",
+                "path": "Design -> Background Styles / Format -> Page -> Background. (Try adding different colours, shapes/objects and/or images/drawings). Figure 8.6.6."
+              },
+              {
+                "software": "LibreOffice Impress",
+                "path": "Format -> Page -> Background. (Add colours or shapes to background)."
+              }
+            ]
+          },
+          {
+            "type": "step",
+            "title": "Adding Text to Slides",
+            "description": "The location denoted as 'CLICK TO ADD TITLE' is called Place Holder. Click at such a place and start typing. You can enter required texts.",
+            "methods": [
+              {
+                "software": "Microsoft Office Presentation",
+                "path": "Click 'Click To Add Title' placeholder. Type text. Or Insert -> TextBox. Click tools and drag to relevant point."
+              },
+              {
+                "software": "LibreOffice Impress",
+                "path": "Click 'Click To Add Title' placeholder. Type text. Or Insert -> Text Box. Click tools and drag at relevant point. Use formatting tools."
+              }
+            ]
+          },
+          {
+            "type": "step",
+            "title": "Adding Objects (Shapes / Clip Art / Pictures) to Slides",
+            "methods": [
+              {
+                "category": "Shapes",
+                "software": "Microsoft Office Presentation",
+                "path": "Insert -> Shape -> Select shape from drop down menu and drag to slide.",
+                "software": "LibreOffice Impress",
+                "path": "Drawing Tool Bar -> Click shape and drag to slide."
+              },
+              {
+                "category": "Clip Art",
+                "software": "Microsoft Office Presentation",
+                "path": "Insert -> Clip Art -> Search for clip art -> Insert."
+              },
+              {
+                "category": "Clip Art",
+                "software": "LibreOffice Impress",
+                "path": "View -> Tool Bars -> Drawing -> Gallery or Tools -> Gallery. Drag required clip art."
+              },
+              {
+                "category": "Pictures",
+                "software": "Microsoft Office Presentation",
+                "path": "Insert -> Picture -> From File... (Insert external picture). Expand/shrink using small handles."
+              },
+              {
+                "category": "Pictures",
+                "software": "LibreOffice",
+                "path": "Insert -> Picture -> From File... Insert external picture. Expand/shrink using small handles."
+              }
+            ]
+          },
+          {
+            "type": "step",
+            "title": "Using Symbols",
+            "methods": [
+              {
+                "software": "Microsoft Office Presentation",
+                "path": "Insert -> Symbol. Then click 'Insert'."
+              },
+              {
+                "software": "LibreOffice Impress",
+                "path": "Insert -> Special Character. Then click 'Ok'."
+              }
+            ]
+          },
+          {
+            "type": "step",
+            "title": "Adding Header/Footer and Page Numbers",
+            "methods": [
+              {
+                "software": "Microsoft Office Presentation",
+                "path": "Insert -> Header and Footer / Page Number."
+              },
+              {
+                "software": "LibreOffice Impress",
+                "path": "Insert -> Header and Footer / Page Number."
+              }
+            ]
+          },
+          {
+            "type": "step",
+            "title": "Creating Columns",
+            "description": "This feature is often used in newspapers and magazines.",
+            "methods": [
+              {
+                "software": "Microsoft Office Presentation",
+                "path": "Page Layout -> Columns -> Select number of columns."
+              },
+              {
+                "software": "LibreOffice Impress",
+                "path": "Format -> Slide Layout -> Columns -> Select number of columns."
+              }
+            ]
+          },
+          {
+            "type": "step",
+            "title": "Inserting a Table",
+            "methods": [
+              {
+                "software": "Microsoft Office Presentation",
+                "path": "Insert -> Table -> Select rows and columns -> Click 'Ok'.",
+                "actions": [
+                  "Formatting: Use 'Design' and 'Layout' ribbons.",
+                  "Delete rows/cols."
+                  "Merge cells: Select cells -> Layout -> Merge Cells."
+                  "Split cells: Layout -> Split Cells."
+                  "Table Design: Layout -> Table Design."
+                ]
+              },
+              {
+                "software": "LibreOffice Impress",
+                "path": "Table -> Insert -> Table -> Select rows and columns -> Insert.",
+                "actions": "Use Table tab. Select, Delete, Insert, Split, Merge from Menu Bar or Task Pane. Use Format cells dialog box."
+              }
+            ]
+          },
+          {
+            "type": "step",
+            "title": "Proofreading",
+            "content": [
+              {
+                "name": "Correcting Spelling and Grammar",
+                "description": "Spelling errors are underlined in red colour and grammar errors are underlined in green colour.",
+                "methods": [
+                  {
+                    "software": "Microsoft Office PowerPoint",
+                    "path": "Review -> Spelling and Grammar. Click 'Change' after selecting the correct word."
+                  },
+                  {
+                    "software": "LibreOffice Impress",
+                    "path": "Tools -> Language -> Spelling and Grammar. Tools -> Language -> Thesaurus."
+                  }
+                ]
+              },
+              {
+                "name": "Thesaurus",
+                "description": "Thesaurus can be used to find synonyms for words in documents.",
+                "methods": [
+                  {
+                    "software": "Microsoft Office PowerPoint",
+                    "path": "Review -> Thesaurus."
+                  },
+                  {
+                    "software": "LibreOffice Impress",
+                    "path": "Tools -> Language -> Thesaurus."
+                  }
+                ]
+              },
+              {
+                "name": "Find and Replace Words",
+                "description": "Use 'Find' facility if a document contains many pages.",
+                "methods": [
+                  {
+                    "software": "Microsoft Office PowerPoint",
+                    "path": "Home -> Editing -> Find / Find & Replace."
+                  },
+                  {
+                    "software": "LibreOffice Impress",
+                    "path": "Edit -> Find & Replace."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "step",
+            "title": "Printing a Presentation",
+            "content": [
+              {
+                "name": "Print Preview",
+                "description": "Print Preview is useful to check document before printing. User can check whether the document is prepared as needed.",
+                "methods": [
+                  {
+                    "software": "Microsoft Office PowerPoint",
+                    "path": "File -> Print Preview."
+                  },
+                  {
+                    "software": "LibreOffice Impress",
+                    "path": "File -> Print Preview."
+                  }
+                ]
+              },
+              {
+                "name": "Print",
+                "description": "This tool is used to print document.",
+                "settings": [
+                  "Select printer.",
+                  "Select range (Current page, Pages or All).",
+                  "Specify number of copies."
+                ],
+                "methods": [
+                  {
+                    "software": "Microsoft Office Presentation",
+                    "path": "File -> Print."
+                  },
+                  {
+                    "software": "LibreOffice Impress",
+                    "path":File -> Print."
+                  }
+                ]
+              },
+              {
+                "name": "Printing Handouts",
+                "description": "The handouts that are obtained by 'File -> Print' can be distributed to audience.",
+                "methods": [
+                  {
+                    "software": "Microsoft Office Presentation",
+                    "note": "Select the range 'Handouts' in the print dialog box. You can change the size of the print (larger or smaller). Figure 8.6.13."
+                  },
+                  {
+                    "software": "LibreOffice Impress",
+                    "note": "Select 'Print range' and 'Number of copies'. You can change the print size."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "8.6",
+        "title": "Mail Merge",
+        "type": "section",
+        "content": [
+          {
+            "type": "concept",
+            "text": "Mail Merge is used to send invitations, letters or to print certificates to several people. For this process, you can use data etc saved in address box saved using Mail Merge. User can create address for labels print."
+          },
+          {
+            "type": "software_process",
+            "title": "Microsoft Word Process for Mail Merge",
+            "steps": [
+              "Select Mailing Tab.",
+              "Start Mail Merge -> Letter.",
+              "Select Document Type (Letter).",
+              "To create/select Data Source -> Select Recipient -> Type New List (or Use Existing List).",
+              "Customize (Add/Delete/Rename fields).",
+              "Write Data (New Entry / Delete Entry / Find).",
+              "Next -> Create Address Block (Add greeting, body, salutation).",
+              "Next -> Insert Merge Field at cursor.",
+              "Finish & Merge/Edit Individual documents -> Save/Print."
+            ]
+          },
+          {
+            "type": "software_process",
+            "title": "LibreOffice Writer for Mail Merge",
+            "steps": [
+              "Tools -> Mailing Wizard.",
+              "Step 1: Select Starting document -> Next.",
+              "Step 2: Select Document type -> Letter -> Next.",
+              "Step3: Select Address List (Create New / Add Existing).",
+              "Step 4: Customize fields (Add, Delete, Rename).",
+              "Step5: Write Data (New / Delete / Find).",
+              "Step 6: Next.",
+              "Step 7: Create Address Block (Layout/Greeting/Body/Salutation).",
+              "Step 8: Adjust Layout.",
+              "Step 9: Preview/Edit Documents.",
+              "Step 10: Personalize Documents.",
+              "Step 11: Save (Starting doc, Merged doc, Print).",
+              "Step 12: Return to Mailing Wizard.",
+              "Step 13: Save/Print/Send Email."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "8.7",
+        "title": "Shortcut Keys",
+        "content": [
+          {
+            "title": "Common Shortcut Keys",
+            "keys": [
+              {
+                "key": "Ctrl + N",
+                "function": "Get a new document"
+              },
+              {
+                "key": "Ctrl + S",
+                "function": "Name the document and to save"
+              },
+              {
+                "key": "Ctrl + O",
+                "function": "Open a document"
+              },
+              {
+                "key": "Ctrl + A",
+                "function": "Select the document"
+              },
+              {
+                "key": "Ctrl + C",
+                "function": "Copy letters / objects"
+              },
+              {
+                "key": "Ctrl + X",
+                "function": "Cut letters / objects"
+              },
+              {
+                "key": "Ctrl + V",
+                "function": "Paste letters / objects"
+              },
+              {
+                "key": "Ctrl + H",
+                "function": "Replace words"
+              },
+              {
+                "key": "Ctrl + Home",
+                "function": "Get the cursor to the opening of the document."
+              },
+              {
+                "key": "Ctrl + End",
+                "function": "Get the cursor to the end of the document."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "8.8",
+        "title": "Green Computing",
+        "type": "section",
+        "content": [
+          {
+            "type": "definition",
+            "text": "Study and practice of designing, manufacturing, using and disposing of computers and associated subsystems... efficiently and effectively with minimal or no impact on environment. It addresses environmental effects of computing."
+          },
+          {
+            "type": "aspects",
+            "list": [
+              "Green use",
+              "Green disposal",
+              "Green design",
+              "Green manufacturing"
+            ]
+          },
+          {
+            "type": "activity",
+            "title": "Green Computing Activity",
+            "task": "Read the information on Green Computing given above and find out more books, magazines, and web and make a presentation with the help of your teacher.",
+            "requirements": [
+              "A suitable title with animation",
+              "Images",
+              "A video clip",
+              "A sound clip",
+              "A menu to help the user",
+              "Buttons for slide transition",
+              "A conclusion slide on Green Computing"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "activities",
+        "type": "section",
+        "content": [
+          {
+            "title": "Activity 1",
+            "task": "Make a list of features how traditional presentation differ from electronic presentation and compare their pros and cons. Also point out how you can use the electronic presentations in your educational activities."
+          },
+          {
+            "title": "Activity 2",
+            "task": "Make a list of all possible multimedia contents which can be included in an e-presentation."
+          }
+        ]
+      },
+      {
+        "id": "summary",
+        "title": "Summary",
+        "content": [
+          "People make presentations to share their views, opinions, ideas and knowledge.",
+          "Drumming, flags and speech were common methods of communication in the past.",
+          "Slide Projector and Overhead Projector (OHP) were common tools of presentation in the past.",
+          "Multimedia Projector allows us to display presentations which are made quickly using a computer. It allows the ability to include multimedia contents such as audio and video.",
+          "A presentation that contains multiple types of contents is called a multimedia electronic presentation.",
+          "We use various techniques to impart knowledge... gestures, tools to justify one's points to an audience.",
+          "It is important to consider the number of lines... Font size... Correct use of grammar and language... Inserting images... Use of colours... Animation and videos... Target group.",
+          "Presentation software helps to create presentations with multimedia contents.",
+          "Some popular presentation software: Microsoft PowerPoint, LibreOffice Impress, Apple Keynote, Corel Presentation."
+          "Fundamentals of presentation software: Interface components (Ribbon, Slide Pane, Task Pane, Notes Pane, Status Bar).",
+          "Creating a presentation: Setting Slide Size, Selecting Theme/Layout, Creating Title Slide, Saving, Opening, Slide Background, Adding Text, Adding Objects, Adding Tables, Symbols, Header/Footer, Columns.",
+          "Proofreading includes: Correcting Spelling/Grammar, Using Thesaurus, Finding/Replacing words.",
+          "Printing includes: Print Preview, Print, Printing Handouts.",
+          "Mail Merge allows sending letters/certificates to several people using a Data Source."
+          "Shortcut keys help for efficient use of application.",
+          "Green Computing addresses environmental effects of computing."
+          "A presentation can be projected and printed as a handout."
+          "A printed copy of a presentation can be given to audience. The handouts that are obtained by 'File -> Print' can be distributed to audience."
+          "Manual presentations use slide projector or overhead projector. Electronic presentations use multimedia projector."
+          "Characteristics of good presentations: Number of lines (6-9), Font size (32+), Correct use of grammar/language, Limiting images/diagrams, Use of colours, Animation/Videos, Paying attention to target group."
+          "Cloud computing options allow presentations to be created even when there is no Office in the computer."
+        ]
+      }
+    ]
+  }
+}

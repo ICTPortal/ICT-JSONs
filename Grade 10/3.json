@@ -1,0 +1,379 @@
+{
+  "document_info": {
+    "language": "en",
+    "title": "Data Representation Methods in the Computer system"
+  },
+  "chapter_content": {
+    "chapter_number": 3,
+    "title": "Data Representation Methods in the Computer system",
+    "learning_objectives": [
+      "computer data representation",
+      "Decimal, Binary, Octal and Hexadecimal number systems",
+      "most and least significant positional value of a number",
+      "converting decimal numbers to binary, octal numbers to hexadecimal numbers",
+      "conversion among binary, octal, hexadecimal and decimal numbers",
+      "data storage capacity",
+      "coding systems in computers"
+    ],
+    "sections": [
+      {
+        "id": "3.1",
+        "title": "Computer Data Representation",
+        "type": "section",
+        "content": [
+          {
+            "type": "example",
+            "title": "Representing letter 'A'",
+            "flow": [
+              "Step 1: Press 'A' on keyboard",
+              "Step 2: Electronic symbol goes to System Unit",
+              "Step 3: Converted to ASCII Binary Code (1000001) -> Video Memory via RAM",
+              "Step 4: Displayed on screen"
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "3.1.1",
+            "title": "Number System",
+            "content": "Computers represent data as numbers. A number system consists of a Unit, Number (digit), and Base/Radix.",
+            "table": {
+              "headers": ["Number System", "Base Value", "Digits Used"],
+              "rows": [
+                ["Binary", 2, "0, 1"],
+                ["Octal", 8, "0, 1, 2, 3, 4, 5, 6, 7"],
+                ["Decimal", 10, "0, 1, 2, 3, 4, 5, 6, 7, 8, 9"],
+                ["Hexa-decimal", 16, "0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F"]
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "id": "3.1.2",
+            "title": "Use of Binary Numbers in Computer Data Representation",
+            "content": [
+              "Computer represents data in two signal states: High voltage (1) and Low voltage (0).",
+              "Data from Secondary Storage is sent to Main Memory and then to CPU converted to binary.",
+              "Example of Colour Representation: Dark Purple represented as (135, 31, 120) in Decimal -> (100000111, 11111, 1111000) in Binary."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "3.2",
+        "title": "Decimal, Binary, Octal and Hexa-Decimal Number Systems",
+        "type": "section",
+        "content": [
+          {
+            "type": "subsection",
+            "id": "3.2.1",
+            "title": "Decimal Number System",
+            "content": {
+              "base": 10,
+              "digits": "0-9",
+              "example_calc": "25 = (2 x 10^1) + (5 x 10^0) = 20 + 5",
+              "decimal_example": "302.75 = (3 x 10^2) + (0 x 10^1) + (2 x 10^0) + (7 x 10^-1) + (5 x 10^-2)"
+            }
+          },
+          {
+            "type": "subsection",
+            "id": "3.2.2",
+            "title": "Binary Number System",
+            "content": {
+              "base": 2,
+              "digits": "0, 1",
+              "example_calc": "11101101_2 = (1 x 2^7) + (1 x 2^6) + (0 x 2^5) + (1 x 2^4) + (0 x 2^3) + (1 x 2^2) + (1 x 2^0)",
+              "note": "Bit is the smallest measuring unit of the computer."
+            }
+          },
+          {
+            "type": "subsection",
+            "id": "3.2.3",
+            "title": "Octal Number System",
+            "content": {
+              "base": 8,
+              "digits": "0, 1, 2, 3, 4, 5, 6, 7",
+              "example_calc": "236_8"
+            }
+          },
+          {
+            "type": "subsection",
+            "id": "3.2.4",
+            "title": "Hexa-Decimal Number System",
+            "content": {
+              "base": 16,
+              "digits": "0-9 and A (10), B (11), C (12), D (13), E (14), F (15)",
+              "example_calc": "15E_16",
+              "color_example": "Dark Purple #871F78 (R=135, G=31, B=120)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "3.3",
+        "title": "Most and Least Significant Positional Value of a Number",
+        "type": "section",
+        "content": [
+          {
+            "type": "definition",
+            "term": "Most Significant Positional Value",
+            "definition": "The leftmost non-zero digit."
+          },
+          {
+            "type": "definition",
+            "term": "Least Significant Positional Value",
+            "definition": "The rightmost non-zero digit."
+          },
+          {
+            "type": "subsection",
+            "id": "3.3.1",
+            "title": "Most Significant Digit (MSD) and Least Significant Digit (LSD)",
+            "examples_table": {
+              "headers": ["Number", "MSD", "LSD"],
+              "rows": [
+                ["329", "3", "9"],
+                ["1237.0", "1", "7"],
+                ["58.32", "5", "2"],
+                ["0.0975", "9", "5"],
+                ["0.4", "4", "4"]
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "id": "3.3.2",
+            "title": "Most Significant Bit (MSB) and Least Significant Bit (LSB)",
+            "content": "Applies only to Binary Number System.",
+            "examples_table": {
+              "headers": ["Binary Number", "MSB", "LSB"],
+              "rows": [
+                ["1001_2", "1 (2^3)", "1 (2^0)"],
+                ["011.101_2", "1 (2^1)", "1 (2^-3)"]
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "3.4",
+        "title": "Converting Decimal Numbers to Binary, Octal and Hexa-Decimal Numbers",
+        "type": "section",
+        "content": [
+          {
+            "type": "subsection",
+            "id": "3.4.2",
+            "title": "Conversion of Decimal Numbers to Binary Numbers",
+            "method": "Divide by 2 until remainder is 0. Write remainders from bottom to top.",
+            "examples": [
+              "12_10 = 1100_2",
+              "46_10 = 101110_2"
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "3.4.3",
+            "title": "Converting Decimal Numbers to Octal Numbers",
+            "method": "Divide by 8 until remainder is 0.",
+            "example": "158_10 = 236_8"
+          },
+          {
+            "type": "subsection",
+            "id": "3.4.4",
+            "title": "Converting Decimal Numbers to Hexadecimal Numbers",
+            "method": "Divide by 16 until remainder is 0.",
+            "examples": [
+              "38_10 = 26_16",
+              "47_10 = 2F_16"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "3.5",
+        "title": "Conversion among Binary, Octal, Hexadecimal and Decimal Numbers",
+        "type": "section",
+        "content": [
+          {
+            "type": "subsection",
+            "id": "3.5.1",
+            "title": "Converting Binary Numbers to Decimal Numbers",
+            "method": "Multiply each bit by the power of 2 based on its position.",
+            "example": "1101_2 = (1x2^3) + (1x2^2) + (0x2^1) + (1x2^0) = 8+4+0+1 = 13_10"
+          },
+          {
+            "type": "subsection",
+            "id": "3.5.2",
+            "title": "Converting Octal Numbers to Decimal Numbers",
+            "method": "Multiply each digit by the power of 8.",
+            "example": "1275_8 = (1x8^3) + (2x8^2) + (7x8^1) + (5x8^0)"
+          },
+          {
+            "type": "subsection",
+            "id": "3.5.3",
+            "title": "Converting Hexadecimal Numbers to Decimal Numbers",
+            "method": "Multiply each digit by the power of 16.",
+            "example": "329_16 = (3x16^1) + (2x16^0) + (9x16^-1)"
+          },
+          {
+            "type": "subsection",
+            "id": "3.5.4",
+            "title": "Converting Binary Numbers to Octal Numbers",
+            "method": "Group into 3 bits from right. Add zeros to left if needed.",
+            "example": "1011101_2 -> 001 011 101 -> 1 3 5 -> 135_8"
+          },
+          {
+            "type": "subsection",
+            "id": "3.5.5",
+            "title": "Converting Binary Numbers to Hexadecimal Numbers",
+            "method": "Group into 4 bits from right.",
+            "example": "10111011100_2 -> 101 1011 1100 -> B B C -> BBC_16"
+          },
+          {
+            "type": "subsection",
+            "id": "3.5.6",
+            "title": "Converting Octal numbers to Binary Numbers",
+            "method": "Convert each digit to its 3-bit binary equivalent.",
+            "example": "457_8 -> 100 101 111 -> 100101111_2"
+          },
+          {
+            "type": "subsection",
+            "id": "3.5.7",
+            "title": "Converting Octal numbers to Hexadecimal Numbers",
+            "method": "Octal -> Binary -> Group in 4 bits -> Hexadecimal.",
+            "example": "1057_8 -> 001 000 101 111 -> 0010 0010 1111 -> 2 2 F -> 22F_16"
+          },
+          {
+            "type": "subsection",
+            "id": "3.5.8",
+            "title": "Converting Hexadecimal Numbers to Binary Numbers",
+            "method": "Convert each digit to its 4-bit binary equivalent.",
+            "example": "2AE_16 -> 0010 1010 1110 -> 1010101110_2"
+          },
+          {
+            "type": "subsection",
+            "id": "3.5.9",
+            "title": "Converting Hexadecimal Numbers to Octal Numbers",
+            "method": "Hexadecimal -> Binary -> Group in 3 bits -> Octal.",
+            "example": "23A_16 -> 0010 0011 1010 -> 001 0011 1010 -> 1 7 2 0 -> 1720_8"
+          }
+        ]
+      },
+      {
+        "id": "3.6",
+        "title": "Data Storage Capacity",
+        "type": "section",
+        "content": [
+          {
+            "type": "subsection",
+            "id": "3.6.1",
+            "title": "Units to Measure Data Storage",
+            "relationships": [
+              "8 bits = 1 byte",
+              "4 bits = 1 nibble",
+              "1024 bytes = 1 kilobyte (KB)",
+              "1024 KB = 1 Megabyte (MB)",
+              "1024 MB = 1 Gigabyte(GB)",
+              "1024 GB = 1 Terabyte(TB)",
+              "1024 TB = 1 Petabyte(PB)"
+            ],
+            "table_capacities": {
+              "headers": ["Name", "Approximate", "Approximate Text Pages"],
+              "rows": [
+                ["Byte", "One", "One text"],
+                ["Kilobyte", "Thousand", "1/2 page"],
+                ["Megabyte", "One million", "500 pages"],
+                ["Gigabyte", "One billion", "500,000 pages"],
+                ["Terabyte", "One trillion", "500,000,000 pages"]
+              ]
+            }
+          },
+          {
+            "type": "subsection",
+            "id": "3.6.3",
+            "title": "Data Access Speed",
+            "order_fast_to_slow": [
+              "Register Memory",
+              "Cache Memory",
+              "RAM",
+              "ROM",
+              "Flash Memory",
+              "Hard Disk",
+              "DVD",
+              "CD",
+              "Magnetic Tape"
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "3.6.4",
+            "title": "Cost per unit Storage",
+            "observation": "Register and Cache memory are most expensive per bit."
+          }
+        ]
+      },
+      {
+        "id": "3.7",
+        "title": "Coding Systems",
+        "type": "section",
+        "content": [
+          {
+            "type": "intro",
+            "text": "Binary codes are used for storing numeric, alphabetic, special characters, images and sounds."
+          },
+          {
+            "type": "code_system",
+            "name": "BCD (Binary Coded Decimal)",
+            "details": "4 bits per digit. Represents decimal 0-9.",
+            "table": {
+              "headers": ["Decimal Value", "BCD Value"],
+              "rows": [
+                ["0", "0000"],
+                ["7", "0111"],
+                ["9", "1001"]
+              ]
+            },
+            "example": "37_10 = 00110111"
+          },
+          {
+            "type": "code_system",
+            "name": "ASCII (American Standard Code for Information Interchange)",
+            "details": "7-bit. Represents 128 characters. Used for text.",
+            "example": "School = S(83) c(99) h(104) o(111) o(111) l(108)"
+          },
+          {
+            "type": "code_system",
+            "name": "EBCDIC (Extended Binary Coded Decimal Interchange Code)",
+            "details": "8-bit. Represents 256 characters. Used in IBM mainframes."
+          },
+          {
+            "type": "code_system",
+            "name": "Unicode System",
+            "details": "16-bit. Represents 65,536 symbols. Can represent Sinhala, Tamil, etc.",
+            "usage": "Used in websites and newspapers."
+          },
+          {
+            "type": "subsection",
+            "title": "Picture and Sound Data",
+            "content": [
+              "Picture: Pixels with RGB values (0-255).",
+              "Sound: Analog waves converted to digital bits."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "summary",
+        "title": "Summary",
+        "content": [
+          "Number systems: Binary (Base 2), Octal (Base 8), Decimal (Base 10), Hexadecimal (Base 16).",
+          "Units: Bit, Byte, KB, MB, GB, TB.",
+          "Coding systems: BCD (4-bit), ASCII (7-bit), EBCDIC (8-bit), Unicode (16-bit)."
+        ]
+      },
+      {
+        "id": "appendix",
+        "title": "Appendix: ASCII and EBCDIC codes",
+        "content": "Contains tables for character codes and related decimal, octal, and hexadecimal numbers, and Unicode tables for Sinhala and Tamil letters."
+      }
+    ]
+  }
+}

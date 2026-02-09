@@ -1,0 +1,675 @@
+{
+  "textbook_info": {
+    "title": "Compendium ICT Textbook",
+    "version": "1.0",
+    "language": "en",
+    "description": "A comprehensive text covering Programming, System Development, ICT, Computer Fundamentals, and Logic Gates.",
+    "subjects": [
+      "Programming",
+      "System Development",
+      "ICT",
+      "Hardware",
+      "Digital Logic"
+    ]
+  },
+  "chapters": [
+    {
+      "chapter_id": "01",
+      "title": "Programming",
+      "topics": [
+        "Problem Analysis",
+        "Algorithms",
+        "Control Structures",
+        "Pascal Programming",
+        "Data Structures",
+        "Evolution of Languages"
+      ],
+      "sections": [
+        {
+          "id": "1.1",
+          "title": "Analyzing a problem",
+          "content": {
+            "definitions": {
+              "Input": "The raw materials that are used to solve a problem.",
+              "Process": "Converting input to output step by step.",
+              "Output": "The result obtained after solving a problem."
+            },
+            "examples": [
+              {
+                "number": 1,
+                "title": "Preparing a letter to post",
+                "input": "Paper, pen, envelope, stamp, glue",
+                "process": [
+                  "Write letter",
+                  "Fold letter and put in envelope",
+                  "Paste envelope",
+                  "Write recipient's address",
+                  "Stick stamp"
+                ],
+                "output": "A letter ready to be posted"
+              },
+              {
+                "number": 2,
+                "title": "Making a cup of tea",
+                "input": "Tea leaves, hot water, sugar, cup, spoon",
+                "process": [
+                  "Put tea leaves in strainer",
+                  "Pour hot water through strainer",
+                  "Add sugar",
+                  "Stir well"
+                ],
+                "output": "A cup of tea"
+              },
+              {
+                "number": 3,
+                "title": "Sorting books by page count",
+                "input": "Parcel of books",
+                "process": "Open parcel, take book, check page count, assign to sibling, repeat until empty",
+                "output": "Sanduni (40 pagers), Anupama (80 pagers)"
+              },
+              {
+                "number": 7,
+                "title": "Odd or Even",
+                "input": "Number",
+                "process": "Divide by 2. If remainder is 0 -> Even. If remainder is 1 -> Odd.",
+                "output": "Indication of Odd or Even"
+              }
+            ],
+            "activity": {
+              "title": "Alternative Solutions",
+              "scenario": "School bus breaks down. How to reach school?",
+              "solutions": [
+                "Another school bus",
+                "Walking",
+                "Car/Motorbike",
+                "Short-cut"
+              ],
+              "definition": "All solutions pertaining to a problem are called 'Solution Space'."
+            },
+            "problem_examples": [
+              {
+                "title": "Calculate Perimeter",
+                "solutions": [
+                  "Length + Width + Length + Width",
+                  "(Length + Width) * 2",
+                  "Length * 2 + Width * 2"
+                ]
+              },
+              {
+                "title": "Pass/Fail",
+                "solutions": [
+                  "If Mark < 35 -> Fail else Pass",
+                  "If Mark >= 35 -> Pass else Fail"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "1.2",
+          "title": "Problem Solving using Algorithms",
+          "content": {
+            "definition": "A step-by-step procedure for solving a problem presented in a plan.",
+            "examples": [
+              {
+                "title": "Algorithm to post a letter",
+                "note": "Steps 4 and 5 (address/stamp) can be interchanged."
+              },
+              {
+                "title": "Measuring 500g sugar",
+                "steps": [
+                  "Put sugar in bag",
+                  "Place bag on scale",
+                  "If > 500g, remove sugar until = 500g",
+                  "If < 500g, add sugar until = 500g"
+                ]
+              }
+            ],
+            "control_structures": {
+              "sequence": "Steps executed in order (e.g., counting 1 to 10).",
+              "selection": "Making a decision based on a condition (e.g., Age check for Grade 1).",
+              "repetition": "Repeating steps until a condition is met (e.g., taking attendance until last student)."
+            }
+          }
+        },
+        {
+          "id": "1.3",
+          "title": "Representation of an algorithm",
+          "content": {
+            "tools": ["Flowcharts", "Pseudo Codes"],
+            "flowcharts": {
+              "symbols": [
+                {"symbol": "Oval", "meaning": "Start/End"},
+                {"symbol": "Parallelogram", "meaning": "Input/Output"},
+                {"symbol": "Rectangle", "meaning": "Process"},
+                {"symbol": "Diamond", "meaning": "Decision"},
+                {"symbol": "Circle", "meaning": "Connector"}
+              ],
+              "examples": [
+                {
+                  "title": "Area of a Circle",
+                  "type": "Sequence",
+                  "steps": ["Start", "Input Radius", "Calc Area", "Output Area", "End"]
+                },
+                {
+                  "title": "Odd or Even",
+                  "type": "Selection",
+                  "steps": ["Start", "Input N", "Calc Remainder", "Is Remainder 0?", "Yes->Even", "No->Odd", "End"]
+                }
+              ]
+            },
+            "pseudo_code": {
+              "keywords": [
+                "BEGIN", "END", "INPUT", "OUTPUT", "DISPLAY",
+                "IF...THEN...ELSE...ENDIF",
+                "FOR...DO", "WHILE...ENDWHILE", "REPEAT...UNTIL"
+              ],
+              "examples": [
+                {
+                  "title": "Area of Circle",
+                  "code": "BEGIN\nINPUT Radius\nCALCULATE Area = 22/7 * Radius * Radius\nDISPLAY Area\nEND."
+                },
+                {
+                  "title": "Odd or Even",
+                  "code": "BEGIN\nREAD Number N\nCALCULATE Remainder = N MOD 2\nIF Remainder = 0 THEN\nDISPLAY 'Even'\nELSE\nDISPLAY 'Odd'\nENDIF\nEND."
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "1.4",
+          "title": "Pascal Programming",
+          "content": {
+            "identifier_rules": {
+              "start_letter": "Must start with A-Z or a-z.",
+              "chars": "Can contain letters, digits, and underscores.",
+              "no_space": "No spaces allowed.",
+              "no_special_chars": "No special chars like $, %, ^, &."
+            },
+            "reserved_words": [
+              "and", "asm", "array", "begin", "case", "const", "constructor", "destructor",
+              "div", "do", "downto", "else", "end", "exports", "for", "function",
+              "goto", "if", "implementation", "in", "inherited", "inline", "interface",
+              "label", "library", "mod", "nil", "not", "object", "of", "or", "packed",
+              "procedure", "program", "record", "repeat", "set", "shl", "shr", "string",
+              "then", "to", "type", "unit", "until", "uses", "var", "while", "with", "xor"
+            ],
+            "data_types": [
+              {"name": "Integer", "desc": "Whole numbers (+/-).", "range": "Limited"},
+              {"name": "Real", "desc": "Decimal numbers.", "range": "Large"},
+              {"name": "Boolean", "desc": "True or False.", "range": "2 values"},
+              {"name": "Char", "desc": "Single character.", "range": "256 chars"},
+              {"name": "String", "desc": "Sequence of chars.", "range": "Large"}
+            ],
+            "variables_constants": {
+              "variable": "Value can change. declared with 'var'.",
+              "constant": "Value does not change. declared with 'const'."
+            }
+          }
+        },
+        {
+          "id": "1.5",
+          "title": "Operators",
+          "content": {
+            "arithmetic": [
+              {"symbol": "+", "usage": "Addition"},
+              {"symbol": "-", "usage": "Subtraction"},
+              {"symbol": "*", "usage": "Multiplication"},
+              {"symbol": "/", "usage": "Division"},
+              {"symbol": "DIV", "usage": "Integer Division"},
+              {"symbol": "MOD", "usage": "Remainder"}
+            ],
+            "comparison": [
+              {"symbol": ">", "usage": "Greater than"},
+              {"symbol": ">=", "usage": "Greater than or equal"},
+              {"symbol": "<", "usage": "Less than"},
+              {"symbol": "<=", "usage": "Less than or equal"},
+              {"symbol": "=", "usage": "Equal"},
+              {"symbol": "<>", "usage": "Not equal"}
+            ],
+            "logical": [
+              {"symbol": "AND", "truth_table": [[0,0,0], [0,1,0], [1,0,0], [1,1,1]]},
+              {"symbol": "OR", "truth_table": [[0,0,0], [0,1,1], [1,0,1], [1,1,1]]},
+              {"symbol": "NOT", "truth_table": [[1,0], [0,1]]}
+            ],
+            "precedence": ["NOT", "*, /, DIV, MOD, AND", "+, -, OR", "=, <, >, <=, >=, <>"]
+          }
+        },
+        {
+          "id": "1.6",
+          "title": "Selection",
+          "content": {
+            "structures": [
+              {
+                "type": "IF...THEN",
+                "desc": "Executes statement if condition true.",
+                "code": "Var N: integer;\nBegin\n\tReadln(N);\n\tIf N > 0 then\n\t\tWriteln(N);\nEnd."
+              },
+              {
+                "type": "IF...THEN...ELSE",
+                "desc": "Executes one of two statements based on condition.",
+                "code": "Var N1, N2, Large: integer;\nBegin\n\tReadln(N1, N2);\n\tIf N1 > N2 then Large := N1 else Large := N2;\nEnd."
+              },
+              {
+                "type": "NESTED IF",
+                "desc": "If statements within If statements.",
+                "code": "If M >= 75 then Grade := 'A'\nElse If M >= 65 then Grade := 'B'\nElse ..."
+              },
+              {
+                "type": "CASE",
+                "desc": "Multiple discrete values of a variable.",
+                "code": "Case Marks of\n\t0..34: Grade := 'W';\n\t35..49: Grade := 'S';\n...\nEnd;"
+              }
+            ]
+          }
+        },
+        {
+          "id": "1.7",
+          "title": "Repetition",
+          "content": {
+            "structures": [
+              {
+                "type": "FOR...DO",
+                "desc": "Known number of iterations (Count Up).",
+                "code": "for count := 1 to 10 do writeln(count);"
+              },
+              {
+                "type": "FOR...DOWNTO",
+                "desc": "Known number of iterations (Count Down).",
+                "code": "for count := 10 downto 1 do writeln(count);"
+              },
+              {
+                "type": "WHILE...DO",
+                "desc": "Condition checked at start. Repeats while true.",
+                "code": "while count <= 10 do begin ... end;"
+              },
+              {
+                "type": "REPEAT...UNTIL",
+                "desc": "Condition checked at end. Repeats until true.",
+                "code": "repeat ... until count > 5;"
+              }
+            ]
+          }
+        },
+        {
+          "id": "1.8",
+          "title": "Nested control structures",
+          "content": {
+            "types": [
+              "Repetition inside selection",
+              "Selection in repetition"
+            ]
+          }
+        },
+        {
+          "id": "1.9",
+          "title": "Arrays",
+          "content": {
+            "definition": "Data structure storing same-type data sequentially in adjoining memory.",
+            "declaration": "var Name: array[range] of datatype;",
+            "usage": "Accessed via index e.g. Name[0]",
+            "example": "var marks: array[0..34] of integer;"
+          }
+        },
+        {
+          "id": "1.10",
+          "title": "Sub-programs",
+          "content": {
+            "procedure": "Does not return value. (e.g., procedure inputRadius;)",
+            "function": "Returns a value. (e.g., function calcArea: real;)"
+          }
+        },
+        {
+          "id": "1.11",
+          "title": "Evolution of programming languages",
+          "content": {
+            "levels": [
+              {"type": "Low Level", "examples": ["Machine Language (Binary)", "Assembly Language (Mnemonics)"]},
+              {"type": "High Level", "examples": ["Pascal", "C", "BASIC", "Java"]}
+            ],
+            "paradigms": [
+              {"name": "Procedural", "desc": "Step-by-step instructions (Pascal, C)"},
+              {"name": "Object Oriented", "desc": "Objects + Methods (Java, C++)"},
+              {"name": "Declarative", "desc": "Defines 'what' not 'how' (SQL)"}
+            ],
+            "translators": [
+              {"name": "Interpreter", "desc": "Line by line translation."},
+              {"name": "Compiler", "desc": "Whole program to machine code."}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "02",
+      "title": "System Development Life Cycle",
+      "sections": [
+        {
+          "id": "2.1",
+          "title": "Describes the concept for Information Systems",
+          "content": {
+            "system_def": "Collection of interconnected components for a common objective.",
+            "basic_elements": ["Input", "Process", "Output"],
+            "info_sys_def": "System which converts data into Information.",
+            "manual_vs_computer": {
+              "manual": "All processes done manually (e.g., manual student records).",
+              "computer_based": "Converts data to info using computer (e.g., Library system with barcode readers).",
+              "comparison_table": [
+                {"feature": "Errors", "manual": "Prone to error", "computer": "Minimal errors"},
+                {"feature": "Speed", "manual": "Less efficient", "computer": "More efficient"},
+                {"feature": "Storage", "manual": "Requires large space", "computer": "Small physical space"},
+                {"feature": "Security", "manual": "Not safe", "computer": "Passwords/Backups"}
+              ]
+            }
+          }
+        },
+        {
+          "id": "2.2",
+          "title": "System Development Processes",
+          "content": {
+            "sdlc_phases": [
+              {
+                "phase": 1,
+                "name": "Investigation and Analysis",
+                "details": "Study existing system, identify user needs.",
+                "methods": [
+                  "Observation",
+                  "Interviews",
+                  "Questionnaires",
+                  "Document sample collection",
+                  "Prototyping"
+                ]
+              },
+              {
+                "phase": 2,
+                "name": "Designing the solution",
+                "details": "Blueprint of the new system (Input/Output, Files, UI, HW/SW, Test Plan)."
+              },
+              {
+                "phase": 3,
+                "name": "Coding of the solution",
+                "details": "Writing program code."
+              },
+              {
+                "phase": 4,
+                "name": "Testing and debugging",
+                "details": "Resolving errors.",
+                "types": ["Unit Testing", "Integration Testing", "System Testing", "Acceptance Testing"]
+              },
+              {
+                "phase": 5,
+                "name": "Deployment of the system",
+                "details": "Installing the system.",
+                "approaches": ["Direct deployment", "Parallel deployment", "Pilot deployment", "Phased deployment"]
+              },
+              {
+                "phase": 6,
+                "name": "Maintenance of the system",
+                "details": "Correcting bugs, new features, performance improvement."
+              }
+            ],
+            "models": [
+              {
+                "name": "Waterfall Model",
+                "desc": "Linear development. One stage at a time.",
+                "limitation": "User requirements must be clear initially."
+              },
+              {
+                "name": "Iterative Incremental Model",
+                "desc": "Small components at a time iteratively.",
+                "benefits": "Feedback incorporated easily."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "03",
+      "title": "Information and Communication Technology",
+      "sections": [
+        {
+          "id": "3.1",
+          "title": "Data and Information",
+          "content": {
+            "data": "Raw numbers/words/images (no meaning alone).",
+            "information": "Meaningful result from processing data.",
+            "examples": [
+              "Student marks table (Processing raw marks into totals/ranks)",
+              "Family figures (Arranging images to make sense)",
+              "NIC number (Analyzing number for year of birth/gender)"
+            ]
+          }
+        },
+        {
+          "id": "3.2",
+          "title": "The Components of a System",
+          "content": {
+            "definition": "Combination of components to fulfill a task.",
+            "examples": ["ATM", "Fingerprint Reader", "QR Code", "Business Processing"],
+            "quality_characteristics": [
+              {"name": "Relevancy", "desc": "Info should be related to need."},
+              {"name": "Completeness", "desc": "All necessary info included."},
+              {"name": "Accuracy", "desc": "Correct info."},
+              {"name": "Timeliness", "desc": "Up-to-date info."},
+              {"name": "Cost Effectiveness", "desc": "Worth the cost."}
+            ]
+          }
+        },
+        {
+          "id": "3.3",
+          "title": "ICT",
+          "content": "Technology to convert data to info and exchange it."
+        },
+        {
+          "id": "3.4",
+          "title": "Applications of ICT",
+          "content": [
+            "e-Government (Gov.lk, ICTA)",
+            "Education (Schoolnet, LMS, Distance Learning)",
+            "Health (CAT, MRI, Telemedicine)",
+            "Agriculture (Meteorology, Greenhouse, Robotics)",
+            "Manufacturing/Business (Robots, E-banking, Video Conferencing)",
+            "Transport (CCTV, Traffic Lights)",
+            "Entertainment (Social media, Games, E-books)"
+          ]
+        },
+        {
+          "id": "3.5",
+          "title": "Demerits of ICT",
+          "content": [
+            "Addiction (Education loss)",
+            "Social media misuse",
+            "Virus threats",
+            "Psychological effects",
+            "Privacy issues"
+          ]
+        },
+        {
+          "id": "3.6",
+          "title": "Evolution of the Computer",
+          "content": {
+            "history": ["Abacus", "Pascal Adding Machine", "Analytical Engine", "MARK 1"],
+            "generations": [
+              {"gen": 1, "hw": "Vacuum Tubes", "sw": "Machine Lang"},
+              {"gen": 2, "hw": "Transistors", "sw": "Assembly"},
+              {"gen": 3, "hw": "IC", "sw": "High Level"},
+              {"gen": 4, "hw": "LSI/VLSI", "sw": "OS, GUI"},
+              {"gen": 5, "hw": "ULSI", "sw": "Internet, AI"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "04",
+      "title": "Fundamentals of a computer system",
+      "sections": [
+        {
+          "id": "4.1",
+          "title": "What is a computer?",
+          "content": {
+            "definition": "Electronic device accepting data, processing it, producing output.",
+            "features": [
+              "Speed (MIPS)",
+              "Accuracy",
+              "Efficiency (No fatigue)",
+              "Versatility (Multi-tasking)",
+              "Storing/Retrieving"
+            ]
+          }
+        },
+        {
+          "id": "4.2",
+          "title": "Classification of computers",
+          "content": {
+            "by_size": [
+              {"name": "Super Computer", "use": "NASA, Military"},
+              {"name": "Mainframe", "use": "Large businesses"},
+              {"name": "Mini Computer", "use": "Banking systems"},
+              {"name": "Personal Computer", "use": "Individuals"}
+            ],
+            "by_technology": [
+              {"name": "Analog", "desc": "Continuous signals (Thermometer)"},
+              {"name": "Digital", "desc": "Discrete signals (0s and 1s)"},
+              {"name": "Hybrid", "desc": "Combination (ECG)"}
+            ]
+          }
+        },
+        {
+          "id": "4.3",
+          "title": "Function of a Computer System",
+          "content": "Input -> Memory -> CPU (Process) -> Memory -> Output. Secondary Storage for permanent data."
+        },
+        {
+          "id": "4.4",
+          "title": "Basic Components",
+          "content": {
+            "input_devices": [
+              "Keyboard", "Mouse", "Touch Screen", "Light Pen",
+              "Digital Camera", "Webcam", "CCTV",
+              "Scanner (Flatbed, Barcode, MICR, OCR, OMR, ATM)",
+              "Microphone"
+            ],
+            "output_devices": [
+              "Soft Copy (Monitor - CRT, LCD, LED; Projector)",
+              "Hard Copy (Impact: Dot Matrix, Line; Non-Impact: Laser, Inkjet, Thermal, Plotter)",
+              "Speaker"
+            ],
+            "cpu_components": ["ALU (Arithmetic Logic Unit)", "Control Unit", "Registers"],
+            "memory": [
+              "Primary (RAM - Volatile; ROM - Non-volatile; Cache)",
+              "Secondary (Magnetic: HDD, Tape; Optical: CD, DVD, Blu-ray; Solid State: USB, Memory Card)"
+            ]
+          }
+        },
+        {
+          "id": "4.5",
+          "title": "Computer Ports",
+          "content": [
+            "PS/2 (Keyboard/Mouse)",
+            "Parallel (Printer)",
+            "HDMI (High def video/audio)",
+            "RJ 45 (Network)",
+            "Audio (Line In/Out, Mic)",
+            "USB (Universal)",
+            "VGA (Video)",
+            "Serial"
+          ]
+        },
+        {
+          "id": "4.6",
+          "title": "Data Communication",
+          "content": {
+            "modes": ["Simplex", "Half-duplex", "Full-duplex"],
+            "media": [
+              "Guided (Twisted Pair, Coaxial, Fiber Optics)",
+              "Unguided (Radio waves, Microwaves, Infrared, Satelite)"
+            ],
+            "devices": ["NIC", "Switch/Hub", "Wi-Fi", "Router", "Modem", "Firewall"],
+            "networks": [
+              "LAN (Room/Building)",
+              "MAN (City)",
+              "WAN (Global/Internet)"
+            ],
+            "topology": ["Star", "Bus", "Ring", "Tree", "Mesh"]
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "05",
+      "title": "Logic Gates with Boolean Functions",
+      "sections": [
+        {
+          "id": "5.1",
+          "title": "Introduction",
+          "content": "Circuits enabling building of logical conditions using binary values."
+        },
+        {
+          "id": "5.2",
+          "title": "Logic Gates",
+          "content": {
+            "basic_gates": [
+              {
+                "name": "AND",
+                "symbol": "Q = A.B",
+                "truth_table": [[0,0,0], [0,1,0], [1,0,0], [1,1,1]],
+                "description": "Output 1 only if all inputs are 1."
+              },
+              {
+                "name": "OR",
+                "symbol": "Q = A+B",
+                "truth_table": [[0,0,0], [0,1,1], [1,0,1], [1,1,1]],
+                "description": "Output 1 if at least one input is 1."
+              },
+              {
+                "name": "NOT",
+                "symbol": "Q = A'",
+                "truth_table": [[0,1], [1,0]],
+                "description": "Complement of the input."
+              }
+            ],
+            "combinational_gates": [
+              {
+                "name": "NOR",
+                "symbol": "Q = (A+B)'",
+                "truth_table": [[0,0,1], [0,1,0], [1,0,0], [1,1,0]]
+              },
+              {
+                "name": "NAND",
+                "symbol": "Q = (A.B)'",
+                "truth_table": [[0,0,1], [0,1,1], [1,0,1], [1,1,0]]
+              }
+            ]
+          }
+        },
+        {
+          "id": "5.3",
+          "title": "Designing Logical Circuits",
+          "content": "Using logic gates to realize Boolean expressions (e.g., Q = A.(A+B)+B)."
+        },
+        {
+          "id": "5.4",
+          "title": "Integrated Circuits (IC)",
+          "content": "Circuits designed for specific functions packed in small sizes using transistors, diodes, etc."
+        },
+        {
+          "id": "5.5",
+          "title": "Practical Usage",
+          "content": [
+            {
+              "example": "Home Alarm System",
+              "logic": "OR gate (Alarm if Window 1 OR Window 2 OR Door... is open)."
+            },
+            {
+              "example": "Street Light Control",
+              "logic": "Combination of Timer, Light Sensor, Manual Switch."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

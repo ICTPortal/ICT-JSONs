@@ -1,0 +1,489 @@
+{
+  "document_info": {
+    "language": "en",
+    "title": "Fundamentals of a computer system",
+    "version": "2.0",
+    "enhancement_level": "advanced",
+    "features": ["interactive_flipcards", "case_studies", "knowledge_checks", "real_world_examples", "bilingual_support"]
+  },
+  "chapter_content": {
+    "chapter_number": 2,
+    "title": "Fundamentals of a computer system",
+    "title_sinhala": "පරිගණක පද්ධතිවල මූලධර්ම",
+    "difficulty_level": "Foundation",
+    "duration_hours": 6,
+    "learning_objectives": [
+      "features of a computer",
+      "classification of computers",
+      "functions and devices of a computer system",
+      "basic components of a computer",
+      "computer ports",
+      "computer network"
+    ],
+    "learning_outcomes": "After completing this chapter, students will be able to: identify and explain computer features, classify computers by type, describe all input/output devices, understand CPU functions, distinguish between memory types, recognize network components and topologies, and apply networking concepts to real scenarios.",
+    "sections": [
+      {
+        "id": "2.1",
+        "title": "What is a computer?",
+        "type": "section",
+        "content": [
+          {
+            "type": "definition",
+            "term": "Computer",
+            "text": "An electronic device, which accepts or collects data, processes them according to the given instructions and produces the desired output."
+          },
+          {
+            "type": "list",
+            "title": "Features of a Computer",
+            "items": [
+              {
+                "name": "Speed",
+                "desc": "Executes more than one million instructions per second."
+              },
+              {
+                "name": "Accuracy",
+                "desc": "Provides correct output when correct instructions and data are given."
+              },
+              {
+                "name": "Efficiency",
+                "desc": "Never gets tired. Can work round the clock with the same level of accuracy."
+              },
+              {
+                "name": "Versatility",
+                "desc": "Can be used to perform many tasks simultaneously."
+              },
+              {
+                "name": "Storing and Retrieving",
+                "desc": "Used to store large number of data and information in a relatively small unit and retrieve them easily and quickly."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2.2",
+        "title": "Classification of computers",
+        "type": "section",
+        "content": [
+          {
+            "type": "subsection",
+            "title": "According to size",
+            "categories": [
+              {
+                "name": "Super Computers",
+                "desc": "Higher computing power, large size, expensive. Used for scientific/engineering functions and complex math problems (e.g., NASA, military)."
+              },
+              {
+                "name": "Mainframe Computers",
+                "desc": "Relatively less computing power and less expensive than super. Number of users get connected using terminals sharing data. Used in large scale businesses."
+              },
+              {
+                "name": "Mini Computers",
+                "desc": "Slower, less powerful and less expensive than Mainframes. Called common purpose computers."
+              },
+              {
+                "name": "Personal Computers / Micro Computers",
+                "desc": "Small for personal use, small memory capacity, less speedy, less expensive, consumes little electricity. Examples: Laptops, Desktops."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "According to technology",
+            "categories": [
+              {
+                "name": "Analog Computers",
+                "desc": "Use analog signals such as environmental parameters (speed, pressure, temperature). Examples: Speedometers, road lamps with sensors."
+              },
+              {
+                "name": "Digital Computers",
+                "desc": "Use digital signals (electricity). Used in day-to-day life."
+              },
+              {
+                "name": "Hybrid Computers",
+                "desc": "Combination of analog and digital. Example: ECG machine (heartbeat signal -> digital signal)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2.3",
+        "title": "Function of a Computer System",
+        "type": "section",
+        "content": {
+          "description": "Main functions are to input data, process and store data, and produce information.",
+          "flow": {
+            "Input": "Data and instructions fed to computer via input device are stored in primary memory.",
+            "Process": "CPU uses data and instructions for processing.",
+            "Output": "Processed data stored in Primary Memory as info sent to output device.",
+            "Storage": "Data/Info to be stored sent to Secondary Storage device.",
+            "Control": "Control Unit sends control signals to all devices."
+          }
+        }
+      },
+      {
+        "id": "2.4",
+        "title": "Basic Components of a computer system",
+        "type": "section",
+        "content": [
+          {
+            "type": "subsection",
+            "title": "Input Devices",
+            "content": [
+              {
+                "name": "Keyboard",
+                "desc": "Most common input device. 101/102 or 104/108 keys."
+              },
+              {
+                "name": "Pointing Devices",
+                "sub_items": [
+                  "Mouse (Buttons: Left, Right, Wheel)",
+                  "Touch Screen (Input/Output)",
+                  "Joy Stick",
+                  "Light Pen"
+                ]
+              },
+              {
+                "name": "Imaging and Video Input",
+                "sub_items": [
+                  "Digital Camera",
+                  "Webcam",
+                  "CCTV"
+                ]
+              },
+              {
+                "name": "Scanners",
+                "sub_items": [
+                  "Flatbed Scanner",
+                  "Bar Code Reader",
+                  "MICR (Magnetic Ink Character Reader) - Banks",
+                  "OCR (Optical Character Recognition)",
+                  "OMR (Optical Mark Recognition)",
+                  "ATM (Automated Teller Machine)"
+                ]
+              },
+              {
+                "name": "Microphone",
+                "desc": "Used to feed sound."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Output Devices",
+            "content": [
+              {
+                "name": "Soft Copy",
+                "sub_items": [
+                  "Monitor / VDU (Visual Display Unit)",
+                  "CRT Monitor (Large, consumes electricity)",
+                  "LCD (Liquid Crystal Display - Flat screen)",
+                  "LED (Light Emitting Diode - Brightness)",
+                  "Multimedia Projector"
+                ]
+              },
+              {
+                "name": "Hard Copy",
+                "sub_items": [
+                  {
+                    "type": "Impact Printers",
+                    "items": ["Dot Matrix Printer", "Line Printer"]
+                  },
+                  {
+                    "type": "Non Impact Printers",
+                    "items": ["Laser Printer", "Bubble/Ink Jet Printer", "Thermal Printer", "Plotter"]
+                  }
+                ]
+              },
+              {
+                "name": "Sound",
+                "items": ["Speaker"]
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Central Processing Unit (CPU)",
+            "content": {
+              "description": "Brain of the computer. Consists of three main components.",
+              "components": [
+                {
+                  "name": "Arithmetic and Logical Unit (ALU)",
+                  "desc": "Perform all mathematical and logical functions."
+                },
+                {
+                  "name": "Control Unit (CU)",
+                  "desc": "Controls all devices of a computer system."
+                },
+                {
+                  "name": "Memory Registers",
+                  "desc": "Temporarily stores data needed for ALU function."
+                }
+              ],
+              "speed_unit": "Hertz (Hz), Megahertz (MHz), Gigahertz (GHz)."
+            }
+          },
+          {
+            "type": "subsection",
+            "title": "Computer Memory",
+            "content": [
+              {
+                "name": "Primary Memory",
+                "sub_items": [
+                  {
+                    "name": "Random Access Memory (RAM)",
+                    "desc": "Temporarily stores data. Deleted when switched off (Volatile)."
+                  },
+                  {
+                    "name": "Read Only Memory (ROM)",
+                    "desc": "Not erased when switched off (Non-volatile). Stores BIOS."
+                  },
+                  {
+                    "name": "Cache Memory",
+                    "desc": "Faster than RAM. Acts as mediator between CPU and Primary Memory."
+                  }
+                ]
+              },
+              {
+                "name": "Secondary Memory (External Storage)",
+                "desc": "Stores data permanently. Non-volatile.",
+                "sub_items": [
+                  {
+                    "type": "Magnetic Media Devices",
+                    "items": [
+                      "Hard Disk Drive (HDD) - Read/Write, 250GB to 4TB",
+                      "Magnetic Tape - Server backups"
+                    ]
+                  },
+                  {
+                    "type": "Optical Media",
+                    "items": [
+                      "CD-ROM (650-900MB), CD-R, CD-RW",
+                      "DVD-ROM (4.7-9.4GB), DVD-R, DVD-RW",
+                      "Blu-ray (25-128GB), Blue-ray 3D"
+                    ]
+                  },
+                  {
+                    "type": "Solid State Devices",
+                    "items": ["USB Flash Drive", "Memory Card (SD Card)"]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2.5",
+        "title": "Computer Ports",
+        "type": "section",
+        "content": [
+          {
+            "type": "list",
+            "title": "Port Types",
+            "items": [
+              {
+                "name": "PS/2 Port",
+                "desc": "Used for keyboard/mouse (Purple for keyboard, Green for mouse)."
+              },
+              {
+                "name": "Parallel Port",
+                "desc": "Used for printers (25 holes)."
+              },
+              {
+                "name": "HDMI Port",
+                "desc": "Connects monitor, multimedia projector, TVs."
+              },
+              {
+                "name": "RJ 45 Port",
+                "desc": "Connects computer network to router/switch."
+              },
+              {
+                "name": "Audio Ports/Jacks",
+                "desc": "Connects mic, speaker (Blue=Line In, Green=Line Out, Pink=Mic)."
+              },
+              {
+                "name": "USB Port",
+                "desc": "Connects many I/O devices."
+              },
+              {
+                "name": "Video Port (VGA)",
+                "desc": "Connects monitor/projector (15 holes)."
+              },
+              {
+                "name": "Serial Port",
+                "desc": "Connects devices like modem."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2.5_data_comm",
+        "title": "Data Communication",
+        "type": "section",
+        "content": [
+          {
+            "type": "subsection",
+            "title": "Basic Components",
+            "items": [
+              "Sender / Source - sends data",
+              "Medium - medium to transmit (wires/wireless)",
+              "Receiver/destination - receives data"
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Data Transmission Modes",
+            "modes": [
+              {
+                "name": "Simplex Mode",
+                "desc": "Data transmitted from sender to receiver only."
+              },
+              {
+                "name": "Half-duplex Mode",
+                "desc": "Data transmitted in one direction at a time."
+              },
+              {
+                "name": "Full Duplex Mode",
+                "desc": "Data transmitted to both sides at same time."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Data Transmission Media",
+            "categories": [
+              {
+                "name": "Guided / Wired",
+                "items": [
+                  "Twisted Pair (UTP - Telephone, STP - Secure)",
+                  "Coaxial Cable (TV antenna)",
+                  "Fiber Optics Cable (Reflection of light, fast, expensive)"
+                ]
+              },
+              {
+                "name": "Unguided / Wireless Media",
+                "items": [
+                  "Radio waves (Wifi, Bluetooth)",
+                  "Microwaves (Satellite communication)",
+                  "Infrared (TV remote)",
+                  "Satellite"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2.5.4",
+        "title": "Computer network devices",
+        "type": "section",
+        "content": [
+          {
+            "type": "list",
+            "items": [
+              {
+                "name": "Network Interface Card (NIC)",
+                "desc": "Has an RJ45 port, built into motherboard."
+              },
+              {
+                "name": "Switch/Hub",
+                "desc": "Mediator to connect computers. Hub sends to all (congestion), Switch sends to relevant only."
+              },
+              {
+                "name": "Wireless Fidelity - Wi-Fi",
+                "desc": "Popular media using radio waves."
+              },
+              {
+                "name": "Router",
+                "desc": "Connects two or more computer networks (Gateway)."
+              },
+              {
+                "name": "Modem",
+                "desc": "Connects computer to internet. Translates Digital<->Analog (MOdulation-DEModulation)."
+              },
+              {
+                "name": "Firewall",
+                "desc": "Network security barrier (Software or Hardware)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2.5.6",
+        "title": "Types of Computer Network",
+        "type": "section",
+        "content": [
+          {
+            "name": "LAN (Local Area Network)",
+            "desc": "Connects computers inside a room or building (e.g., school, office)."
+          },
+          {
+            "name": "MAN (Metropolitan Area Network)",
+            "desc": "Combination of several LANs covering less than 16 miles (e.g., city banks)."
+          },
+          {
+            "name": "WAN (Wide Area Network)",
+            "desc": "Covers wide area (e.g., Internet)."
+          }
+        ]
+      },
+      {
+        "id": "2.5.7",
+        "title": "Network Topology",
+        "type": "section",
+        "content": [
+          {
+            "name": "Star Topology",
+            "desc": "Centralized switch/hub."
+          },
+          {
+            "name": "Bus Topology",
+            "desc": "Connections established through main cable (backbone)."
+          },
+          {
+            "name": "Ring Topology",
+            "desc": "Computers positioned in a ring, data moves circularly."
+          },
+          {
+            "name": "Tree Topology",
+            "desc": "Several star topologies connected to bus backbone."
+          },
+          {
+            "name": "Mesh Topology",
+            "desc": "All computers connected with each other (Internet)."
+          }
+        ]
+      },
+      {
+        "id": "2.5.8",
+        "title": "Benefits of Networking",
+        "type": "section",
+        "content": [
+          "Data and information can be shared between computers.",
+          "Less storage space required.",
+          "Ability to share resources (printer, scanner).",
+          "Ability to control central software.",
+          "Ability to connect at any where and at any time.",
+          "Security (Authorized clients only).",
+          "Electronic mail (E-mail)."
+        ]
+      },
+      {
+        "id": "2.5.9",
+        "title": "Disadvantages of Networking",
+        "type": "section",
+        "content": [
+          "Possible security issues (Hackers).",
+          "Breakdown of network affects function of other computers.",
+          "Virus spread.",
+          "Computer break downs (Server issues).",
+          "Training requirements (Specialized personnel)."
+        ]
+      }
+    ]
+  }
+}

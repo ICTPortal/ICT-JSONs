@@ -1,0 +1,700 @@
+{
+  "document_info": {
+    "language": "en",
+    "title": "Programming Fundamentals (Inferred)"
+  },
+  "chapter_content": {
+    "chapter_number": 1,
+    "topics": [
+      "How to analyze a problem and develop an algorithm",
+      "Control structures and their use",
+      "Finding alternate solutions to a problem",
+      "Programming in Pascal",
+      "Evolution of programming languages"
+    ],
+    "sections": [
+      {
+        "id": "1.1",
+        "title": "Analyzing a problem",
+        "type": "section",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The raw materials that are used to solve a problem are known as the 'input'. The result obtained after solving a problem is known as the 'output'. Converting input to output is called the 'process'. A process takes place step by step and it is indicated."
+          },
+          {
+            "type": "example",
+            "number": 1,
+            "title": "Preparing a letter which can be posted",
+            "details": {
+              "input": "A sheet of paper suitable to write the letter on and a pen, An envelope and a stamp, Glue",
+              "process": [
+                "Writing the letter",
+                "Folding the letter and putting it into the envelope",
+                "Pasting the envelope",
+                "Writing the recipient's address on the envelope",
+                "Sticking the stamp"
+              ],
+              "output": "A letter ready to be posted",
+              "note": "Steps No. 4 and 5 in this process can be interchanged."
+            }
+          },
+          {
+            "type": "example",
+            "number": 2,
+            "title": "Making a cup of tea",
+            "details": {
+              "input": "Tea leaves, (implied: Water, Sugar, Cup, Spoon)",
+              "process": [
+                "Putting tea leaves in the strainer",
+                "Pouring hot water to the cup through the strainer",
+                "Adding some sugar to the cup",
+                "Stirring it well with a spoon"
+              ],
+              "output": "A cup of tea"
+            }
+          },
+          {
+            "type": "example",
+            "number": 3,
+            "title": "Dividing 40 page and 80 page books from a parcel of books between two siblings - Sanduni and Anupama",
+            "details": {
+              "input": "The parcel of books",
+              "process": [
+                "Opening the book parcel",
+                "Taking a book out from the parcel",
+                "(Implicit logic for assigning to Sanduni or Anupama based on page count)",
+                "Go to Step No. 2 till all the books are taken out of the parcel"
+              ],
+              "output": "Sanduni getting 40 page books, Anupama getting 80 page books"
+            }
+          },
+          {
+            "type": "example",
+            "number": 4,
+            "title": "Adding two numbers",
+            "details": {
+              "input": "Two numbers",
+              "process": "Adding the two numbers",
+              "output": "Total"
+            }
+          },
+          {
+            "type": "example",
+            "number": 5,
+            "title": "Finding the area of a rectangle",
+            "details": {
+              "input": "Length and width of the rectangle",
+              "process": "Area = Length x Width",
+              "output": "Area"
+            }
+          },
+          {
+            "type": "example",
+            "number": 6,
+            "title": "Finding the larger number between two numbers",
+            "details": {
+              "input": "Two numbers",
+              "process": "(Missing in text, implied comparison)",
+              "output": "Larger number"
+            }
+          },
+          {
+            "type": "example",
+            "number": 7,
+            "title": "Finding whether a number is odd or even",
+            "details": {
+              "input": "Number",
+              "process": "Dividing the number by 2. Deciding that the number is even if the remainder = 0. Deciding that the number is odd if the remainder = 1.",
+              "output": "Indicating whether the number is odd or even"
+            }
+          },
+          {
+            "type": "subsection",
+            "title": "Alternative Solutions",
+            "content": [
+              {
+                "type": "paragraph",
+                "text": "Activity: Imagine you come to school by school bus. If the bus breaks down on your way to school, you will think of alternative solutions to reach school."
+              },
+              {
+                "type": "list",
+                "items": [
+                  "Coming to school by another school bus which goes to your school",
+                  "(Item 2 missing in text)",
+                  "Walking to school along the road",
+                  "Walking to school using a short-cut",
+                  "(Item 5 missing in text)",
+                  "Reaching the school by car or motor bike with the support of a trustworthy person"
+                ]
+              },
+              {
+                "type": "paragraph",
+                "text": "All the solutions pertaining to a problem are called solution space."
+              },
+              {
+                "type": "example",
+                "number": 1,
+                "title": "Calculating the perimeter of a rectangle",
+                "details": {
+                  "input": "Length and width of the rectangle",
+                  "process": "Calculating the perimeter",
+                  "output": "Indicating the perimeter",
+                  "solutions": [
+                    "Perimeter = length + width + length + width",
+                    "Perimeter = length × 2 + width × 2",
+                    "Perimeter = (length + width) × 2"
+                  ],
+                  "note": "The text suggests selecting the 1st solution as most appropriate, or the 3rd if multiplication is known."
+                }
+              },
+              {
+                "type": "example",
+                "number": 2,
+                "title": "Pass or Fail determination",
+                "details": {
+                  "input": "Marks",
+                  "process": "Comparing the mark scored with 35",
+                  "output": "Fail or Pass",
+                  "solutions": [
+                    "If the mark is less than 35 Result = Fail, If not Result = Pass",
+                    "If the mark is 35 or more than 35 Result = Pass, If not Result = Fail"
+                  ]
+                }
+              },
+              {
+                "type": "example",
+                "number": 3,
+                "title": "Finding the larger number from between two numbers",
+                "details": {
+                  "input": "Two numbers (n1, n2)",
+                  "solutions": [
+                    "If n1 is larger than n2, the larger number will be n1. If n2 is larger than n1 n2.",
+                    "Subtract n2 from n1. If the result is more than 0, n1 is the larger number. If the result is less than 0, n2 is the larger number."
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1.2",
+        "title": "Problem Solving using Algorithms",
+        "type": "section",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "An algorithm is a method to show the steps in solving a problem. An algorithm is a step-by-step procedure for solving a problem. The need for this is to present a way to solve the problem with a plan."
+          },
+          {
+            "type": "example",
+            "number": 1,
+            "title": "Develop an algorithm to post a letter",
+            "content": "The algorithm allows flexibility (e.g., sticking stamp after writing address or vice versa) as long as process and output are the same."
+          },
+          {
+            "type": "example",
+            "number": 2,
+            "title": "Steps in measuring 500g of sugar using a scale",
+            "details": {
+              "process_steps": [
+                "Putting sugar into a bag",
+                "Placing the bag on the scale",
+                "Checking if it weighs 500g",
+                "If more, remove sugar from the bag till it weighs 500g",
+                "If less, add sugar to the bag"
+              ]
+            }
+          },
+          {
+            "type": "activity",
+            "text": "There are 183 students in a primary school. The principal has decided to hold an inter-house sports meet dividing them into three houses. Write an algorithm to divide the students into the three houses."
+          },
+          {
+            "type": "subsection",
+            "id": "1.2.1",
+            "title": "Control Structures",
+            "content": [
+              {
+                "type": "paragraph",
+                "text": "Three types of control structures are used in an algorithms: i. Sequence, ii. Selection, iii. Repetition"
+              },
+              {
+                "type": "sub_subsection",
+                "title": "i. Sequence",
+                "content": "If the steps from the beginning to the end of an algorithm are carried out in order, it is called a sequence."
+              },
+              {
+                "type": "sub_subsection",
+                "title": "ii. Selection",
+                "content": "Selection involves making a decision.",
+                "examples": [
+                  "Admitting a child to Grade 1 (Age check)",
+                  "Passing a subject (Mark >= 35)",
+                  "Buying a book (Money >= Price)"
+                ]
+              },
+              {
+                "type": "sub_subsection",
+                "title": "iii. Repetition",
+                "content": "If one or several steps of an algorithm are repeated until a condition is met.",
+                "examples": [
+                  "Teacher marking attendance till last name",
+                  "Reading a paragraph and counting words"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1.3",
+        "title": "Representation of an algorithm",
+        "type": "section",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Flow charts and pseudo codes are used as tools to present an algorithm to make the algorithm understand better."
+          },
+          {
+            "type": "subsection",
+            "id": "1.3.1",
+            "title": "Flowcharts",
+            "content": [
+              {
+                "type": "table",
+                "title": "Table 1.1 Symbols",
+                "headers": ["Symbol", "Function"],
+                "rows": [
+                  ["Oval (Implied)", "Start or end"],
+                  ["Parallelogram (Implied)", "Input or output"],
+                  ["Rectangle (Implied)", "Process"],
+                  ["Diamond (Implied)", "Decision"],
+                  ["Arrow (Implied)", "Flow direction"],
+                  ["Circle (Implied)", "Connector"]
+                ]
+              },
+              {
+                "type": "example",
+                "title": "Sequence - Finding the area of a circle",
+                "code": "Start\nInput the radius of the circle\nCalculate the area of the circle\nOutput the area of the circle\nEnd"
+              },
+              {
+                "type": "example",
+                "title": "Selection - Finding whether a number is odd or even",
+                "code": "Start\nInput the number\nFind the remainder when the number is divided by 2\nIs remainder 0?\n-- Yes: Even number\n-- No: Odd number\nEnd"
+              },
+              {
+                "type": "example",
+                "title": "Repetition - Finding the total of some numbers",
+                "code": "Start\nGet the number N\nTotal = 0\nTotal = Total + N\nAre there any more numbers?\n-- Yes: Get next number\n-- No: Output Total\nEnd"
+              },
+              {
+                "type": "activity",
+                "items": [
+                  "Find the perimeter and area of a rectangle.",
+                  "Add Rs.5000 to the basic salary. Calculate the new salary.",
+                  "Determine fare for a letter (Standard vs Additional weight)."
+                ]
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "1.3.2",
+            "title": "Pseudo codes",
+            "content": [
+              {
+                "type": "paragraph",
+                "text": "When an algorithm is presented in simple English terms it is called a pseudo code. Pseudo codes are independent of a computer language."
+              },
+              {
+                "type": "list",
+                "title": "Keywords",
+                "items": [
+                  "BEGIN / END",
+                  "INPUT / READ / DISPLAY / PRINT",
+                  "IF ... THEN ... ELSE ... ENDIF",
+                  "FOR ... DO",
+                  "WHILE ... ENDWHILE",
+                  "REPEAT ... UNTIL"
+                ]
+              },
+              {
+                "type": "example",
+                "number": 1,
+                "title": "Finding the area of a circle",
+                "code": "BEGIN\n\tINPUT Radius\n\tCALCULATE Area = pi * Radius * Radius\n\tDISPLAY Area\nEND."
+              },
+              {
+                "type": "example",
+                "number": 2,
+                "title": "Finding whether a number is odd or even",
+                "code": "BEGIN\n\tREAD number as N\n\tCALCULATE Remainder after number is divided by 2\n\tIF Remainder = 0 THEN\n\t\tDISPLAY \"Even number\"\n\tELSE\n\t\tDISPLAY \"Odd number\"\n\tENDIF\nEND."
+              },
+              {
+                "type": "example",
+                "number": 3,
+                "title": "Finding the total of some numbers",
+                "code": "BEGIN\n\tTotal = 0\n\tREPEAT\n\t\tREAD Number as N\n\t\tCALCULATE Total = Total + N\n\tUNTIL numbers are over\n\tDISPLAY Total\nEND."
+              },
+              {
+                "type": "example",
+                "number": 4,
+                "title": "Finding the total and the average of 10 numbers",
+                "code": "BEGIN\n\tTotal = 0\n\tAverage = 0\n\tn = 1\n\tWHILE n <= 10\n\t\tREAD Number\n\t\tCALCULATE Total = Total + Number\n\t\tn = n + 1\n\tENDWHILE\n\tCALCULATE Average = Total / 10\n\tDISPLAY (Total, Average)\nEND."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1.4",
+        "title": "Pascal programming",
+        "type": "section",
+        "content": [
+          {
+            "type": "subsection",
+            "id": "1.4.1",
+            "title": "Rules for naming identifiers",
+            "content": [
+              "Reserved words cannot be used.",
+              "Should start with an English letter.",
+              "Can contain letters and digits, but no spaces.",
+              "No special characters allowed (e.g., Last-name is invalid)."
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "1.4.2",
+            "title": "Reserved words",
+            "content": [
+              "and", "asm", "array", "begin", "case", "const", "constructor", "destructor", "div", "do", "downto", "else", "end", "exports", "for", "function", "goto", "if", "implementation", "in", "inherited", "inline", "interface", "label", "library", "mod", "nil", "not", "object", "of", "or", "packed", "procedure", "program", "record", "repeat", "set", "shl", "shr", "string", "then", "to", "type", "unit", "until", "uses", "var", "while", "with", "xor"
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "1.4.3",
+            "title": "Standard data types",
+            "content": [
+              {
+                "type": "table",
+                "headers": ["Type", "Description"],
+                "rows": [
+                  ["Integer", "Plus or minus whole numbers"],
+                  ["Real", "Plus or minus decimal numbers"],
+                  ["Boolean", "True or False"],
+                  ["Char", "Any character of the keyboard"],
+                  ["String", "Any sequence of characters"]
+                ]
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "1.4.4",
+            "title": "Variables and constants",
+            "content": {
+              "variables": "Stores data which can change during execution. declared with 'var'.",
+              "constants": "Stores data that does not change. declared with 'const'. Example: Const max = 100;"
+            }
+          }
+        ]
+      },
+      {
+        "id": "1.5",
+        "title": "Operators",
+        "type": "section",
+        "content": [
+          {
+            "type": "sub_subsection",
+            "title": "1. Algebra operators",
+            "content": {
+              "type": "table",
+              "headers": ["Operator", "Usage", "Example", "Result"],
+              "rows": [
+                ["+", "Addition", "6 + 3", "9"],
+                ["-", "Subtraction", "7 - 5", "2"],
+                ["*", "Multiplication", "2 * 5", "10"],
+                ["/", "Division", "10/4", "2.50"],
+                ["DIV", "Division of round numbers", "20 DIV 6", "3"],
+                ["MOD", "Remainder after division", "20 MOD 6", "2"]
+              ]
+            }
+          },
+          {
+            "type": "sub_subsection",
+            "title": "2. Comparison operator",
+            "content": {
+              "type": "table",
+              "headers": ["Operator", "Usage", "Example", "Result"],
+              "rows": [
+                [">", "Greater than", "7 > 3", "True"],
+                [">=", "Greater than or equal", "8 >= 8", "True"],
+                ["<", "Less than", "3 < 2", "False"],
+                ["<=", "Less than or equal", "4 <= 6", "True"],
+                ["=", "Equal", "3 = 1", "False"],
+                ["<>", "Not equal", "2 <> 5", "True"]
+              ]
+            }
+          },
+          {
+            "type": "sub_subsection",
+            "title": "3. Logical operators",
+            "content": [
+              {
+                "title": "AND",
+                "table": {
+                  "headers": ["Exp 1", "Exp 2", "Result"],
+                  "rows": [
+                    ["False", "False", "False"],
+                    ["False", "True", "False"],
+                    ["True", "False", "False"],
+                    ["True", "True", "True"]
+                  ]
+                }
+              },
+              {
+                "title": "OR",
+                "table": {
+                  "headers": ["Exp 1", "Exp 2", "Result"],
+                  "rows": [
+                    ["False", "False", "False"],
+                    ["False", "True", "True"],
+                    ["True", "False", "True"],
+                    ["True", "True", "True"]
+                  ]
+                }
+              },
+              {
+                "title": "NOT",
+                "table": {
+                  "headers": ["Expression", "Result"],
+                  "rows": [
+                    ["False", "True"],
+                    ["True", "False"]
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "title": "Operator precedence",
+            "text": "1. NOT, 2. * / DIV MOD AND, 3. + - OR, 4. = < > <= >= <>"
+          },
+          {
+            "type": "example",
+            "title": "Basic Pascal program structure",
+            "code": "program addNum\nvar\n\tnum1, num2, total : integer;\nbegin\n\twriteln('Enter two numbers');\n\treadln(num1);\n\treadln(num2);\n\ttotal := num1 + num2;\n\twriteln('Total = ', total);\nend."
+          }
+        ]
+      },
+      {
+        "id": "1.6",
+        "title": "Selection",
+        "type": "section",
+        "content": [
+          {
+            "type": "code_block",
+            "language": "Pascal",
+            "title": "IF statement (No ELSE)",
+            "code": "Var N : integer;\nbegin\n\treadln(N);\n\tIf N > 0 then\n\t\twriteln(N);\n\tEnd."
+          },
+          {
+            "type": "code_block",
+            "language": "Pascal",
+            "title": "IF statement (With ELSE)",
+            "code": "Var N1, N2, Large : integer;\nbegin\n\treadln(N1, N2);\n\tIf N1 > N2 then\n\t\tLarge := N1\n\tElse\n\t\tLarge := N2;\n\twriteln(Large);\nEnd."
+          },
+          {
+            "type": "code_block",
+            "language": "Pascal",
+            "title": "Nested IF",
+            "code": "Var M: integer; Grade: char;\nbegin\n\treadln(M);\n\tIf M >= 75 then Grade := 'A'\n\tElse If M >= 65 then Grade := 'B'\n\tElse If M >= 50 then Grade := 'C'\n\tElse If M >= 35 then Grade := 'S'\n\tElse Grade := 'F';\n\twriteln(Grade);\nEnd."
+          },
+          {
+            "type": "code_block",
+            "language": "Pascal",
+            "title": "CASE statement",
+            "code": "var Marks : integer; Grade: char;\nbegin\n\treadln(Marks);\n\tCase Marks of\n\t\t0..34 : Grade := 'W';\n\t\t35..49 : Grade := 'W';\n\t\t50..64 : Grade := 'C';\n\t\t65..74 : Grade := 'A'; // Note: Text says 65-74 Result='A' but implies different grading logic\n\t\t75..100 : Grade := 'A';\n\t\tElse writeln('Invalid');\n\tEnd;\n\twriteln(Grade);\nEnd."
+          }
+        ]
+      },
+      {
+        "id": "1.7",
+        "title": "Repetition",
+        "type": "section",
+        "content": [
+          {
+            "type": "sub_subsection",
+            "title": "FOR - DO Loop",
+            "content": {
+              "code": "Var count : integer;\nbegin\n\tfor count := 1 to 10 do\n\t\twriteln(count);\nend.",
+              "note": "Used when number of repetitions is known."
+            }
+          },
+          {
+            "type": "sub_subsection",
+            "title": "FOR - DOWNTO Loop",
+            "content": {
+              "code": "Var count : integer;\nbegin\n\tfor count := 10 downto 1 do\n\t\twriteln(count);\nend."
+            }
+          },
+          {
+            "type": "sub_subsection",
+            "title": "WHILE - DO Loop",
+            "content": {
+              "description": "Condition checked at beginning. Repeats while true.",
+              "code": "Var number : integer;\nbegin\n\tnumber := 1;\n\twhile number <= 10 do\n\tbegin\n\t\twriteln(number);\n\t\tnumber := number + 1;\n\tend;\nend."
+            }
+          },
+          {
+            "type": "sub_subsection",
+            "title": "REPEAT - UNTIL Loop",
+            "content": {
+              "description": "Condition checked at end. Repeats until condition becomes true.",
+              "code": "Var count : integer;\nbegin\n\tcount := 0;\n\tRepeat\n\t\twriteln('Pascal');\n\t\tcount := count + 1;\n\tUntil count > 5;\nend."
+            }
+          }
+        ]
+      },
+      {
+        "id": "1.8",
+        "title": "Nested control structures",
+        "type": "section",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Repetition inside selection or selection inside repetition."
+          },
+          {
+            "type": "code_block",
+            "language": "Pascal",
+            "title": "Repetition inside selection",
+            "code": "var num:integer; cho:char;\nbegin\n\treadln(cho);\n\tif cho = 'A' then\n\tbegin\n\t\tfor num := 1 to 6 do\n\t\t\twriteln(num);\n\tend;\n\tif cho = 'D' then\n\tbegin\n\t\tfor num := 6 downto 1 do\n\t\t\twriteln(num);\n\tend;\nend."
+          },
+          {
+            "type": "code_block",
+            "language": "Pascal",
+            "title": "Selection in repetition",
+            "code": "var count, num, rem : integer;\nbegin\n\tfor count := 1 to 10 do\n\tbegin\n\t\treadln(num);\n\t\trem := num mod 2;\n\t\tif rem = 0 then writeln('Even')\n\t\telse writeln('Odd');\n\tend;\nend."
+          }
+        ]
+      },
+      {
+        "id": "1.9",
+        "title": "Arrays",
+        "type": "section",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "An array is a data structure used to save data of the same type sequentially in adjoining memory spaces."
+          },
+          {
+            "type": "code_block",
+            "language": "Pascal",
+            "title": "Declaration",
+            "code": "var Name_of_Array : array[range] of data_type;\n// E.g. var marks : array[1..10] of integer;"
+          },
+          {
+            "type": "paragraph",
+            "title": "Assigning values",
+            "code": "num[0] := 45;\nnum[2] := 36;"
+          },
+          {
+            "type": "example",
+            "title": "ICT Marks Program",
+            "code": "program ictMarks(input,output);\nvar marks : array[0..34] of integer;\ni,tot,max : integer;\navg : real;\nbegin\n\ttot := 0;\n\tfor i := 0 to 34 do\n\tbegin\n\t\twriteln('Enter Marks');\n\t\treadln(marks[i]);\n\t\ttot := tot + marks[i];\n\tend;\n\tavg := tot/35;\n\tmax := marks[0];\n\tfor i := 1 to 34 do\n\tbegin\n\t\tif marks[i] > max then max := marks[i];\n\tend;\n\twriteln('Maximum marks = ', max);\n\twriteln('Average marks = ',avg);\nend."
+          }
+        ]
+      },
+      {
+        "id": "1.10",
+        "title": "Use of sub-programs",
+        "type": "section",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Sub-programs help break down complex problems. Types: Function (returns a value) and Procedure (does not return a value)."
+          },
+          {
+            "type": "code_block",
+            "language": "Pascal",
+            "title": "Program with Procedures",
+            "code": "program circleCalc;\nvar radius:real;\nprocedure inputRadius;\nbegin\n\treadln(radius);\nend;\nprocedure processArea;\nvar area:real;\nbegin\n\tarea := 3.14 * radius * radius;\n\twriteln(area);\nend;\nprocedure processCircumference;\nvar circum:real;\nbegin\n\tcircum := 2 * 3.14 * radius;\n\twriteln(circum);\nend;\nbegin\n\tinputRadius;\n\tprocessArea;\n\tprocessCircumference;\nend."
+          },
+          {
+            "type": "code_block",
+            "language": "Pascal",
+            "title": "Program with Functions",
+            "code": "program circleCalcFunc;\nvar radius:real;\nfunction processArea : real;\nvar area:real;\nbegin\n\tarea := 3.14 * radius * radius;\n\tprocessArea := area;\nend;\nfunction processCircumference : real;\nvar circum:real;\nbegin\n\tcircum := 2 * 3.14 * radius;\n\tprocessCircumference := circum;\nend;\nbegin\n\treadln(radius);\n\twriteln(processArea);\n\twriteln(processCircumference);\nend."
+          }
+        ]
+      },
+      {
+        "id": "1.11",
+        "title": "Evolution of programming languages",
+        "type": "section",
+        "content": [
+          {
+            "type": "sub_subsection",
+            "title": "1.11.2 Low level programming languages",
+            "items": [
+              {
+                "name": "Machine Language",
+                "details": "Executed directly by hardware, binary, fast, hard to understand."
+              },
+              {
+                "name": "Assembly Language",
+                "details": "Uses mnemonics/symbols, needs an Assembler to translate to machine code."
+              }
+            ]
+          },
+          {
+            "type": "sub_subsection",
+            "title": "1.11.3 High-level programming languages",
+            "details": "English-like, easy to understand, needs a Compiler or Interpreter."
+          },
+          {
+            "type": "sub_subsection",
+            "title": "1.11.4 Programming language types (Paradigms)",
+            "items": [
+              "Procedural (e.g., Pascal, C) - Step-by-step instructions.",
+              "Declarative (e.g., SQL, Prolog) - Defines what to do, not how.",
+              "Object Oriented (e.g., Java, C++) - Based on objects (data + methods)."
+            ]
+          },
+          {
+            "type": "sub_subsection",
+            "title": "1.11.5 Language translators",
+            "items": [
+              {
+                "name": "Interpreter",
+                "details": "Translates line by line and executes immediately."
+              },
+              {
+                "name": "Compiler",
+                "details": "Translates the whole program to machine code (object code) before execution."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "summary",
+        "title": "Summary",
+        "type": "section",
+        "content": [
+          "Evaluation of an expression occurs depending on the priority level of functions.",
+          "Machine language and Assembly language are considered low-level programming languages.",
+          "High-level languages are user-friendly.",
+          "A program written using Machine language can be directly run in the processor.",
+          "A program written in any computer language except in Machine language should be translated to Machine language instructions before it runs.",
+          "Interpreter and Compiler are two translation programs."
+        ]
+      }
+    ]
+  }
+}

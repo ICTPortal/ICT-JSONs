@@ -1,0 +1,413 @@
+{
+  "textbook_info": {
+    "language": "en",
+    "title": "Word Processing"
+  },
+  "chapter_content": {
+    "chapter_number": 6,
+    "title": "Word Processing",
+    "learning_objectives": [
+      "What is word processing",
+      "Benefits of using a word processing software",
+      "Creating a document",
+      "Formatting of a document",
+      "Adding clip arts and charts to a document",
+      "Opening and closing files",
+      "Mail merge",
+      "Printing a document",
+      "Shortcut keys"
+    ],
+    "sections": [
+      {
+        "id": "6.1",
+        "title": "Word Processing",
+        "type": "introduction",
+        "content": [
+          {
+            "type": "scenario",
+            "description": "Your school principal has informed you that this year's Art Festival is going to be celebrated. The assigned task of your team is preparing necessary documents for the arts festival (Letters, Reports, Invitations, Certificates).",
+            "challenge": "Documents should be well prepared and printed. After drafting, you need to find the best method of document preparation.",
+            "bad_solutions": ["Hand written invitations (Difficult to write in similar size)", "Using a typewriter in the library (Cannot add pictures, borders, etc.)"],
+            "solution": "Use a computer with Word Processing Software."
+          }
+        ]
+      },
+      {
+        "id": "6.1.1",
+        "title": "Word Processing Software",
+        "type": "section",
+        "content": [
+          {
+            "type": "definition",
+            "text": "We often use different types of documents in our day-to-day activities and preparing these documents in different styles is called word processing. To avoid the shortcomings of pen/pencil based documents, we use word processing software."
+          },
+          {
+            "type": "benefits_list",
+            "items": [
+              "Creation and editing",
+              "Insert objects such as images",
+              "Saving and retrieving",
+              "Print preview and printing",
+              "Spell checking and grammar",
+              "Find and replace",
+              "Mail merge"
+            ]
+          },
+          {
+            "type": "software_examples",
+            "list": [
+              {
+                "name": "Microsoft Office Word",
+                "producer": "Microsoft Corporation",
+                "type": "Commercial"
+              },
+              {
+                "name": "LibreOffice Writer",
+                "producer": "The Document Foundation (Open Source)",
+                "type": "Open Source"
+              },
+              {
+                "name": "Google Docs / Office 365 Word",
+                "producer": "Cloud Platforms",
+                "type": "Cloud Computing"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "6.1.2",
+        "title": "Running a Word Processing Software",
+        "type": "section",
+        "content": [
+          {
+            "type": "application_example",
+            "name": "Microsoft Office Word 2010",
+            "launch_path": "Start -> All Programs -> Microsoft Office -> Microsoft Office Word 2010",
+            "interface_components": [
+              {
+                "name": "Title Bar",
+                "description": "Shows the name of the document (e.g., Document1). Contains minimize, maximize, close buttons."
+              },
+              {
+                "name": "Ribbon",
+                "description": "Special feature containing tabs (File, Home, Insert, etc.). Icons represent functions. Classes: Clipboard, Font, Paragraph, Styles, Editing.",
+                "sub_components": [
+                  {"name": "Bold", "icon": "B"},
+                  {"name": "Italic", "icon": "I"},
+                  {"name": "Underline", "icon": "U"},
+                  {"name": "Font Size"},
+                  {"name": "Font Color"},
+                  {"name": "Alignment"},
+                  {"name": "Line Spacing"},
+                  {"name": "Shading"},
+                  {"name": "Border"}
+                ]
+              },
+              {
+                "name": "Quick Access Tool Bar",
+                "description": "Quick commands above/below ribbon (New, Save, Open, Zoom, Undo, Redo)."
+              },
+              {
+                "name": "Status Bar",
+                "description": "At bottom left. Shows number of pages, words, language, view buttons."
+              },
+              {
+                "name": "Scroll Bar",
+                "description": "Used to go up and down."
+              },
+              {
+                "name": "Zoom Control",
+                "description": "Adjust size of pictures on screen."
+              }
+            ]
+          },
+          {
+            "type": "application_example",
+            "name": "LibreOffice Writer",
+            "launch_path": "Start -> All Programs -> LibreOffice Writer",
+            "interface_components": [
+              {
+                "name": "Title Bar",
+                "description": "Top most bar. Shows name (e.g., Untitled 1)."
+              },
+              {
+                "name": "Menu Bar",
+                "description": "Below Title Bar. Features: File, Edit, View, Insert, Format, Tables, Tools, Window, Help."
+              },
+              {
+                "name": "Standard Tool Bar",
+                "description": "Icons for New, Save, Open, Copy, Cut, Paste, Print, etc."
+              },
+              {
+                "name": "Formatting Tool Bar",
+                "description": "Formatting methods (Bold, Italic, Alignment, Bullets, Indentation)."
+              },
+              {
+                "name": "Status Bar",
+                "description": "Number of pages, words, zooming."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "6.2",
+        "title": "Let us discuss some important things in preparing a new document",
+        "type": "section",
+        "content": [
+          {
+            "type": "step_list",
+            "items": [
+              {"id": 1, "title": "Opening a new page", "description": "File -> New -> Blank Document (Ctrl+N)"},
+              {"id": 2, "title": "Saving the Document", "description": "File -> Save (Ctrl+S). Provide proper name and location."},
+              {"id": 3, "title": "Saving the file by another name", "description": "File -> Save As. Select new location and name."},
+              {"id": 4, "title": "Closing the document", "description": "File -> Close (Ctrl+W)"},
+              {"id": 5, "title": "Opening a document", "description": "File -> Open (Ctrl+O). Select file from 'Look in' location."},
+              {"id": 6, "title": "Saving a document using a password", "description": "File -> Save (or Save As) -> Tools -> General Options -> Type password."}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "6.3",
+        "title": "Preparing a Document",
+        "type": "section",
+        "content": [
+          {
+            "type": "subsection",
+            "id": "6.3.1",
+            "title": "Page Setup",
+            "content": [
+              {
+                "type": "list",
+                "title": "Tools Available",
+                "items": [
+                  "Paper Size (A4, A5, Letter)",
+                  "Orientation (Portrait or Landscape)",
+                  "Margins"
+                ]
+              },
+              {
+                "type": "instruction",
+                "word": "Page Layout -> Page Setup (Word) or Format -> Page (Writer)"
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "6.3.2",
+            "title": "Formatting",
+            "content": [
+              {
+                "type": "list",
+                "title": "Methods of Selection",
+                "items": [
+                  "Letter/Character: Drag mouse.",
+                  "Word: Double click.",
+                  "Few words: Drag from first to last.",
+                  "Sentence: Click first word, drag to last.",
+                  "Row: Drag to white right arrow.",
+                  "Paragraph: Click twice or click first word and drag to last.",
+                  "Document: Ctrl + A."
+                ]
+              },
+              {
+                "type": "text_formatting",
+                "options": [
+                  "Change Font Size",
+                  "Change Font Style (Bold, Italic, Underline)",
+                  "Change Font Type (English/Sinhala/Tamil fonts)",
+                  "Change Font Color"
+                ]
+              },
+              {
+                "type": "paragraph_formatting",
+                "options": [
+                  "Alignment (Left, Center, Right, Justify)",
+                  "Indentation (Left, Right, First Line, Hanging)",
+                  "Line Spacing",
+                  "Paragraph Spacing",
+                  "Bullets and Numbering",
+                  "Shading / Background Color",
+                  "Borders"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "6.3.3",
+            "title": "Formatting Document",
+            "tools": [
+              "Shapes & Objects",
+              "Pictures / Clip Art",
+              "Symbols",
+              "Tables",
+              "Header and Footer",
+              "Page Numbers",
+              "Columns"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "6.4",
+        "title": "Formatting Document",
+        "type": "section",
+        "content": [
+          {
+            "type": "tool_category",
+            "name": "Shapes and Images",
+            "description": "Added for clarity and attractiveness.",
+            "actions": [
+              "Insert Shape (Insert -> Shapes / Object)",
+              "Insert Picture (Insert -> Picture / Clip Art)",
+              "Format Shape/Image (Size, Color, Border, Position, Rotation)"
+            ]
+          },
+          {
+            "type": "tool_category",
+            "name": "Symbols",
+            "description": "Adding special symbols not on keyboard.",
+            "actions": [
+              "Word: Insert -> Symbol",
+              "Writer: Insert -> Special Character"
+            ]
+          },
+          {
+            "type": "tool_category",
+            "name": "Tables",
+            "description": "To tabulate data.",
+            "features": [
+              "Insert rows/columns",
+              "Delete rows/columns",
+              "Merge/Split cells",
+              "Color table",
+              "Change text direction"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "6.5",
+        "title": "Proof reading",
+        "type": "section",
+        "content": [
+          {
+            "type": "feature",
+            "name": "Correcting Spelling and Grammar",
+            "details": "Errors underlined in red (spelling) and green (grammar). Click Change to correct, Ignore for names."
+          },
+          {
+            "type": "feature",
+            "name": "Thesaurus",
+            "details": "Find synonyms for words."
+          },
+          {
+            "type": "feature",
+            "name": "Find and Replace",
+            "details": "Find a word and replace it with another word easily."
+          }
+        ]
+      },
+      {
+        "id": "6.6",
+        "title": "Print",
+        "type": "section",
+        "content": [
+          {
+            "type": "feature",
+            "name": "Print Preview",
+            "description": "Check document before printing to ensure formatting, indentation, etc. are correct."
+          },
+          {
+            "type": "feature",
+            "name": "Print",
+            "options": [
+              "Select Printer",
+              "Select Page Range (Current page, Selection, All)",
+              "Specify number of copies",
+              "Select PDF format for easy distribution"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "6.7",
+        "title": "Mail Merge",
+        "type": "section",
+        "content": [
+          {
+            "type": "concept",
+            "description": "Used to send invitations, letters or print certificates to several people using a data source (Address List)."
+          },
+          {
+            "type": "process_steps",
+            "name": "For Microsoft Word",
+            "steps": [
+              "1. Select 'Mailing' Tab -> Start Mail Merge -> Letters.",
+              "2. Select 'Select Recipients' -> Type New List (or Use Existing List).",
+              "3. Click 'Customize' to add/remove/rename fields.",
+              "4. Type data (New Entry, Delete Entry, Find). Click Ok.",
+              "5. Write letter and insert fields (Insert Merge Field) or use Greeting Line.",
+              "6. Click 'Finish & Merge' to edit/preview.",
+              "7. Save and print merged documents."
+            ]
+          },
+          {
+            "type": "process_steps",
+            "name": "For LibreOffice Writer",
+            "steps": [
+              "1. Select Tools -> Mailing Wizard.",
+              "2. Select 'Start document' -> Use current document.",
+              "3. Select Document type -> Letter.",
+              "4. Select 'Insert Address Block' -> Create Address List (or Add).",
+              "5. Customize fields.",
+              "6. Type data. Save.",
+              "7. Continue to create Salutation and Address Block.",
+              "8. Edit/Preview document.",
+              "9. Save, Print, or Send as E-mail."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "6.7.1",
+        "title": "Shortcut Keys",
+        "type": "section",
+        "content": [
+          {
+            "type": "table",
+            "headers": ["Shortcut Key", "Function"],
+            "rows": [
+              ["Ctrl + N", "Get a new document"],
+              ["Ctrl + S", "Name document and save"],
+              ["Ctrl + O", "Open a document"],
+              ["Ctrl + A", "Select document"],
+              ["Ctrl + C", "Copy letters / objects"],
+              ["Ctrl + X", "Cut letters / objects"],
+              ["Ctrl + V", "Paste letters / objects"],
+              ["Ctrl + H", "Replace words"],
+              ["Ctrl + HOME", "Get cursor to beginning of document"],
+              ["Ctrl + END", "Get cursor to end of document"]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "summary",
+        "title": "Summary",
+        "type": "conclusion",
+        "points": [
+          "Word processing software allows creating, editing, and formatting documents.",
+          "Benefits include spell check, thesaurus, images, mail merge, etc.",
+          "Steps to prepare a document: Open, Save, Format (Page Setup, Text, Paragraph), Insert Objects, Proofread, Print.",
+          "Formatting options include changing font, alignment, borders, tables, and columns.",
+          "Mail merge helps send personalized letters to many people using a data source.",
+          "Shortcut keys improve efficiency."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,531 @@
+{
+  "document_info": {
+    "language": "en",
+    "title": "Databases"
+  },
+  "chapter_content": {
+    "chapter_number": 9,
+    "title": "Databases",
+    "learning_objectives": [
+      "definition of database",
+      "advantages of using a database",
+      "special characteristics of a database",
+      "using fields to create tables",
+      "identifying key fields",
+      "relational databases",
+      "relationships between tables",
+      "using queries to get data",
+      "using data forms",
+      "using reports to furnish information"
+    ],
+    "sections": [
+      {
+        "id": "9.1",
+        "title": "Database Concept",
+        "type": "section",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Chapter one included a description on what data and information is. This chapter covers saving data in an organized manner. Higher amount of data it becomes difficult to keep in our memory. On such occasions writing these data is one method. That is called manual database. The other method is to maintain data on an electronic medium. This is called an electronic database. Data can be retrieved efficiently when needed if it is saved in a database in a systematic way. Hence, database is needed to save a large amount of data and to retrieve them very efficiently. Examples: A telephone book (Manual) or a phone directory (Electronic)."
+          },
+          {
+            "type": "definition",
+            "term": "Database",
+            "text": "Collection of organized data can be defined as a database. It is used to manage a database. It consists of objects like tables, queries, forms and reports."
+          }
+        ]
+      },
+      {
+        "id": "9.1.1",
+        "title": "Advantages of Databases",
+        "type": "section",
+        "content": [
+          {
+            "type": "list",
+            "title": "Advantages",
+            "items": [
+              {
+                "title": "More efficient in retrieving information",
+                "description": "Required information can be found very quickly as data is properly organized in tables in a database. Example: Searching for a particular student's details."
+              },
+              {
+                "Easy to obtain copies",
+                "description": "Electronic databases can be copied very easily."
+              },
+              {
+                "Smaller physical space to store data",
+                "description": "Though more physical space is needed to maintain a manual database, a small space is sufficient to save data on an electronic medium."
+              },
+              {
+                "Data analysis can be carried out efficiently",
+                "description": "Only necessary data can be selected and processed."
+              },
+              {
+                "Data can be shared",
+                "description": "The same database can be used in different application software."
+              },
+              {
+                "Independence of data",
+                "description": "Though database and software are connected, database tables can be updated without changes to application software. Therefore, data and software are independent."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "9.1.2",
+        "title": "Features of a Database",
+        "type": "section",
+        "content": [
+          {
+            "type": "list",
+            "title": "Minimal data redundancy",
+            "items": [
+              "If the same data is stored in several tables, this is called data redundancy. Example: Student name stored in Admission card and library membership card. If the name is changed, that name should be edited separately in all documents.",
+              "Reducing data duplication minimizes errors. Example: Storing related database in tables (Student record, Book record) reduces duplication. The name is recorded only in one table."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "By minimizing data redundancy, the same data being saved in various tables can be reduced or prevented. This enables the maintenance of data consistency."
+          },
+          {
+            "type": "list",
+            "title": "Data consistency",
+            "items": [
+              "Example: Considering change of name (Firosa Lai to Firosa Rafeeq). If the same data is recorded in different tables, more time is spent to find all these places. This leads to inefficiency. In related databases, data consistency increases speed. Hence, efficiency is increased."
+            ]
+          },
+          {
+            "type": "list",
+            "title": "Increases accuracy",
+            "items": [
+              "If one mistake leads to inaccurate information (e.g., correcting Firosa Lai as Mohomal Malakkar in one place only ensures high accuracy."
+            ]
+          },
+          {
+            "type": "list",
+            "title": "Increases validity",
+            "items": [
+              "Properties of fields can be assigned when a database is planned. Validity can be checked at data entry stage."
+            ]
+          },
+          {
+            "type": "list",
+            "title": "Security",
+            "items": [
+              "Unauthorized access can be controlled by using a password and encrypting the database. This increases security. Data encryption is translating data in such a way that unauthorized personnel cannot read it."
+            ]
+          },
+          {
+            "type": "example",
+            "title": "Electronic and Manual Databases",
+            "type": "comparison_table",
+            "headers": ["Feature", "Manual Systems", "Computer Based Information Systems"],
+            "rows": [
+              ["Less efficient", "More efficient"],
+              ["Less accurate", "More accurate"],
+              ["Less credible", "More credible"],
+              ["Difficult to analyse data", "Easy to analyse data"],
+              ["Should present in order of input", "Can change data input order"],
+              ["Difficult to delete unnecessary data", "Easy to delete unnecessary data"],
+              ["Difficult to update data", "Easy to update data"],
+              ["More space is needed to save data", "A very small space is needed to save data"],
+              ["More man power is needed", "Less man power is needed"]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "9.1.3",
+        "title": "Electronic and Manual Databases",
+        "type": "section",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "In an electronic database, data can be saved in a very small space which consists of an audio or video medium. Given below is a comparison of electronic and manual databases."
+          },
+          {
+            "type": "comparison_table",
+            "headers": ["Feature", "Manual Database", "Electronic Database"],
+            "rows": [
+              ["Less efficient", "More efficient"],
+              ["Less accurate", "More accurate"],
+              ["Less credible", "More credible"],
+              ["Difficult to analyse data", "Easy to analyse data"],
+              ["Should present in order of input", "Can change data input order"],
+              ["Difficult to delete unnecessary data", "Easy to delete unnecessary data"],
+              ["Difficult to update data", "Easy to update data"],
+              ["More space is needed to save data", "A very small space is needed to save data"],
+              ["More man power is needed", "Less man power is needed"]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "9.1.4",
+        "title": "Introduction to Relational Database",
+        "type": "section",
+        "content": [
+          {
+            "type": "definition",
+            "term": "Field",
+            "definition": "A collection of fields related to one person or object is called a record."
+          },
+          {
+            "type": "definition",
+            "term": "Record",
+            "definition": "A collection of records is called a data table."
+          },
+          {
+            "type": "definition",
+            "term": "Relational Database",
+            "definition": "A collection of related tables is called a relational database."
+          },
+          {
+            "type": "example",
+            "description": "A collection of fields related to a student record (Name, Date of Birth, Date of Admission, Name of Guardian).",
+            "diagram": {
+              "fields": ["Student No", "Name", "Date of Birth", "Date of Admission", "Name of Guardian"],
+              "values": ["100", "Manoj Dayarathne", "2008.05.23", "G. Dayarathne", "101", "Firosa Lai Rafeeq", "2008.01.01", "K. Fais"],
+              "records": [
+                ["100", "M", "D", "2008", "100", "G", "Dayarathne"],
+                ["101", "F", "L", "2008", "101", "R", "L", "K. Fais"]
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "9.2",
+        "title": "Creating a Simple Database Manually",
+        "type": "section",
+        "content": [
+          {
+            "type": "table",
+            "title": "Standard data types",
+            "headers": ["Type", "Description"],
+            "rows": [
+              ["Numeric", "Used for calculations. Exists in several forms.", "Integer", "Plus or minus whole numeric figures.", "Real", "Plus or minus numbers with decimal places.", "Currency", "Used to indicate monetary values.", "Date / Time", "Indicates dates and time.", "Boolean", "There are only two Boolean values: True and False."]
+          },
+          {
+            "type": "list",
+            "title": "Enter data according to data type",
+            "items": [
+              "Numeric type",
+              "Telephone numbers with first digit '0' is not displayed in numeric format. Enter number as Text."
+            ]
+          },
+          {
+            "type": "activity",
+            "questions": [
+              "(1) Tabulate details of 10 books in your library under fields mentioned above.",
+              "(2) Create a table suitable to enter marks scored by students in your class. Include Admission Number, Name and Marks for subjects you study in this table."
+              "(3) Explain with examples the importance of selecting the most suitable data type for fields in Table 9.17.",
+              "Examples: Integer, Real, Currency, Date/Time, Boolean, String. Integer for Roll Number, Real for Marks, String for Name."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "9.3",
+        "title": "Converting a Manual Database to an Electronic Medium",
+        "type": "section",
+        "content": [
+          {
+            "type": "definition",
+            "term": "Database Management System (DBMS)",
+            "definition": "A collection of objects which facilitates planning and maintenance of a database to the user.",
+            "components": ["Tables", "Queries", "Forms", "Reports"],
+            "example": "Tables: Student, Employee. Queries: Student Marks. Forms: Data Entry, Display Data. Reports: Student Report."
+          },
+          {
+            "type": "table",
+            "title": "Various Database Management Systems",
+            "headers": ["Software", "Manufacturing Company"],
+            "rows": [
+              ["Access", "Microsoft Company"],
+              ["Base", "The Document Foundation (Open Source)"],
+              ["Oracle", "Oracle Cooperation"],
+              ["DBMS", "Data Base Management Systems"]
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "9.3.1",
+            "title": "Using Database Management System Software",
+            "content": [
+              "Start DBMS software.",
+              "Plan a data table with fields and data types.",
+              "Create primary key for the data table.",
+              "Enter data into table.",
+              "Create a simple database using steps described in 9.3.1, 9.3.2, 9.3.3."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "9.4",
+        "title": "Creating a Relational Database",
+        "type": "section",
+        "content": [
+          {
+            "type": "subsection",
+            "id": "9.4.1",
+            "title": "Primary Key",
+            "content": [
+              "A column (or a combination of columns) which enables to identify a record uniquely is called a primary key.",
+              "examples": [
+                {
+                  "example_number": 1,
+                  "title": "National Identity Card Number",
+                  "description": "No duplicate values (e.g., 1234567)."
+                },
+                {
+                  "example_number": 2,
+                  "title": "School Admission Number",
+                  "description": "No duplicate numbers (e.g., 1426, 1426)."
+                }
+              ],
+              "attributes": [
+                "Should not be empty (data being there is mandatory).",
+                "No duplicate values (same values do not exist).",
+                "Special attributes of a primary key": [
+                  "Should not be empty.",
+                  "Should not have duplicate values."
+                ],
+                "example": "Student Number is the most suitable field for the Student Table."
+              ]
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "9.4.2",
+            "title": "Composite Primary Key",
+            "description": "The primary key which consists of two or more columns uniquely identifies a record.",
+            "examples": [
+              "Year and Sport (e.g., 2013 Cricket, 2013 Football).",
+              "Student ID, Student Name (e.g., 1001 Saman Kumara, 1001 Saman Kumara)."
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "9.4.3",
+            "title": "Foreign Key",
+            "description": "If a field (or a combination of fields) of one table can be used to uniquely identify rows of another table, these fields are called foreign keys.",
+            "examples": [
+              {
+                "example_number": 1,
+                "title": "Student Table (Foreign Key)",
+                "tables": ["Student Table", "Marks Table"],
+                "diagram": "Admission No (PK of Student Table), Admission No (FK of Marks Table)"
+              },
+              {
+                "example_number": 2,
+                "Student Record (Primary Key), "Marks Record (Foreign Key)",
+                "tables": ["Student Table", "Marks Table"],
+                "diagram": "Admission No (PK of Marks Table)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "9.4.1",
+        "title": "One-to-one Relationship",
+        "type": "section",
+        "content": [
+          {
+            "type": "description",
+            "text": "If only a row of a table is related to a row of another table, it is called a one-to-one relationship."
+          },
+          {
+            "type": "description",
+            "text": "Two tables exist: A and B. A record in Table A is related to one row in Table B, and a row in Table B is related to one row in Table A.",
+          },
+          {
+            "type": "example",
+            "title": "One-to-one relationship (Scholarship Marks)",
+            "data": [
+              {
+                "Student Table": [
+                  ["Index No", "Marks", "Admission No"],
+                  ["23234", "151", "1426"],
+                  ["23876", "186", "1427"]
+                ],
+                "Marks Table": [
+                  ["Index No", "Marks"],
+                  ["23234", "151"],
+                  ["23876", "186"]
+                ]
+              }
+            ]
+          },
+          {
+            "type": "description",
+            "text": "The primary key of Student Table is Admission Number and it is the foreign key of Marks Table."
+          }
+        ]
+      },
+      {
+        "id": "9.4.2",
+        "title": "One-to-many Relationship",
+        "type": "section",
+        "content": [
+          {
+            "type": "definition",
+            "text": "If each record of a table is related to several records of another table, this is called a one-to-many relationship.",
+          },
+          {
+            "type": "example",
+            "title": "School Books",
+            "data": [
+              {
+                "Student Table": [
+                  ["Index No", "Name", "Date of Birth"],
+                  ["1426", "Kavindu Prabashwara", "2005.05.23"],
+                  ["1427", "Meenadevi Ramanathan", "2005.08.12"],
+                  ["1428", "Mohommad Malikkar", "2005.02.07"]
+                ],
+                "Borrowed Books Table": [
+                  ["Index No", "Book Number", "Date Borrowed", "Date Returned"],
+                  ["101", "2222/9/2014", "16/9/2014"],
+                  ["100", "3333/3/9/2014", "17/9/2014"],
+                  ["100", "3333/4/9/2014", "18/9/2014"]
+                ]
+              }
+            ]
+          },
+          {
+            "type": "description",
+            "text": "One record in Student Table can be related to several records in Borrowed Books Table. A record in Student Table can be related to one or more records in Borrowed Books Table as well."
+          },
+          {
+            "type": "description",
+            "text": "One record in Borrowed Books Table can be related to one record in Student Table. A record in Borrowed Books Table can be related to several records in Student Table."
+          }
+        ]
+      },
+      {
+        "id": "9.4.3",
+        "title": "Many-to-many Relationship",
+        "type": "section",
+        "content": [
+          {
+            "type": "definition",
+            "text": "If a record of a table is related to several records of another table and if a record of that related table is related to several records of another table, there is a many-to-many relationship.",
+          },
+          {
+            "type": "example",
+            "title": "Student Sports",
+            "data": [
+              {
+                "Student Table": [
+                  ["Student No", "Sport"],
+                  ["1426", "S001 Cricket"],
+                  ["1426", "S002 Football"],
+                  ["1428", "S001 Cricket"]
+                ],
+                "Sports Table": [
+                  ["Sport No", "Sport Team Number of permanent members"],
+                  ["S001", "11"],
+                  ["S002", "16"],
+                  ["S003", "Volleyball", "6"],
+                  ["S001", "Cricket", "Bowling"]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "9.5",
+        "title": "Creating a Relational Database Using Database Management System Software",
+        "type": "section",
+        "content": [
+          {
+            "type": "activity",
+            "text": "Let us learn how to build relationships between tables using a Database Management System.",
+            "steps": [
+              "Open Database Software (MS Access or LibreOffice Base).",
+              "Plan tables (Student Table, Marks Table).",
+              "Build relationship between Student Table and Marks Table.",
+              "Create forms to enter and display data."
+              "Create queries to get information."
+              "Create reports to present information."
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Creating a Data Table",
+            "content": [
+              "Plan a data table with fields (e.g., Name, Date of Birth, Gender) and data types.",
+              "Example: Student Table: Admission No, Name, Date of Birth, Gender."
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Creating Primary Key",
+            "content": "Data should not be duplicated to uniquely identify rows of a table. Identify unique field (Admission No) as Primary Key."
+          },
+          {
+            "type": "subsection",
+            "title": "Creating Relationships",
+            "content": [
+              "Use Database Tools menu to select Relationship.",
+              "Drag the Primary Key to the Foreign Key.",
+              "Select 'Enforce Referential Integrity' to ensure updates are cascaded."
+              "Create button."
+            ]
+          }
+          },
+          {
+            "type": "subsection",
+            "title": "Creating Forms to Entering and Displaying Data",
+            "content": [
+              "Create Form -> Add Existing Fields -> Show tables -> Select table -> Drag fields to form.",
+              "Form View -> Open form."
+              "Data entry: Fill inputs (e.g., Name, Date of Birth). Record Navigation Bar is used.",
+              "Records: New Record, Previous Record, Next Record."
+              "Saving records (File -> Save, File -> Save As)."
+            ]
+          },
+          {
+            "type": "activity",
+            "title": "Forms and Controls",
+            "content": [
+              "Create Data Form",
+              "Command Button Wizard",
+              "Combo Box",
+              "Label"
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Creating Queries to Get Information",
+            "content": [
+              "Create Query -> Design View -> Select tables and fields.",
+              "Run the query to see information (e.g., Marks of Sanduni, Ranjala)."
+              "Design View -> Create query for: (Total, Average). Build expression: Total = [Student]."
+              "Create Report -> Report Wizard -> Select table or query. Design report."
+            ]
+          },
+          {
+            "type": "activity",
+            "questions": [
+              "List out advantages of electronic databases.",
+              "Explain relational databases using fields, records and tables.",
+              "Define primary key and provide three examples.",
+              "Define composite key and provide three examples.",
+              "Write five disadvantages of data duplication."
+              "What is a data type? Provide examples for data types.",
+              "Explain why integer data type is not the best data type for field that stores telephone numbers.",
+              "Explain relationships; one-to-one, one-to-many and many-to-many with two examples for each.",
+              "Explain what 'objects' are in Database Management Systems and explain the uses of objects."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
