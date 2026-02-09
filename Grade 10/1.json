@@ -1,0 +1,424 @@
+{
+  "document_info": {
+    "language": "en",
+    "title": "Information and Communication Technology"
+  },
+  "chapter_content": {
+    "chapter_number": 1,
+    "learning_objectives": [
+      "how to identify data and information",
+      "what a system is",
+      "the systems we come across in our day to day activities",
+      "characteristics of quality information",
+      "Information and Communication Technology",
+      "applications of Information and Communication Technology",
+      "evolution of the computer"
+    ],
+    "sections": [
+      {
+        "id": "1.1",
+        "title": "Data and Information",
+        "type": "section",
+        "content": [
+          {
+            "type": "definition",
+            "term": "Data",
+            "text": "The numbers, words, images and symbols which do not bear a meaning, when standing alone."
+          },
+          {
+            "type": "definition",
+            "term": "Information",
+            "text": "Meaningful result obtained by arranging and processing data, used to make decisions."
+          },
+          {
+            "type": "concept",
+            "title": "System Components",
+            "details": {
+              "Input": "Submitting data for processing.",
+              "Output": "The result we get after processing."
+            }
+          },
+          {
+            "type": "example",
+            "number": 1,
+            "title": "Student Marks",
+            "description": "Raw data (separate names and marks) is hard to analyze. Tabulated data is better. Calculated totals and averages provide useful information (e.g., rank, individual skill)."
+          },
+          {
+            "type": "example",
+            "number": 2,
+            "title": "Human Figures",
+            "description": "Individual images convey no meaning, but arranged correctly they represent a family."
+          },
+          {
+            "type": "example",
+            "number": 3,
+            "title": "National Identity Card",
+            "description": "Looks like just a number, but analysis reveals meaningful info like year of birth, gender (0-4 Male, 5-9 Female)."
+          },
+          {
+            "type": "activity",
+            "text": "Provide more other examples for data and information."
+          }
+        ]
+      },
+      {
+        "id": "1.2",
+        "title": "The Components of a System",
+        "type": "section",
+        "content": [
+          {
+            "type": "definition",
+            "term": "System",
+            "text": "A combination of components that work together to fulfil a task. The computer is a system that processes data into information."
+          },
+          {
+            "type": "example",
+            "number": 1,
+            "title": "ATM (Automatic Teller Machine)",
+            "flow": {
+              "Input": "Bank ATM Card",
+              "Processing": "Data processing",
+              "Output": "Name, Account Number, Balance, Cash withdrawal."
+            }
+          },
+          {
+            "type": "example",
+            "number": 2,
+            "title": "Fingerprint Reader",
+            "flow": {
+              "Input": "Fingerprint",
+              "Processing": "Matching data",
+              "Output": "Time of arrival, Time of departure, Attendance record."
+            }
+          },
+          {
+            "type": "example",
+            "number": 3,
+            "title": "QR Code",
+            "flow": {
+              "Input": "Scan QR Code",
+              "Processing": "Connect to internet",
+              "Output": "Further information from website."
+            }
+          },
+          {
+            "type": "example",
+            "number": 4,
+            "title": "Processing Business Information",
+            "flow": {
+              "Input": "Purchases, Sales, Income, Expenses, Year",
+              "Processing": "Calculation",
+              "Output": "Profit, Loss",
+              "Decision": "Business decision making."
+            }
+          },
+          {
+            "type": "activity",
+            "text": "Find out details of items/books by analyzing their barcodes (Barcode and ISBN Code)."
+          }
+        ]
+      },
+      {
+        "id": "1.2.1",
+        "title": "Quality of Information",
+        "type": "subsection",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Not all information is suitable for making decisions. Information obtained should be of good quality."
+          },
+          {
+            "type": "list",
+            "title": "Characteristics of Quality Information",
+            "items": [
+              {
+                "name": "Relevancy",
+                "desc": "e.g., Submitting only highest qualification instead of all academic records from Grade 1."
+              },
+              {
+                "name": "Completeness",
+                "desc": "e.g., Taking info from a small group for PCI (Per Capita Income) leads to wrong conclusions."
+              },
+              {
+                "name": "Accuracy",
+                "desc": "e.g., Wrong info about a patient's health can be harmful."
+              },
+              {
+                "name": "Timeliness",
+                "desc": "e.g., Today's weather report is not suitable for tomorrow's decision."
+              },
+              {
+                "name": "Cost Effectiveness",
+                "desc": "e.g., Spending more than profits to collect info causes business loss."
+              }
+            ]
+          },
+          {
+            "type": "activity",
+            "text": "Write another example each for the above characteristics."
+          }
+        ]
+      },
+      {
+        "id": "1.3",
+        "title": "Information and Communication Technology (ICT)",
+        "type": "section",
+        "content": [
+          {
+            "type": "definition",
+            "text": "Technology used to convert data into information and exchange them. It overcomes difficulties in data communication."
+          }
+        ]
+      },
+      {
+        "id": "1.4",
+        "title": "Applications of Information and Communication Technology",
+        "type": "section",
+        "content": [
+          {
+            "type": "subsection",
+            "id": "1.4.1",
+            "title": "e-Government",
+            "content": "Communication between government and citizens/companies/orgs using ICT. Examples: gov.lk, ICTA. Benefits: Easy access to government information and services."
+          },
+          {
+            "type": "subsection",
+            "id": "1.4.2",
+            "title": "Applications in Education",
+            "content": [
+              {
+                "type": "list",
+                "title": "In the classroom",
+                "items": ["Presentations", "Videos of experiments", "Creating images/videos", "Desktop publishing", "Edutainment", "CD-ROM learning", "Gathering info on internet"]
+              },
+              {
+                "type": "list",
+                "title": "Education - any where anytime",
+                "items": ["Websites: schoolnet.lk, nenasala.lk, e-thaksalawa.moe.gov.lk", "WBT (Web Based Training)", "Save time and money"]
+              },
+              {
+                "type": "list",
+                "title": "As a teaching aid",
+                "items": ["Audio-visuals for difficult subjects", "Organizing lessons", "Relevant subject info"]
+              },
+              {
+                "type": "list",
+                "title": "Learning Management System (LMS)",
+                "items": ["Anytime anywhere access", "Upload assignments", "Queries via forums", "Video co-curricular activities", "Parents can monitor progress"]
+              },
+              {
+                "type": "paragraph",
+                "title": "Higher Education",
+                "text": "Online Distance Learning (Low cost, flexible timing, digital library, online assignments/quizzes)."
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "1.4.3",
+            "title": "ICT in Health Sector",
+            "content": [
+              {
+                "type": "list",
+                "title": "Diagnosis Tools",
+                "items": [
+                  {
+                    "name": "CAT (Computerized Axial Tomography)",
+                    "desc": "Creates 3D images of body parts."
+                  },
+                  {
+                    "name": "MRI (Magnetic Resonance Imaging)",
+                    "desc": "Digitalized images of internal organs using magnetic fields."
+                  },
+                  {
+                    "name": "ECG (Electrocardiogram)",
+                    "desc": "Monitors heart beat and electrical impulses."
+                  },
+                  {
+                    "name": "Cardiac Screening Machine",
+                    "desc": "Displays heart physiology and movements inside the heart."
+                  },
+                  {
+                    "name": "EEG (Electro-encephalography)",
+                    "desc": "Records brain activities."
+                  },
+                  {
+                    "name": "Blood Sugar Testing Machine",
+                    "desc": "Analyzes blood sample for glucose level."
+                  },
+                  {
+                    "name": "Blood Pressure Measuring Machine",
+                    "desc": "Measures BP at rest and during activity."
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "title": "Telemedicine",
+                "items": [
+                  "Emergency Telemedicine (Remote villages/planes/ships)",
+                  "Home health medicine (Monitoring via network)",
+                  "Telemedicine Consultation (Specialist at ETU)",
+                  "Telesurgery (Remote surgery via telecom)",
+                  "Medical Teletraining (Training remote professionals)"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "1.4.4",
+            "title": "ICT in Agricultural Industry",
+            "content": [
+              {
+                "type": "list",
+                "title": "ICT for Farming",
+                "items": [
+                  "Meteorological Devices (Assess weather, climate, rain)",
+                  "Automated Insect Control Devices (Display insect density)",
+                  "Field conditions measuring devices (Fertility, humidity)",
+                  "Drip irrigation (Control water supply)",
+                  "Automatic Weed remover",
+                  "Seedlings planter using Robotics",
+                  "Crop harvesting using Robots",
+                  "Greenhouse (Protect crops from disasters, control light/moisture)"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "1.4.5",
+            "title": "ICT in Management of Farmhouse",
+            "content": [
+              "RFID - Identifying and counting animals",
+              "Automated milking and examination of cows",
+              "Security using CCTV",
+              "Farm Management (Laptops/smartphones for tracking info, profit/loss, market rates)"
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "1.4.6",
+            "title": "ICT in Fishing Industry",
+            "content": "Sensors placed in sea convey fish concentration to trawlers via internet."
+          },
+          {
+            "type": "subsection",
+            "id": "1.4.7",
+            "title": "ICT in Manufacturing and Business",
+            "content": [
+              {
+                "type": "list",
+                "title": "Manufacturing",
+                "items": ["Robots replace human labour", "Benefits: 24hr service, efficiency, accuracy, hygiene"],
+                "examples": ["Video Conferencing", "HR Management (Fingerprint/Card reader)", "e-Banking (ATM, Inter-banking, Mobile banking)", "Online Shopping (Global access, 24/7, home delivery)"]
+              }
+            ]
+          },
+          {
+            "type": "subsection",
+            "id": "1.4.8",
+            "title": "ICT in Transport",
+            "content": ["CCTV (Monitor traffic/accidents)", "Traffic Light Control System", "Parking identification placard (Sensors read pass)"]
+          },
+          {
+            "type": "subsection",
+            "id": "1.4.9",
+            "title": "ICT in Entertainment",
+            "content": ["Social media", "Listening to music/watching video", "Games", "High definition video", "Surfing internet", "E-books", "Digital Photography"]
+          }
+        ]
+      },
+      {
+        "id": "1.5",
+        "title": "Demerits of ICT",
+        "type": "section",
+        "content": [
+          "Addiction (Ailments, loss of education)",
+          "Building unsuitable friendships through social media",
+          "Computers infected by virus due to improper use",
+          "Negative effects on psychology (improper websites)",
+          "Publishing edited photos/videos affecting personal lives"
+        ]
+      },
+      {
+        "id": "1.6",
+        "title": "Evolution of the Computer",
+        "type": "section",
+        "content": [
+          {
+            "type": "history",
+            "title": "Early History",
+            "events": [
+              {"year": "~5000 years ago", "event": "Abacus invented for addition"},
+              {"year": "1642", "event": "Blaise Pascal invented Adding Machine"},
+              {"year": "1674", "event": "Gottfried Wilhelm Von Leibnitz improved it (Multiplication/Division)"},
+              {"event": "Joseph Jacquard - Mechanical Loom (Punch Card)"},
+              {"event": "Charles Babbage - Analytical Engine (Father of Computing)"},
+              {"event": "Ada Augusta Lovelace - First Programmer"},
+              {"year": "1944", "event": "Howard Aiken - MARK 1 (Automatic Sequence Control Calculator)"}
+            ]
+          },
+          {
+            "type": "generations",
+            "list": [
+              {
+                "gen": 1,
+                "period": "1940-1956",
+                "hardware": "Vacuum Tubes, Punch Cards, Magnetic Tape",
+                "software": "Machine Language",
+                "characteristics": "Large size, slow processing, high heat, consumes lot of electricity, expensive"
+              },
+              {
+                "gen": 2,
+                "period": "1956-1963",
+                "hardware": "Transistors, Tape, Floppy Disk",
+                "software": "Assembly Language, Stored Program Concept",
+                "characteristics": "Smaller size, less heat, faster processing, expensive, lower power consumption"
+              },
+              {
+                "gen": 3,
+                "period": "1964-1975",
+                "hardware": "Integrated Circuits (IC), Keyboard/Mouse, High Capacity Disks",
+                "software": "High-level languages, OS with GUI, UNIX",
+                "characteristics": "Smaller size, faster, reliable, cheaper"
+              },
+              {
+                "gen": 4,
+                "period": "1975-1989",
+                "hardware": "LSI/VLSI, Microprocessors, Hard Disks, Optical Disks",
+                "software": "Internet, Multimedia, GUI (Windows), Voice recognition",
+                "characteristics": "Portable, easy operation, high reliability, high efficiency, Personal Computers"
+              },
+              {
+                "gen": 5,
+                "period": "1989-present",
+                "hardware": "ULSI, Portable devices, Very High Capacity Hard Disks",
+                "software": "Internet, Multimedia, AI, Voice/Character Recognition",
+                "characteristics": "Very small size, portable, easy to use"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "summary",
+        "title": "Summary",
+        "content": [
+          "Images, words, numbers or symbols which do not convey a meaning when standing alone are called data.",
+          "Information is obtained by processing data. Information is used to make decisions.",
+          "Computer is a system.",
+          "Computers and computer based systems are used to process data.",
+          "Providing data is called ‘input’ while extracting information is called ‘output’.",
+          "Quality of information is important (relevancy, completeness, accuracy, timeliness, low cost).",
+          "Data input, processing and data output are components of a system.",
+          "Technology is used to exchange the processed data.",
+          "Applications of ICT have made man's life easy. There are many applications such as e-Government, education, health, agriculture, business, entertainment etc.",
+          "The advent of computing dates back to 5000 years. Computing is categorized into many generations from the period of automation."
+        ]
+      }
+    ]
+  }
+}
