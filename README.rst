@@ -59,7 +59,7 @@ Usage
 
 .. code-block:: bash
 
-    git clone https://github.com/YourUsername/SL-ICT-JSONs.git
+    git clone https://github.com/ICTPortal/ICT-JSONs.git
 
 2. **Load JSON in your project** (example in JavaScript):
 
